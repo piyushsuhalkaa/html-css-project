@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PROJECT A | Cafe</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
+  </head>
+  <body>
+    <!--Banner Section Start-->
+    <section class="presentation">
+      <div class="bg-image"></div>
+      <div class="presentation__header">
+        <div class="header__logo-container">
+          <img class="header__logo" src="./assets/images/logo.png" alt="" />
+        </div>
+        <div class="header__nav-bar">
+          <ul class="header__nav-links">
+            <li><a class="header__nav-link" href="#">Home</a></li>
+            <li><a class="header__nav-link" href="about.html">About</a></li>
+            <li><a class="header__nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header__cta-container">
+          <button id="ctaHeader">Book Now</button>
+        </div>
+      </div>
+      <div class="presentation__banner">
+        <h1 class="banner-heading">Welcome</h1>
+        <hr size="7" class="banner-hr" />
+        <p class="banner-caption">
+          Our restaurant offers full-service dining with breathtaking views seen
+          from our indoor covered patio and our outdoor sundeck.
+        </p>
+      </div>
+    </section>
+
+    <!--Reservation Form-->
+    <section class="cta-form">
+      <div class="form-block">
+        <form class="form-cta" action="">
+          <div class="cta-form-container">
+            <div class="cta-form-item">
+              <label class="label-heading">Name</label>
+              <input class="label-input" type="text" placeholder="Your Name" />
+            </div>
+            <div class="cta-form-line"></div>
+            <div class="cta-form-item">
+              <label class="label-heading">Phone</label>
+              <input
+                class="label-input"
+                type="tel"
+                placeholder="Your Phone Number"
+              />
+            </div>
+            <div class="cta-form-line"></div>
+            <div class="cta-form-item">
+              <label class="label-heading">Date </label>
+              <input class="label-input" type="date" />
+            </div>
+            <div class="cta-form-line"></div>
+            <div class="cta-form-item" style="width:200px;">
+              <label class="label-heading">No. of People</label>
+              <select
+                class="select-label"
+                style="width: 130px; margin-top: 25px; height: 25px; font-size: 18px;"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+            <div class="cta-form-item">
+              <span class="cta-container">
+                <button id="ctaBook" type="submit">Check Avlaibilty</button>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about">
+      <div class="about__left">
+        <img
+          class="about-back-img"
+          src="./assets/images/about/about-back.jpg"
+        />
+        <img class="about-img" src="./assets/images/about/chef.png" />
+      </div>
+      <div class="about__right">
+        <h2 class="about-heading">About Us</h2>
+        <p class="about-caption">
+          Pesto is a family owned and operated Italian Restaurant offering a
+          combination of fresh ingredients and authentic Italian cooking.<br />
+        </p>
+        <p class="about-caption">
+          We will make sure you are served the most authentic and fresh Italian
+          dishes, while offering the best customer service. Our kitchen is
+          committed to providing our guests with the best Italian Cuisine.
+        </p>
+        <img class="about-sign" src="./assets/images/signature.png" />
+      </div>
+    </section>
+
+    <!-- Featured Section-->
+    <section class="featured">
+      <div class="featured-top">
+        <h2 class="featured-head">Featured Offers</h2>
+        <p class="featured-caption">
+          We offer a great variety of the best Italian dishes to our visitors
+          and guests. Below are some of our most popular main dishes and
+          desserts.
+        </p>
+      </div>
+      <div class="featured-items">
+        <div class="featured-item-1">
+          <a class="item-links" href="#">
+            <img
+              class="image"
+              src="./assets/images/featured/item1.jpg"
+              alt=""
+            />
+            <div class="middle">
+              <div class="text">Order Now</div>
+            </div>
+            <h1 class="dish-name">
+              <a class="link-normal-dish-name" href="#">Ravioli</a>
+            </h1>
+            <h2 class="dish-price">
+              <a class="link-normal-dish-price " href="#">$ 3</a>
+            </h2>
+          </a>
+        </div>
+
+        <div class="featured-item-2">
+          <a class="item-links" href="#">
+            <img
+              class="image"
+              src="./assets/images/featured/item2.jpg"
+              alt=""
+            />
+            <div class="middle">
+              <div class="text">Order Now</div>
+            </div>
+          </a>
+          <h1 class="dish-name">
+            <a class="link-normal-dish-name" href="#">Fruits</a>
+          </h1>
+          <h2 class="dish-price">
+            <a class="link-normal-dish-price" href="#">$ 3</a>
+          </h2>
+        </div>
+
+        <div class="featured-item-3">
+          <a class="item-links" href="#">
+            <img
+              class="image"
+              src="./assets/images/featured/item3.jpg"
+              alt=""
+            />
+            <div class="middle">
+              <div class="text">Order Now</div>
+            </div>
+            <h1 class="dish-name">
+              <a class="link-normal-dish-name" style="color: black;" href="#"
+                ><strong>Gelato</strong></a
+              >
+            </h1>
+            <h2 class="dish-price">
+              <a class="link-normal-dish-price" href="#">$ 3</a>
+            </h2>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurant menu Section -->
+    <section class="res-menu">
+      <h1 class="res-menu-heading">Our Restaurant Menu</h1>
+      <section class="">
+        <div class="res-menu-container">
+          <button
+            class="res-menu-tab-head"
+            id="defaultOpen"
+            onclick="ourMenu('ourMain')"
+          >
+            Main
+          </button>
+          <button
+            class="res-menu-tab-head"
+            onclick="ourMenu('ourDessert', this, 'red')"
+          >
+            Dessert
+          </button>
+          <button
+            class="res-menu-tab-head"
+            onclick="ourMenu('ourDrink', this, 'red')"
+          >
+            Drink
+          </button>
+        </div>
+        <div class="res-menu-captions">
+          <div id="ourMain" class="tabcontent">
+            <div>
+              <div>
+                <span class="res-menu-item-price">$25.89</span>
+                <span class="res-menu-item-name">Osso Buco</span>
+                <p class="res-menu-item-caption">
+                  Osso Buco is one of the Italian greats - slow cooked veal in a
+                  white wine tomato sauce. Meltingly tender, this is both hearty
+                  and luxurious.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$16.89</span>
+                <span class="res-menu-item-name">Pappardelle Mimmo</span>
+                <p class="res-menu-item-caption">
+                  This delicious dish tops long, wide pasta with scallops,
+                  lobster, asparagus, butter, sage and truffle oil to cater
+                  every palate.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$18.89</span>
+                <span class="res-menu-item-name">Osso Buco</span>
+                <p class="res-menu-item-caption">
+                  This delicious dish tops long, wide pasta with scallops,
+                  lobster, asparagus, butter, sage and truffle oil to cater
+                  every palate.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$18.89</span>
+                <span class="res-menu-item-name">Filetto Di Manzo</span>
+                <p class="res-menu-item-caption">
+                  Wonderful combination of prime tenderloin, winter greens,
+                  Jerusalem artichoke puree, and oxtail reduction sauce.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="ourDessert" class="tabcontent" style="display:none">
+            <div>
+              <div>
+                <span class="res-menu-item-price">$20.89</span>
+                <span class="res-menu-item-name">Tiramisu</span>
+                <p class="res-menu-item-caption">
+                  A Pesto’s favorite - classic Italian dessert made with lady
+                  fingers, Mascarpone cheese & espresso. Perfect for both kids
+                  and adults.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$6.89</span>
+                <span class="res-menu-item-name">Cannoli</span>
+                <p class="res-menu-item-caption">
+                  Trio tower of cannoli filled with smooth ricotta, sugar &
+                  cinnamon, with chocolate & raspberry sauces. Single cannoli is
+                  also available.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$5.89</span>
+                <span class="res-menu-item-name">Pistachio Passion</span>
+                <p class="res-menu-item-caption">
+                  Layered pistachio cream, cream cheese custard & whipped cream
+                  atop a rich walnut crust.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$4.89</span>
+                <span class="res-menu-item-name"
+                  >Chocolate-and-Pistachio Biscotti</span
+                >
+                <p class="res-menu-item-caption">
+                  At Pesto, we vary these wonderful nutty biscotti, while also
+                  dipping them in melted dark chocolate for an extra layer of
+                  flavor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="ourDrink" class="tabcontent" style="display:none">
+            <div>
+              <div>
+                <span class="res-menu-item-price">$10.89</span>
+                <span class="res-menu-item-name">Aperol Spritz</span>
+                <p class="res-menu-item-caption">
+                  The most popular drink in Venice: refreshing, easygoing
+                  &…happy! Perfect to be sipped as an “Aperitivo” just before
+                  dinner - delightful!
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$9.89</span>
+                <span class="res-menu-item-name">Negroni</span>
+                <p class="res-menu-item-caption">
+                  Reward yourself with a moment of relaxation & pure pleasure
+                  while enjoying the full flavour & simplicity of a Negroni, an
+                  iconic Italian cocktail.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$11.89</span>
+                <span class="res-menu-item-name">Negroni Sbagliato</span>
+                <p class="res-menu-item-caption">
+                  A cocktail for those who prefer more delicate flavours but
+                  nonetheless want a drink full of taste & personality.
+                </p>
+              </div>
+              <div>
+                <span class="res-menu-item-price">$8.89</span>
+                <span class="res-menu-item-name">White Peach Bellini</span>
+                <p class="res-menu-item-caption">
+                  White Peach Bellini is a classic drink from Venice Italy of
+                  white peach purée and Prosecco. It is one of our most popular
+                  drinks at Pesto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Gallary Section -->
+    <section class="gallary-container">
+      <div class="gallary-row">
+        <img
+          class="gallary-item-row-one"
+          src="./assets/images/gallary/image1.jpg"
+          alt=""
+        />
+        <img
+          class="gallary-item-row-one"
+          src="./assets/images/gallary/image2.jpg"
+          alt=""
+        />
+        <img
+          class="gallary-item-row-one"
+          src="./assets/images/gallary/image3.jpg"
+          alt=""
+        />
+      </div>
+      <div class="gallary-row">
+        <img
+          class="gallary-item-row-two"
+          src="./assets/images/gallary/image4.jpg"
+          alt=""
+        />
+        <img
+          class="gallary-item-row-two"
+          src="./assets/images/gallary/image5.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- Recent News Section -->
+    <section class="recent-news-section">
+      <div class="recent-news-heading">
+        <h2>Recent News</h2>
+      </div>
+      <div class="recent-news-container">
+        <div class="recent-news">
+          <div class="recent-news-items">
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">JUL 02, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#">Genuine Italian Pizza: Authenticity and Choice </a>
+              </span>
+              <p class="item-caption">
+                As an Italian restaurant, we are very proud of our delicious
+                authentic pizzas. Our three most popular choices are the
+                Rustica, the Toscana and...
+              </p>
+              <span class="item-link"><a href="#"> Read More ⟶</a></span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">JUL 02, 2019 </a>
+              </span>
+              <span class="item-title">
+                <a href="#">
+                  Italian vs. American Spaghetti: Top 5 Differences
+                </a>
+              </span>
+              <p class="item-caption">
+                Commonly, when we hear there is spaghetti for dinner we will be
+                expecting a red tomato sauce with meat and seasonings poured
+                over long...
+              </p>
+              <span class="item-link">
+                <a href="#"> Read More ⟶</a>
+              </span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">AUG 02, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#">The Delicious History of Lasagna and Its Origins</a>
+              </span>
+              <p class="item-caption">
+                Lasagna, could there be a more perfect dish? It’s comfort food
+                on steroids. Layers of cheese generously piled on top of
+                decadent amounts...
+              </p>
+              <span class="item-link"><a href="#"> Read More ⟶</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-news">
+          <div class="recent-news-items">
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">AUG 15, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#"
+                  >Making Gelato Like a True Italian: Tips From Our Chef
+                </a>
+              </span>
+              <p class="item-caption">
+                Most would agree that gelato is the most delicious frozen
+                dessert; the perfect ending to any meal. With origins in Sicily,
+                gelato has been made famous...
+              </p>
+              <span class="item-link">
+                <a href="#"> Read More ⟶</a>
+              </span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">SEP 15, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#">Italian Ingredients You Can Easily Grow at Home</a>
+              </span>
+              <p class="item-caption">
+                Imagine preparing an Italian dinner but having to stop cooking
+                because you forget an ingredient and must run to the store. How
+                nice would it be to go...
+              </p>
+              <span class="item-link"><a href="#"> Read More ⟶</a></span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date"><a href="#">SEP 28, 2019</a></span>
+              <span class="item-title">
+                <a>Our Brief Guide to Pairing Wine and Pasta the Right Way</a>
+              </span>
+              <p class="item-caption">
+                To Italians, pasta is the food of the gods, and there is nothing
+                better to go with a good pasta than a perfect wine. To the
+                uninitiated, finding the right...
+              </p>
+              <span class="item-link"><a href="#"> Read More ⟶</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-news">
+          <div class="recent-news-items">
+            <div class="recent-news-item">
+              <span class="item-date"><a href="#">OCT 05, 2019</a></span>
+              <span class="item-title">
+                <a href="#"
+                  >Top 10 Famous Spring Dishes in Italian Restaurants</a
+                >
+              </span>
+              <p class="item-caption">
+                Spring is the time for growth and rebirth. One can see this
+                throughout the countrysides of Italy with blooming flowers and
+                budding trees. Springtime is...
+              </p>
+              <span class="item-link">
+                <a href="#"> Read More ⟶</a>
+              </span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">OCT 17, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#">What Makes Some Seasonings Truly Italian?</a>
+              </span>
+              <p class="item-caption">
+                When thinking of Italian cuisine, dishes like pasta enveloped in
+                hearty sauces come to mind. Certain flavors seem to be found
+                across the different...
+              </p>
+              <span class="item-link">
+                <a href="#"> Read More ⟶</a>
+              </span>
+            </div>
+
+            <div class="recent-news-item">
+              <span class="item-date">
+                <a href="#">NOV 10, 2019</a>
+              </span>
+              <span class="item-title">
+                <a href="#"
+                  >Types of Italian Sausage and Why They Are Different</a
+                >
+              </span>
+              <p class="item-caption">
+                There are many types of Italian sausage. The main difference in
+                Italian sausage when compared to other sausages is the
+                seasoning. The particular...
+              </p>
+              <span class="item-link">
+                <a href="#"> Read More ⟶</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots-container" style="text-align:center">
+          <span class="recent-news-dot" onclick="currentSlide(1)"></span>
+          <span class="recent-news-dot" onclick="currentSlide(2)"></span>
+          <span class="recent-news-dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="footer-logo">
+        <img src="./assets/images/logo.png" />
+      </div>
+      <div class="footer-link-container">
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#">Home</a></li>
+          <li class="footer-link vertical-line"></li>
+          <li class="footer-link"><a href="about.html">About</a></li>
+          <li class="footer-link vertical-line"></li>
+          <li class="footer-link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-link-container">
+        <ul class="footer-social-links">
+          <li class="footer-social-link">
+            <a href="#"
+              ><i
+                class="fa fa-facebook-official icons-social"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li class="footer-social-link">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-social-link">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-social-link">
+            <a href="#"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-caption">
+        © 2020 Pesto. All Rights Reserved. Privacy Policy.
+      </div>
+    </section>
+    <script></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
