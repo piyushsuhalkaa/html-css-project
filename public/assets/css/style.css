@@ -108,10 +108,11 @@ body {
 }
 .banner-heading {
   display: block;
-  margin-top: 20%;
+  margin-top: 27vh;
   text-align: center;
   font-size: 70px;
   color: white;
+  margin-bottom: -1vh;
   text-transform: uppercase;
 }
 .banner-caption {
@@ -125,14 +126,12 @@ body {
 /*CTA Froms Start */
 .cta-form {
   position: relative;
-  margin-top: -150px;
+  top: -140px;
   padding: 20px auto;
   z-index: 1;
 }
 .form-block {
-  width: 100%;
   margin-left: 150px;
-  padding: 1vh;
   margin-top: 50px;
   font-size: 25px;
   width: 1130px;
@@ -144,7 +143,7 @@ body {
 }
 .cta-form-container {
   display: flex;
-  margin: 100px 20px;
+  margin: 50px 30px;
   background-color: snow;
   width: 70%;
 }
@@ -208,8 +207,8 @@ body {
   background-color: whitesmoke;
   display: flex;
   margin: 20px 0px;
-  padding-top: 250px;
-  margin-top: -220px;
+  padding-top: 150px;
+  margin-top: -255px;
   padding-left: 150px;
   padding-bottom: 50px;
 }
@@ -231,9 +230,9 @@ body {
 }
 .about-img {
   position: absolute;
-  left: 14vh;
+  left: 10vh;
   top: -38px;
-  z-index: 2;
+  z-index: 1;
 }
 .about-sign {
   margin-top: 20px;
@@ -446,21 +445,7 @@ body {
   padding: 50px 0px;
 }
 /* Gallary Section */
-.gallary-container {
-  width: 70vh;
-}
-.gallary-row {
-  display: flex;
-  width: 30vh;
-}
-.gallary-item-row-one {
-  flex: 1;
-  width: 480px;
-}
-.gallary-item-row-two {
-  flex: 1;
-  width: 720px;
-}
+
 /* Recent News Section  */
 .recent-news-section {
   background-color: white;
@@ -599,6 +584,7 @@ body {
   text-align: center;
 }
 .vertical-line {
+  margin: 0px 1px;
   border-right: 1px solid white;
 }
 .footer-link {
@@ -608,11 +594,11 @@ body {
   justify-content: center;
   text-decoration: none;
   list-style: none;
-  font-size: 20px;
 }
 .footer-link > a {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .footer-link > a:hover {
   color: green;
@@ -639,6 +625,13 @@ body {
 .footer-caption {
   font-size: 1em;
 }
+.footer-caption > a {
+  color: white;
+  text-decoration: none;
+}
+.footer-caption > a:hover {
+  color: green;
+}
 i {
   background-color: rgb(36, 36, 36);
   border-radius: 50%;
@@ -650,3 +643,136 @@ i:hover {
   background-color: green;
 }
 /*Footer CSS end*/
+
+.gallary-container {
+  width: 70vh;
+}
+.gallary-row {
+  cursor: pointer;
+  display: flex;
+  width: 30vh;
+}
+.gallary-item-row-one {
+  flex: 1;
+  width: 480px;
+}
+.gallary-item-row-two {
+  flex: 1;
+  width: 720px;
+}
+
+/* The Modal (background) */
+.gallary-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: gray;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close-modal {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallarySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

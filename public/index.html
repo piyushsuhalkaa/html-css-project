@@ -365,16 +365,19 @@
     <section class="gallary-container">
       <div class="gallary-row">
         <img
+          onclick="gallaryOpenModal();currentGallarySlide(1)"
           class="gallary-item-row-one"
           src="./assets/images/gallary/image1.jpg"
           alt=""
         />
         <img
+          onclick="gallaryOpenModal();currentGallarySlide(2)"
           class="gallary-item-row-one"
           src="./assets/images/gallary/image2.jpg"
           alt=""
         />
         <img
+          onclick="gallaryOpenModal();currentGallarySlide(3)"
           class="gallary-item-row-one"
           src="./assets/images/gallary/image3.jpg"
           alt=""
@@ -382,18 +385,94 @@
       </div>
       <div class="gallary-row">
         <img
+          onclick="gallaryOpenModal();currentGallarySlide(4)"
           class="gallary-item-row-two"
           src="./assets/images/gallary/image4.jpg"
           alt=""
         />
         <img
+          onclick="gallaryOpenModal();currentGallarySlide(5)"
           class="gallary-item-row-two"
           src="./assets/images/gallary/image5.jpg"
           alt=""
         />
       </div>
     </section>
+    <!-- Gallary Section -->
+    <div class="row">
+    <div id="gallaryModal" class="gallary-modal">
+      <!--<div class="column">
+        <img
+          class="demo cursor"
+          src="./assets/images/gallary/image1.jpg"
+          style="width:100%"
+          onclick="currentSlide(1)"
+          alt="Nature and sunrise"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="./assets/images/gallary/image2.jpg"
+          style="width:100%"
+          onclick="currentSlide(2)"
+          alt="Snow"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="./assets/images/gallary/image3.jpg"
+          style="width:100%"
+          onclick="currentSlide(3)"
+          alt="Mountains and fjords"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="./assets/images/gallary/image4.jpg"
+          style="width:100%"
+          onclick="currentSlide(4)"
+          alt="Northern Lights"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo cursor"
+          src="./assets/images/gallary/image5.jpg"
+          style="width:100%"
+          onclick="currentSlide(4)"
+          alt="Northern Lights"
+        />
+      </div>-->
+      <span class="close-modal cursor" onclick="gallaryCloseModal()">&times;</span>
+      <div class="modal-content">
+        <div class="gallarySlides">
+          <img src="./assets/images/gallary/image1.jpg" style="height:100%" />
+        </div>
 
+        <div class="gallarySlides">
+          <img src="./assets/images/gallary/image2.jpg" style="height:100%" />
+        </div>
+
+        <div class="gallarySlides">
+          <img src="./assets/images/gallary/image3.jpg" style="height:100%" />
+        </div>
+
+        <div class="gallarySlides">
+          <img src="./assets/images/gallary/image4.jpg" style="height:100%" />
+        </div>
+
+        <div class="gallarySlides">
+          <img src="./assets/images/gallary/image5.jpg" style="height:100%" />
+        </div>
+
+        <a class="prev" onclick="plusGallarySlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusGallarySlides(1)">&#10095;</a>
+        
+      </div>
+    </div>
     <!-- Recent News Section -->
     <section class="recent-news-section">
       <div class="recent-news-heading">
@@ -578,36 +657,37 @@
         <ul class="footer-links">
           <li class="footer-link"><a href="#">Home</a></li>
           <li class="footer-link vertical-line"></li>
-          <li class="footer-link"><a href="about.html">About</a></li>
+          <li class="footer-link"><a href="about.html"> About</a></li>
           <li class="footer-link vertical-line"></li>
-          <li class="footer-link"><a href="contact.html">Contact</a></li>
+          <li class="footer-link"><a href="contact.html">Contact </a></li>
         </ul>
       </div>
       <div class="footer-social-link-container">
         <ul class="footer-social-links">
           <li class="footer-social-link">
-            <a href="#"
-              ><i
-                class="fa fa-facebook-official icons-social"
-                aria-hidden="true"
-              ></i
-            ></a>
+            <a href="#">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
           </li>
           <li class="footer-social-link">
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
           </li>
           <li class="footer-social-link">
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
           </li>
           <li class="footer-social-link">
-            <a href="#"
-              ><i class="fa fa-youtube-play" aria-hidden="true"></i
-            ></a>
+            <a href="#">
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer-caption">
-        © 2020 Pesto. All Rights Reserved. Privacy Policy.
+        © 2020 Pesto. All Rights Reserved. <a href="#">Privacy Policy</a>.
       </div>
     </section>
     <script></script>
