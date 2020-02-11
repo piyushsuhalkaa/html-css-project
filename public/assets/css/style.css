@@ -18,7 +18,7 @@ Author URI:
    ========================================================================== */
 /* Imports */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 /* Global CSS Start */
 html,
 body {
@@ -189,7 +189,7 @@ body {
   font-weight: 300;
   padding: 15px 20px;
   font-size: 14px;
-  background-color: rgb(41, 39, 39);
+  background-color: #323232;
   cursor: pointer;
   font-family: "PT Sans", sans-serif;
   color: snow;
@@ -247,9 +247,9 @@ body {
 .about-caption {
   font-weight: 300;
   margin: 10px auto;
-  font-size: 18px;
+  font-size: 17px;
   max-width: 500px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /*About Element CSS End*/
 
@@ -268,12 +268,13 @@ body {
   margin-bottom: 1em;
 }
 .featured-caption {
-  font-weight: 200;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 15px;
   margin-bottom: 1em;
   margin: 0 400px;
+  color: gray;
   max-width: 700px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .featured-items {
   display: flex;
@@ -345,7 +346,7 @@ body {
   padding: 10px;
 }
 .middle :hover {
-  background-color: rgb(26, 24, 24);
+  background-color: #323232;
 }
 
 .item-links:hover .image {
@@ -371,14 +372,14 @@ body {
 }
 .res-menu-container {
   margin-left: 30vh;
-  background-color: black;
+  background-color: #323232;
   display: flex;
   width: 70%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .res-menu-tab-head {
-  background-color: black;
+  background-color: #323232;
   color: rgb(206, 206, 206);
   float: left;
   border: none;
@@ -429,13 +430,13 @@ body {
 .res-menu-item-caption {
   display: block;
   color: black;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 100;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 10px;
-  font-weight: 100;
   margin-bottom: 50px;
   padding: 1px 100px;
+  max-width: 700px;
 }
 .res-menu-tab-head:hover {
   color: rgb(255, 255, 255);
@@ -477,7 +478,7 @@ body {
 .item-date > a {
   padding: 10px;
   font-size: 15px;
-  background-color: black;
+  background-color: #323232;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -502,6 +503,7 @@ body {
 }
 .item-caption {
   margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
   display: block;
   font-size: 15px;
   margin: 5px;
@@ -562,7 +564,7 @@ body {
 .footer {
   width: 100%;
   position: absoulte;
-  background-color: rgb(0, 0, 0);
+  background-color: #323232;
   padding-top: 50px;
   padding-bottom: 50px;
   color: rgb(255, 255, 255);
@@ -623,10 +625,12 @@ body {
   color: white;
 }
 .footer-caption {
-  font-size: 1em;
+  margin-top: 100px;
+  font-size: 15px;
+  color: rgb(151, 151, 151);
 }
 .footer-caption > a {
-  color: white;
+  color: rgb(151, 151, 151);
   text-decoration: none;
 }
 .footer-caption > a:hover {
