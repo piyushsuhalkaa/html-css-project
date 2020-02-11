@@ -82,7 +82,6 @@ body {
 }
 .header__nav-link:hover {
   color: green;
-  font: 2em sans-serif;
 }
 .headaer__cta-container {
   flex: 1;
@@ -125,8 +124,10 @@ body {
 /*Header Element Css Ends*/
 /*CTA Froms Start */
 .cta-form {
+  position: relative;
   margin-top: -150px;
   padding: 20px auto;
+  z-index: 1;
 }
 .form-block {
   width: 100%;
@@ -135,6 +136,7 @@ body {
   margin-top: 50px;
   font-size: 25px;
   width: 1130px;
+  z-index: 1;
   display: flex;
   background-color: snow;
   border-radius: 20px;
@@ -191,7 +193,7 @@ body {
   background-color: rgb(41, 39, 39);
   cursor: pointer;
   font-family: "PT Sans", sans-serif;
-  color: white;
+  color: snow;
   margin: 30px;
   outline: none;
   width: 25vh;
@@ -203,29 +205,35 @@ body {
 /* About section CSS*/
 
 .about {
+  background-color: whitesmoke;
   display: flex;
-  margin: 50px 20px;
-  padding: 30px;
+  margin: 20px 0px;
+  padding-top: 250px;
+  margin-top: -220px;
+  padding-left: 150px;
+  padding-bottom: 50px;
 }
 .about > div {
   margin: 50px;
-  padding: 25px;
+  padding: 25px 0px;
   justify-content: space-around;
 }
 .about__left {
+  padding-left: 200px;
   position: relative;
   left: 0;
   top: 0;
+  margin-left: 200px;
 }
 .about-back-img {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .about-img {
   position: absolute;
   left: 14vh;
   top: -38px;
-  z-index: -1;
+  z-index: 2;
 }
 .about-sign {
   margin-top: 20px;
@@ -236,13 +244,11 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   color: #0d0e0d;
-  font-family: "PT Sans", sans-serif;
 }
 .about-caption {
   font-weight: 300;
   margin: 10px auto;
   font-size: 18px;
-  text-align: justify;
   max-width: 500px;
   font-family: "PT Sans", sans-serif;
 }
@@ -251,7 +257,7 @@ body {
 /*Featured CSS Starts*/
 .featured {
   padding: 20px;
-  background-color: snow;
+  background-color: white;
   text-align: center;
   color: #000;
 }
@@ -350,8 +356,6 @@ body {
 .item-links:hover .middle {
   opacity: 1;
 }
-
-/*Featured CSS Ends*/
 
 /* Restaurant Menu Starts */
 .res-menu {
@@ -460,7 +464,7 @@ body {
 /* Recent News Section  */
 .recent-news-section {
   background-color: white;
-  margin: 30px 20px;
+  margin: 30px 10px;
   padding: 50px 10px;
 }
 .recent-news-heading {
@@ -486,16 +490,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .item-date > a {
-  margin: 5px;
   padding: 10px;
   font-size: 15px;
-  color: black;
   background-color: black;
   color: white;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  border: 1 px solid black;
 }
 .item-date > a:hover {
   background-color: green;
@@ -517,11 +518,10 @@ body {
 .item-caption {
   margin-top: 20px;
   display: block;
-  font-size: 16px;
-  margin: 10px;
+  font-size: 15px;
+  margin: 5px;
   margin-top: 20px;
   font-weight: 300;
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 .item-link {
