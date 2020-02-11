@@ -1,6 +1,12 @@
+/*
+
+Menu Section
+
+*/
+
 function ourMenu(pageName) {
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("menu-tab-content");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -12,7 +18,7 @@ function ourMenu(pageName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("AlwaysOpen").click();
 
 // js code for recent
 var slideIndex = 1;
@@ -46,6 +52,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+/* 
+
+Gallary Code 
+
+*/
 function gallaryOpenModal() {
   document.getElementById("gallaryModal").style.display = "block";
 }
@@ -83,4 +94,27 @@ function displaySlides(n) {
   }*/
   gallarySlide[gallarySlideIndex - 1].style.display = "block";
   //dots[gallarySlideIndex - 1].className += " active";
+}
+/*
+
+Top Button Function 
+
+*/
+var mybutton = document.getElementById("topBtn");
+window.onscroll = function() {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 700 ||
+    document.documentElement.scrollTop > 700
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

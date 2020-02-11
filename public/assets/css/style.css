@@ -108,7 +108,7 @@ body {
 }
 .banner-heading {
   display: block;
-  margin-top: 27vh;
+  margin-top: 35vh;
   text-align: center;
   font-size: 70px;
   color: white;
@@ -208,7 +208,7 @@ body {
   display: flex;
   margin: 20px 0px;
   padding-top: 150px;
-  margin-top: -255px;
+  margin-top: -265px;
   padding-left: 150px;
   padding-bottom: 50px;
 }
@@ -239,10 +239,12 @@ body {
   justify-content: baseline;
 }
 .about-heading {
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin-top: -8px;
+  margin-bottom: 30px;
   font-weight: bold;
   color: #0d0e0d;
+  font-family: "pt serif", "times new roman", Times, serif;
 }
 .about-caption {
   font-weight: 300;
@@ -779,4 +781,23 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: black;
 }

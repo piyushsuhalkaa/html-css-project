@@ -44,7 +44,10 @@
         </p>
       </div>
     </section>
-
+    <!-- Top Function Button -->
+    <section class="top-function">
+      <button onclick="topFunction()" id="topBtn">⇧</button>
+    </section>
     <!--Reservation Form-->
     <section class="cta-form">
       <div class="form-block">
@@ -197,7 +200,7 @@
         <div class="res-menu-container">
           <button
             class="res-menu-tab-head"
-            id="defaultOpen"
+            id="AlwaysOpen"
             onclick="ourMenu('ourMain')"
           >
             Main
@@ -216,7 +219,7 @@
           </button>
         </div>
         <div class="res-menu-captions">
-          <div id="ourMain" class="tabcontent">
+          <div id="ourMain" class="menu-tab-content">
             <div>
               <div>
                 <span class="res-menu-item-price">$25.89</span>
@@ -263,7 +266,7 @@
               </div>
             </div>
           </div>
-          <div id="ourDessert" class="tabcontent" style="display:none">
+          <div id="ourDessert" class="menu-tab-content" style="display:none">
             <div>
               <div>
                 <span class="res-menu-item-price">$20.89</span>
@@ -311,7 +314,7 @@
             </div>
           </div>
 
-          <div id="ourDrink" class="tabcontent" style="display:none">
+          <div id="ourDrink" class="menu-tab-content" style="display:none">
             <div>
               <div>
                 <span class="res-menu-item-price">$10.89</span>
