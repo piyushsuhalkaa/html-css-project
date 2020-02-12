@@ -88,6 +88,17 @@
   font-size: 45px;
   font-weight: bolder;
 }
+/* Testimonial Section */
+.testimonial-section {
+  height: 100vh;
+  background-image: url(../images/about-us/back.jpg) no-repeat cover fixed;
+}
+
+.testimonial-heading {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-left: 40vw;
+}
 /* Award Section*/
 .award-section {
   padding: 70px 60px;
@@ -99,7 +110,7 @@
 .awards-head {
   font-weight: bolder;
   font-size: 45px;
-  margin-left: 33vw;
+  margin-left: 35vw;
   margin-bottom: 90px;
 }
 .awards-content {

@@ -157,6 +157,7 @@ body {
 }
 .footer-link > a {
   color: white;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
