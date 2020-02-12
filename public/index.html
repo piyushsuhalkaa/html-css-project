@@ -17,7 +17,6 @@
   <body>
     <!--Banner Section Start-->
     <section class="presentation">
-      <div class="bg-image"></div>
       <div class="presentation__header">
         <div class="header__logo-container">
           <img class="header__logo" src="./assets/images/logo.png" alt="" />
@@ -35,7 +34,7 @@
           <button id="ctaHeader">Book Now</button>
         </div>
       </div>
-      <div class="presentation__banner">
+      <div class="presentation__content">
         <h1 class="banner-heading">Welcome</h1>
         <hr size="7" class="banner-hr" />
         <p class="banner-caption">
@@ -199,7 +198,7 @@
       <section class="">
         <div class="res-menu-container">
           <button
-            class="res-menu-tab-head"
+            class="res-menu-tab-head tab-head-first"
             id="AlwaysOpen"
             onclick="ourMenu('ourMain')"
           >
@@ -212,7 +211,7 @@
             Dessert
           </button>
           <button
-            class="res-menu-tab-head"
+            class="res-menu-tab-head tab-head-last"
             onclick="ourMenu('ourDrink', this, 'red')"
           >
             Drink
@@ -220,7 +219,7 @@
         </div>
         <div class="res-menu-captions">
           <div id="ourMain" class="menu-tab-content">
-            <div>
+            <div class="top-caption">
               <div>
                 <span class="res-menu-item-price">$25.89</span>
                 <span class="res-menu-item-name">
@@ -267,7 +266,7 @@
             </div>
           </div>
           <div id="ourDessert" class="menu-tab-content" style="display:none">
-            <div>
+            <div class="top-caption">
               <div>
                 <span class="res-menu-item-price">$20.89</span>
                 <span class="res-menu-item-name">
@@ -315,7 +314,7 @@
           </div>
 
           <div id="ourDrink" class="menu-tab-content" style="display:none">
-            <div>
+            <div class="top-caption">
               <div>
                 <span class="res-menu-item-price">$10.89</span>
                 <span class="res-menu-item-name">
@@ -400,82 +399,52 @@
           alt=""
         />
       </div>
+      <div id="gallaryModal" class="gallary-modal">
+        <span class="close-modal cursor" onclick="gallaryCloseModal()"
+          >&times;</span
+        >
+        <div class="modal-content">
+          <div class="gallarySlides">
+            <img
+              src="./assets/images/gallary/image1.jpg"
+              style="width: 60%; margin-left: 31vh;"
+            />
+          </div>
+
+          <div class="gallarySlides">
+            <img
+              src="./assets/images/gallary/image2.jpg"
+              style="width: 60%; margin-left: 33vh;"
+            />
+          </div>
+
+          <div class="gallarySlides">
+            <img
+              src="./assets/images/gallary/image3.jpg"
+              style="width: 60%; margin-left: 35vh;"
+            />
+          </div>
+
+          <div class="gallarySlides">
+            <img
+              src="./assets/images/gallary/image4.jpg"
+              style="height: 70%; margin-left: 20vh;"
+            />
+          </div>
+
+          <div class="gallarySlides">
+            <img
+              src="./assets/images/gallary/image5.jpg"
+              style="height: 60%;margin-left: 23vh;"
+            />
+          </div>
+
+          <a class="prev-slide" onclick="plusGallarySlides(-1)">&#10094;</a>
+          <a class="next-slide" onclick="plusGallarySlides(1)">&#10095;</a>
+        </div>
+      </div>
     </section>
-    <!-- Gallary Section -->
-    <div class="row">
-    <div id="gallaryModal" class="gallary-modal">
-      <!--<div class="column">
-        <img
-          class="demo cursor"
-          src="./assets/images/gallary/image1.jpg"
-          style="width:100%"
-          onclick="currentSlide(1)"
-          alt="Nature and sunrise"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="./assets/images/gallary/image2.jpg"
-          style="width:100%"
-          onclick="currentSlide(2)"
-          alt="Snow"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="./assets/images/gallary/image3.jpg"
-          style="width:100%"
-          onclick="currentSlide(3)"
-          alt="Mountains and fjords"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="./assets/images/gallary/image4.jpg"
-          style="width:100%"
-          onclick="currentSlide(4)"
-          alt="Northern Lights"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="./assets/images/gallary/image5.jpg"
-          style="width:100%"
-          onclick="currentSlide(4)"
-          alt="Northern Lights"
-        />
-      </div>-->
-      <span class="close-modal cursor" onclick="gallaryCloseModal()">&times;</span>
-      <div class="modal-content">
-        <div class="gallarySlides">
-          <img src="./assets/images/gallary/image1.jpg" style="height:100%" />
-        </div>
 
-        <div class="gallarySlides">
-          <img src="./assets/images/gallary/image2.jpg" style="height:100%" />
-        </div>
-
-        <div class="gallarySlides">
-          <img src="./assets/images/gallary/image3.jpg" style="height:100%" />
-        </div>
-
-        <div class="gallarySlides">
-          <img src="./assets/images/gallary/image4.jpg" style="height:100%" />
-        </div>
-
-        <div class="gallarySlides">
-          <img src="./assets/images/gallary/image5.jpg" style="height:100%" />
-        </div>
-
-        <a class="prev" onclick="plusGallarySlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusGallarySlides(1)">&#10095;</a>
-        
-      </div>
-    </div>
     <!-- Recent News Section -->
     <section class="recent-news-section">
       <div class="recent-news-heading">

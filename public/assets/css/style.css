@@ -23,7 +23,6 @@ Author URI:
 html,
 body {
   font-size: 16px;
-  width: 100%;
   padding: 0;
   margin: 0;
   font-weight: 400;
@@ -31,16 +30,10 @@ body {
   font-family: "pt serif", "times new roman", Times, serif;
   box-sizing: border-box;
 }
-
 /* Presentation Section*/
-.bg-image {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
 .presentation {
   background-image: url("../images/background.jpg");
-  padding-bottom: 30px;
-  height: 120vh;
+  height: 110vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,10 +94,10 @@ body {
 }
 
 .banner-hr {
-  width: 5%;
+  width: 100px;
   margin: 20px 0px;
   background-color: white;
-  margin-left: 48%;
+  margin-left: 46%;
 }
 .banner-heading {
   display: block;
@@ -206,7 +199,6 @@ body {
 .about {
   background-color: whitesmoke;
   display: flex;
-  margin: 20px 0px;
   padding-top: 150px;
   margin-top: -265px;
   padding-left: 150px;
@@ -257,17 +249,13 @@ body {
 
 /*Featured CSS Starts*/
 .featured {
-  padding: 20px;
-  background-color: white;
+  padding: 50px 0px;
   text-align: center;
-  color: #000;
 }
 
 .featured-head {
-  font-weight: bold;
-  text-transform: capitalize;
   font-size: 50px;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
 }
 .featured-caption {
   font-weight: 100;
@@ -284,13 +272,12 @@ body {
   margin-left: 205px;
 }
 .featured-items > div {
-  padding: 15px;
+  padding: 20px;
 }
 .featured-item-1,
 .featured-item-2,
 .featured-item-3 {
   position: relative;
-  padding: 500px;
 }
 .item-links > img {
   width: 300px;
@@ -366,14 +353,12 @@ body {
   padding-bottom: 100px;
 }
 .res-menu-heading {
-  font-size: 40px;
   font-weight: bolder;
-  color: #000;
   text-align: center;
   font-size: 50px;
 }
 .res-menu-container {
-  margin-left: 30vh;
+  margin-left: 16vw;
   background-color: #323232;
   display: flex;
   width: 70%;
@@ -383,23 +368,28 @@ body {
 .res-menu-tab-head {
   background-color: #323232;
   color: rgb(206, 206, 206);
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 18px;
-  text-align: center;
   text-transform: uppercase;
   flex: 1;
-  width: 50%;
+  padding: 50px 0px;
   margin: 5px;
-  padding: 20px 30px;
-  justify-content: space-around;
+}
+.top-caption {
+  margin: 80px;
+}
+.tab-head-first {
+  margin-left: 30vh;
+}
+.tab-head-last {
+  margin-right: 30vh;
 }
 .res-menu-captions {
   background-color: snow;
-  margin-left: 30vh;
+  margin-left: 16vw;
   padding: 10px;
   width: 990px;
   border-bottom-left-radius: 10px;
@@ -449,11 +439,110 @@ body {
 }
 /* Gallary Section */
 
+.gallary-container {
+  width: 70vh;
+}
+.gallary-row {
+  cursor: pointer;
+  display: flex;
+  width: 30vh;
+}
+.gallary-item-row-one {
+  flex: 1;
+  width: 480px;
+}
+.gallary-item-row-two {
+  flex: 1;
+  width: 720px;
+}
+.gallary-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+}
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+.close-modal {
+  color: white;
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close-modal:hover,
+.close-modal:focus {
+  color: green;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gallarySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev-slide,
+.next-slide {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  top: 40vh;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-slide {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-slide:hover,
+.next-slide:hover {
+  color: green;
+}
+
+/* Top Button*/
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: black;
+}
+
 /* Recent News Section  */
 .recent-news-section {
-  background-color: white;
-  margin: 30px 10px;
-  padding: 50px 10px;
+  padding: 50px 0px;
+  margin-bottom: 30px;
 }
 .recent-news-heading {
   text-align: center;
@@ -461,8 +550,7 @@ body {
   margin-bottom: 90px;
 }
 .recent-news {
-  display: none;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .recent-news-items {
   display: flex;
@@ -514,38 +602,34 @@ body {
   margin-bottom: 30px;
 }
 .item-link {
-  margin: 10px;
+  margin: 5px;
   margin-top: 30px;
 }
 .item-link > a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 .item-link > a:hover {
   text-decoration: none;
   color: green;
 }
-/* Slideshow container */
 .recent-news-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  max-width: 80vw;
+  margin-left: 10vw;
 }
-
-/* The dots indicators */
 .recent-news-dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active,
-.dot:hover {
+.recent-news-dot:hover {
   background-color: green;
 }
 
@@ -564,15 +648,9 @@ body {
 }*/
 /*Footer Section Start*/
 .footer {
-  width: 100%;
-  position: absoulte;
   background-color: #323232;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
-  height: 60vh;
-  text-align: center;
+  padding: 50px;
+  height: 65vh;
 }
 .footer-logo {
   padding-top: 70px;
@@ -580,15 +658,16 @@ body {
   text-align: center;
 }
 .footer-link-container {
-  width: 20%;
-  margin-left: 38%;
+  margin-top: 40px;
+  width: 20vw;
+  margin-left: 38vw;
 }
 .footer-links {
   display: flex;
   text-align: center;
 }
 .vertical-line {
-  margin: 0px 1px;
+  margin: 0px 5px;
   border-right: 1px solid white;
 }
 .footer-link {
@@ -627,6 +706,7 @@ body {
   color: white;
 }
 .footer-caption {
+  text-align: center;
   margin-top: 100px;
   font-size: 15px;
   color: rgb(151, 151, 151);
@@ -649,155 +729,3 @@ i:hover {
   background-color: green;
 }
 /*Footer CSS end*/
-
-.gallary-container {
-  width: 70vh;
-}
-.gallary-row {
-  cursor: pointer;
-  display: flex;
-  width: 30vh;
-}
-.gallary-item-row-one {
-  flex: 1;
-  width: 480px;
-}
-.gallary-item-row-two {
-  flex: 1;
-  width: 720px;
-}
-
-/* The Modal (background) */
-.gallary-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: gray;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close-modal {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close-modal:hover,
-.close-modal:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.gallarySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#topBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  font-size: 25px;
-  border: none;
-  outline: none;
-  background-color: green;
-  color: white;
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-#topBtn:hover {
-  background-color: black;
-}
