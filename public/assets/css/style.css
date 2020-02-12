@@ -119,7 +119,7 @@ body {
 /*CTA Froms Start */
 .cta-form {
   position: relative;
-  top: -140px;
+  top: -150px;
   padding: 20px auto;
   z-index: 1;
 }
@@ -490,9 +490,6 @@ body {
 .gallarySlides {
   display: none;
 }
-.cursor {
-  cursor: pointer;
-}
 .prev-slide,
 .next-slide {
   cursor: pointer;
@@ -654,13 +651,14 @@ body {
 }
 .footer-logo {
   padding-top: 70px;
+  margin-left: 7vh;
   display: block;
   text-align: center;
 }
 .footer-link-container {
   margin-top: 40px;
   width: 20vw;
-  margin-left: 38vw;
+  margin-left: 36vw;
 }
 .footer-links {
   display: flex;
