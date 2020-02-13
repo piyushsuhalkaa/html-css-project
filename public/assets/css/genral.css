@@ -39,67 +39,65 @@ body {
   background-color: green;
   color: white;
 }
-/* Presentation Section*/
-.presentation {
-  height: 110vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.presentation__header {
+/* Header Section*/
+.header {
+  position: absolute;
   display: flex;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.header__logo-container {
+.header-logo-container {
   flex: 1;
 }
-.header__logo {
+.header-logo {
   justify-content: flex-start;
   margin: 30px;
 }
-.header__nav-bar {
+.header-nav-bar {
   flex: 5;
 }
-.header__nav-links {
+.header-nav-links {
   list-style: none;
   display: flex;
   padding: 0px 40px;
   justify-content: center;
   margin-top: 50px;
 }
-.header__nav-link {
+.header-nav-link {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   font-family: poppins, sans-serif;
   text-transform: uppercase;
-  margin: 0px 10px;
+  margin: 0px 30px;
 }
 .active-nav-bar {
   color: green;
 }
-.header__nav-link:hover {
+.header-nav-link:hover {
   color: green;
 }
-.headaer__cta-container {
+.headaer-cta-container {
   flex: 1;
+  margin: 30px;
 }
 #ctaHeader {
-  font-family: PT Sans;
-  margin-left: 70px;
-  margin-top: 40px;
-  font-weight: 300;
-  font-size: 14px;
-  padding: 10px;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 10px 30px;
   text-transform: uppercase;
   cursor: pointer;
-  margin-right: 30px;
+  border: 1px solid white;
+  font-family: poppins, sans-serif;
+}
+#ctaHeader:hover {
   outline: none;
-  font-family: "PT Sans", sans-serif;
+  background-color: black;
+  color: snow;
+  border: 1px solid black;
 }
 
 /* Top Button*/
@@ -157,8 +155,10 @@ body {
 }
 .footer-link > a {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
   text-decoration: none;
+  font-family: poppins, sans-serif;
   text-transform: uppercase;
 }
 .footer-link > a:hover {
@@ -176,7 +176,7 @@ body {
   flex: 1;
   list-style: none;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 10px;
   margin: 15px;
 }
 .footer-social-link > a {
@@ -197,7 +197,7 @@ body {
   color: green;
 }
 .footer-social-link > a > i {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(70, 70, 70);
   border-radius: 50%;
   border: 1x solid grey;
   padding: 10px;

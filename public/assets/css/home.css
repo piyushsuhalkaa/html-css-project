@@ -1,20 +1,31 @@
 .presentation {
-  background-image: url("../images/background.jpg");
+  height: 110vh;
+}
+.background {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/background.jpg");
+  width: 100vw;
+  height: 110vh;
+  z-index: -1;
+}
+.presentation-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 45vh;
+}
+.banner-heading {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 .banner-hr {
   width: 100px;
   margin: 20px 0px;
   background-color: white;
   margin-left: 46%;
-}
-.banner-heading {
-  display: block;
-  margin-top: 35vh;
-  text-align: center;
-  font-size: 70px;
-  color: white;
-  margin-bottom: -1vh;
-  text-transform: uppercase;
 }
 .banner-caption {
   color: white;

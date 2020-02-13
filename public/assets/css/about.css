@@ -1,17 +1,30 @@
 .presentation {
-  height: 95vh;
-  background-image: url("../images/background.jpg");
+  position: relative;
+}
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 64vh;
+}
+.presentation-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 45vh;
 }
 .presentation-container {
-  margin-top: 30vh;
-  margin-left: 7vw;
+  position: absolute;
+  left: 40vw;
+  top: 40vh;
   color: white;
   display: flex;
   flex-direction: column;
 }
 .presentation-head {
   justify-content: center;
-  font-size: 3em;
+  font-size: 50px;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
 }
@@ -30,11 +43,11 @@
   text-transform: uppercase;
 }
 .page-location {
-  color: gray;
+  color: rgb(157, 157, 157);
 }
 
 .about-section {
-  padding: 100px 20px;
+  padding: 120px 30px;
   background-color: whitesmoke;
   display: flex;
 }
@@ -126,21 +139,29 @@
 .feature-row {
   display: flex;
 }
-.feature-col-left {
-}
 .feature-col-right {
   flex: 1;
 }
 /* Testimonial Section */
 .testimonial-section {
-  height: 100vh;
-  background-image: url(../images/about-us/back.jpg) no-repeat cover fixed;
+  height: 70vh;
 }
-
+.testimonial-background {
+  position: absolute;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100vw;
+  z-index: -1;
+}
 .testimonial-heading {
   font-size: 45px;
+  color: white;
+  padding: 100px;
   font-weight: bolder;
-  margin-left: 40vw;
+  left: 34vw;
+  position: absolute;
 }
 /* Award Section*/
 .award-section {
