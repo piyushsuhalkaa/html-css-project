@@ -101,8 +101,8 @@ window.onscroll = function() {
 };
 function scrollFunction() {
   if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
   ) {
     mybutton.style.display = "block";
   } else {
@@ -112,4 +112,33 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+/*
+       Testimonial Code 
+*/
+
+var testimonialSlideIndex = 1;
+testimonialSlide(testimonialSlideIndex);
+
+function plusTestimonialSlides(n) {
+  testimonialSlide((testimonialSlideIndex += n));
+}
+
+function currentTestimonialSlide(n) {
+  testimonialSlide((testimonialSlideIndex = n));
+}
+
+function testimonialSlide(n) {
+  var i;
+  var testimonialSlide = document.getElementsByClassName("testimonial-slide");
+  if (n > testimonialSlide.length) {
+    testimonialSlideIndex = 1;
+  }
+  if (n < 1) {
+    testimonialSlideIndex = testimonialSlide.length;
+  }
+  for (i = 0; i < testimonialSlide.length; i++) {
+    testimonialSlide[i].style.display = "none";
+  }
+  testimonialSlide[testimonialSlideIndex - 1].style.display = "block";
 }
