@@ -275,12 +275,13 @@
 }
 .res-menu-tab-head {
   background-color: #323232;
-  color: rgb(206, 206, 206);
+  color: rgb(99, 99, 99);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
   flex: 1;
   padding: 50px 0px;
