@@ -1,9 +1,9 @@
 .presentation {
-  height: 90vh;
+  height: 75vh;
 }
 .background {
   width: 100vw;
-  height: 80vh;
+  height: 64vh;
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("../images/back.jpg");
@@ -89,7 +89,7 @@
 
 .form-header {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .form-heading {
@@ -133,6 +133,8 @@
   cursor: pointer;
 }
 #messageInput {
+  white-space: nowrap;
   outline: none;
+  font-size: 15px;
   height: 20vh;
 }

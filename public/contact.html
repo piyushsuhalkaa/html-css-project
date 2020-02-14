@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML / CSS PROJECT | Cafe | Contact</title>
-    <link rel="stylesheet" href="./assets/css/genral.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
   </head>
@@ -21,9 +21,11 @@
             <a class="header-nav-link" href="index.html">Home</a>
           </li>
           <li>
-            <a class="header-nav-link active-nav-bar" href="#">About</a>
+            <a class="header-nav-link" href="about.html">About</a>
           </li>
-          <li><a class="header-nav-link" href="contact.html">Contact</a></li>
+          <li>
+            <a class="header-nav-link active-nav-bar" href="#">Contact</a>
+          </li>
         </ul>
       </div>
       <div class="header-cta-container">
@@ -106,8 +108,7 @@
             placeholder="Your Message"
             cols="42"
             rows="5"
-          >
-          </textarea>
+          ></textarea>
           <button id="sentButton" type="submit">Send</button>
         </form>
       </div>
@@ -153,16 +154,6 @@
         © 2020 Pesto. All Rights Reserved. Privacy Policy.
       </div>
     </section>
-    <script>
-      var ra = document.getElementById("messageInput").value.split("\n");
-      var ta = "";
-
-      for (var i = 0; i < ra.length; i++) {
-        if (ra[i] !== "") {
-          ta += ra[i] + "\n";
-        }
-      }
-    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

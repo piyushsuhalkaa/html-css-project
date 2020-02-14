@@ -32,11 +32,11 @@ body {
   box-sizing: border-box;
 }
 *::-moz-selection {
-  background-color: green;
+  background-color: #41a451;
   color: white;
 }
 *::selection {
-  background-color: green;
+  background-color: #41a451;
   color: white;
 }
 /* Header Section*/
