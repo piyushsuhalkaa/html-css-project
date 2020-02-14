@@ -261,4 +261,14 @@ body {
   .footer-social-link-container {
     padding-top: 0px;
   }
+  .footer-social-link > a > i {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .footer-caption {
+    margin-top: 70px;
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+    padding-bottom: 25vh;
+  }
 }
