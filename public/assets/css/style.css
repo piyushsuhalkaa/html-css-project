@@ -106,7 +106,7 @@ body {
 #topBtn {
   display: none;
   position: fixed;
-  bottom: 40px;
+  bottom: 100px;
   right: 40px;
   z-index: 1;
   font-size: 25px;
@@ -269,6 +269,5 @@ body {
     margin-top: 70px;
     font-size: 15px;
     color: rgb(151, 151, 151);
-    padding-bottom: 25vh;
   }
 }
