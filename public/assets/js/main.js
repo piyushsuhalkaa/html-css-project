@@ -95,7 +95,8 @@ function displaySlides(n) {
 Top Button Function 
 
 */
-var mybutton = document.getElementById("topBtn");
+var topButton = document.getElementById("topBtn");
+var scrollMenu = document.getElementsByClassName("header");
 window.onscroll = function() {
   scrollFunction();
 };
@@ -104,9 +105,9 @@ function scrollFunction() {
     document.body.scrollTop > 400 ||
     document.documentElement.scrollTop > 400
   ) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
   }
 }
 function topFunction() {
