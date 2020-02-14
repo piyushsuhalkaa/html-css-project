@@ -43,11 +43,11 @@ body {
 .header {
   position: absolute;
   display: flex;
-  z-index: 99;
+  z-index: 3;
   background-color: #323232;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 .header-logo-container {
   flex: 1;
@@ -209,3 +209,56 @@ body {
   background-color: green;
 }
 /*Footer CSS end*/
+
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 20px;
+    font-weight: 200;
+    box-sizing: border-box;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header-logo {
+    margin: 10px;
+    padding: 20px;
+    margin-left: 30%;
+  }
+  .header-nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  #ctaHeader {
+    display: none;
+  }
+  .footer {
+    height: 80vh;
+    padding: 0;
+  }
+  .footer-logo {
+    padding: 50px;
+  }
+  .footer-link-container {
+    margin-top: 4px;
+    width: 10px;
+    margin-left: 30vw;
+  }
+  .footer-links {
+    flex: 1;
+    margin-left: 0;
+    margin-top: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .footer-social-links {
+    margin-left: 0;
+    width: 1px;
+  }
+  .footer-social-link-container {
+    padding-top: 0px;
+  }
+}

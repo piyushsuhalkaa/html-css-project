@@ -146,6 +146,9 @@
 .testimonial-section {
   height: 70vh;
 }
+.testimonial-slide {
+  display: ;
+}
 .testimonial-background {
   position: absolute;
   background-image: url("../images/background.jpg");
@@ -163,6 +166,22 @@
   left: 34vw;
   position: absolute;
 }
+.testimonial-container {
+  font-size: 18px;
+}
+.testimonial-item {
+  margin-left: 25vw;
+}
+.testimonial-caption {
+  font-size: 25px;
+  max-width: 800px;
+  text-align: center;
+}
+.testimonial-author {
+  font-style: italic;
+  font-size: 40px;
+  margin-left: 15vw;
+}
 .prev-slide,
 .next-slide {
   cursor: pointer;
@@ -172,7 +191,7 @@
   color: white;
   font-weight: bold;
   top: 40vh;
-  font-size: 20px;
+  font-size: 10em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;

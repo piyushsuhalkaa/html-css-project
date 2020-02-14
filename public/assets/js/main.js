@@ -125,10 +125,6 @@ function plusTestimonialSlides(n) {
   testimonialSlide((testimonialSlideIndex += n));
 }
 
-function currentTestimonialSlide(n) {
-  testimonialSlide((testimonialSlideIndex = n));
-}
-
 function testimonialSlide(n) {
   var i;
   var testimonialSlide = document.getElementsByClassName("testimonial-slide");
