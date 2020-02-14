@@ -187,7 +187,7 @@ body {
 }
 .footer-caption {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
   font-size: 15px;
   color: rgb(151, 151, 151);
 }
@@ -255,8 +255,8 @@ body {
     display: none;
   }
   .footer-social-links {
-    margin-left: 0;
     width: 1px;
+    margin-left: -15px;
   }
   .footer-social-link-container {
     padding-top: 0px;
