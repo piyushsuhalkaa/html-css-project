@@ -1,5 +1,138 @@
 .presentation {
-  background-image: url("../images/back.jpg");
+  height: 90vh;
+}
+.background {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1;
+}
+.presentation-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 45vh;
 }
 .presentation-container {
+  position: absolute;
+  left: 40vw;
+  top: 40vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.presentation-head {
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+.presentation-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+}
+.presentation-caption > a {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.page-location {
+  color: rgb(157, 157, 157);
+}
+.contact-description {
+  display: flex;
+  padding: 90px 0px;
+}
+.contact-description > div {
+  flex: 1;
+  padding: 20px 70px;
+}
+.contact-icon {
+  height: 120px;
+  padding: 20px;
+  margin-left: 6vw;
+  display: block;
+  text-align: center;
+}
+.contact-heading {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+}
+.contact-heading > a {
+  text-decoration: none;
+  color: black;
+}
+.contact-heading > a:hover {
+  color: green;
+}
+.contact-caption {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 0px;
+  font-family: "PT Sans", sans-serif;
+  color: gray;
+}
+.contact-icon-container {
+  text-align: center;
+}
+
+.form-header {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.form-heading {
+  font-size: 50px;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 60vh;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  width: 100% !important;
+  height: 60vh !important;
+}
+.form-container {
+  margin: 100px 0;
+  margin-left: 25vw;
+}
+.input-form {
+  width: 50vw;
+  height: 7vh;
+  margin: 10px;
+  font-size: 15px;
+  outline: none;
+}
+#sentButton {
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 70px;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+#sentButton:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#messageInput {
+  outline: none;
+  height: 20vh;
 }

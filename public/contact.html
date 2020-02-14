@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- Header Section  -->
     <section class="header">
       <div class="header-logo-container">
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
@@ -20,49 +20,110 @@
           <li>
             <a class="header-nav-link" href="index.html">Home</a>
           </li>
-          <li><a class="header-nav-link" href="about.html">About</a></li>
           <li>
-            <a class="header-nav-link active-nav-bar" href="#">Contact</a>
+            <a class="header-nav-link active-nav-bar" href="#">About</a>
           </li>
+          <li><a class="header-nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="header-cta-container">
         <button id="ctaHeader">Book Now</button>
       </div>
     </section>
-    <!-- Section-->
+    <!--Banner Section Start-->
     <section class="presentation">
-      <div class="presentation__banner">
-        <h1 class="banner-heading">Contact Us</h1>
-        <p class="banner-caption">
-          <a href="index.html">Home </a> . <a href="#"> Contact</a>
-        </p>
+      <div class="background"></div>
+      <div class="presentation-container">
+        <span class="presentation-head">Contacts</span>
+        <span class="presentation-caption">
+          <a href="index.html"> Home </a> •
+          <span class="page-location">contacts</span>
+        </span>
       </div>
-      <section class="presentation">
-        <div class="background"></div>
-        <div class="presentation-content">
-          <h1 class="banner-heading">Welcome</h1>
-          <hr size="7" class="banner-hr" />
-          <p class="banner-caption">
-            Our restaurant offers full-service dining with breathtaking views
-            seen from our indoor covered patio and our outdoor sundeck.
-          </p>
-        </div>
-      </section>
     </section>
-    <!-- Footer Section -->
+    <!-- Top Function Button -->
+    <div class="top-function">
+      <button onclick="topFunction()" id="topBtn">⇧</button>
+    </div>
+    <!--  -->
+    <section class="contact-description">
+      <div class="contact-call">
+        <span>
+          <img
+            class="contact-icon"
+            src="./assets/images/contact/telephone.svg"
+          />
+        </span>
+        <span class="contact-heading"> <a href="#">1-800-123-1234</a></span>
+        <span class="contact-caption">You can call us anytime</span>
+      </div>
+      <div class="contact-address">
+        <span class="contact-icon-container">
+          <img class="contact-icon" src="./assets/images/contact/map.svg" />
+        </span>
+        <span class="contact-heading">
+          <a href="#">51 Francis Street, San Diego, CA 91702 United States</a>
+        </span>
+      </div>
+      <div class="contact-mail">
+        <span>
+          <img class="contact-icon" src="./assets/images/contact/origami.svg" />
+        </span>
+        <span class="contact-heading">
+          <a href="mailto:#">info@demolink.org</a>
+        </span>
+        <span class="contact-caption">
+          Feel free to email us your questions
+        </span>
+      </div>
+    </section>
+    <!-- Map -->
+    <section class="google-maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.1477577183573!2d73.7093393!3d24.5840964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967ef6e9081b0c7%3A0xb7dd868820aa5744!2sGKM%20IT%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1581616001127!5m2!1sen!2sin"
+        width="1500"
+        height="400"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
+    </section>
+    <!-- Form -->
+    <section>
+      <div class="form-header">
+        <span class="form-heading">Get in Touch</span>
+      </div>
+      <div class="form-container">
+        <form id="contactForm">
+          <input class="input-form" type="text" placeholder="Your Name" />
+          <input class="input-form" type="email" placeholder="Your Email" />
+          <input class="input-form" type="tel" placeholder="Your Phone" />
+          <textarea
+            id="messageInput"
+            class="input-form"
+            type="text"
+            wrap="virtual"
+            placeholder="Your Message"
+            cols="42"
+            rows="5"
+          >
+          </textarea>
+          <button id="sentButton" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section-->
     <section class="footer">
       <div class="footer-logo">
         <img src="./assets/images/logo.png" />
       </div>
-
       <div class="footer-link-container">
         <ul class="footer-links">
           <li class="footer-link"><a href="index.html">Home</a></li>
           <li class="footer-link vertical-line"></li>
-          <li class="footer-link"><a href="about.html">About</a></li>
+          <li class="footer-link"><a href="#">About</a></li>
           <li class="footer-link vertical-line"></li>
-          <li class="footer-link"><a href="#"></a>Contact</li>
+          <li class="footer-link"><a href="contact.html">Contacts</a></li>
         </ul>
       </div>
       <div class="footer-social-link-container">
@@ -92,7 +153,16 @@
         © 2020 Pesto. All Rights Reserved. Privacy Policy.
       </div>
     </section>
+    <script>
+      var ra = document.getElementById("messageInput").value.split("\n");
+      var ta = "";
 
+      for (var i = 0; i < ra.length; i++) {
+        if (ra[i] !== "") {
+          ta += ra[i] + "\n";
+        }
+      }
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
