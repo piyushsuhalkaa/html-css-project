@@ -75,10 +75,10 @@
   z-index: 1;
 }
 .form-block {
-  margin-left: 150px;
+  margin-left: 5vw;
   margin-top: 50px;
   font-size: 25px;
-  width: 1130px;
+  width: 90vw;
   z-index: 1;
   display: flex;
   background-color: snow;
@@ -89,7 +89,7 @@
   display: flex;
   margin: 50px 30px;
   background-color: snow;
-  width: 70%;
+  width: 85vw;
 }
 .cta-form-item {
   flex: 1;
@@ -134,8 +134,9 @@
   color: snow;
   margin: 30px;
   outline: none;
-  width: 25vh;
+  width: 10vw;
   margin-top: 20px;
+  margin-right: 10px; important;
 }
 #ctaBook:hover {
   background-color: green;
@@ -158,7 +159,7 @@
   justify-content: space-around;
 }
 .about__left {
-  padding-left: 200px;
+  padding-left: 2vw;
   position: relative;
   left: 0;
   top: 0;
@@ -216,7 +217,7 @@
 .featured-items {
   display: flex;
   margin: 5vh;
-  margin-left: 205px;
+  margin-left: 10vw;
 }
 .featured-items > div {
   padding: 20px;
@@ -227,7 +228,7 @@
   position: relative;
 }
 .item-links > img {
-  width: 300px;
+  width: 23vw;
 }
 .item-links > a {
   text-decoration: none;
@@ -307,7 +308,7 @@
   margin-left: 16vw;
   background-color: #323232;
   display: flex;
-  width: 70%;
+  width: 70vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -337,7 +338,7 @@
   background-color: snow;
   margin-left: 16vw;
   padding: 10px;
-  width: 990px;
+  width: 69vw;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: justify;
@@ -392,11 +393,11 @@
 }
 .gallary-item-row-one {
   flex: 1;
-  width: 480px;
+  width: 33.4vw;
 }
 .gallary-item-row-two {
   flex: 1;
-  width: 720px;
+  width: 50vw;
 }
 .gallary-modal {
   display: none;
