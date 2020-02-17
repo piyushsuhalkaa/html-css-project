@@ -145,7 +145,7 @@
 }
 /* Testimonial Section */
 .testimonial-section {
-  height: 70vh;
+  height: 90vh;
 }
 .testimonial-background {
   position: absolute;
@@ -153,7 +153,7 @@
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
   z-index: -1;
 }
@@ -202,6 +202,13 @@
 .prev-testimonial:hover,
 .next-testimonial:hover {
   color: green;
+}
+.testimonial-images {
+  margin-left: 38vw;
+}
+.testimonial-image {
+  padding: 10px;
+  border-radius: 50%;
 }
 /* Award Section*/
 .award-section {
@@ -333,5 +340,13 @@
   }
   .next-testimonial {
     margin-left: 60vw;
+  }
+  .testimonial-images {
+    margin-top: 3vh;
+    margin-left: 15vw;
+  }
+  .testimonial-image {
+    padding: 5px;
+    border-radius: 50%;
   }
 }
