@@ -661,6 +661,9 @@
     flex-direction: column;
     margin: 50px 30px;
   }
+  .item-links > img {
+    width: 75vw;
+}
   .dish-name {
     margin-top: 5px;
   }
