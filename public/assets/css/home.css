@@ -31,6 +31,9 @@
     transform: rotate(0deg);
   }
 }
+#responsive-menu {
+  display: none;
+}
 .presentation-content {
   box-sizing: border-box;
   position: absolute;
@@ -547,6 +550,12 @@
     width: 100vw;
     height: 90vh;
     z-index: -1;
+  }
+  #responsive-menu {
+    background-color: #323232;
+    z-index: 3;
+    height: 100vh;
+    width: 70vw;
   }
   .presentation-content {
     top: 40vh;

@@ -19,7 +19,7 @@
     <!-- Header Section -->
     <section id="header" class="header header-transparent">
       <div class="header-logo-container">
-        <button class=" nav-btn">
+        <button class="nav-btn" onclick="menuResponsiveModal()">
           <i class="fa fa-bars"></i>
         </button>
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
@@ -35,6 +35,23 @@
       </div>
       <div class="header-cta-container">
         <button id="ctaHeader">Book Now</button>
+      </div>
+    </section>
+    <!-- responsive menu -->
+    <section id="responsive-menu">
+      <div>
+        <div class="header-nav-bar-res">
+          <ul class="header-nav-links">
+            <li>
+              <a class="header-nav-link active-nav-bar" href="#">Home</a>
+            </li>
+            <li><a class="header-nav-link" href="about.html">About</a></li>
+            <li><a class="header-nav-link" href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="header-cta-container">
+          <button id="ctaHeader">Book Now</button>
+        </div>
       </div>
     </section>
     <!--Banner Section Start-->
@@ -409,7 +426,6 @@
         <span class="close-modal" onclick="gallaryCloseModal()">&times;</span>
         <div class="modal-content">
           <div class="gallarySlides">
-            <!-- style="width: 60%; margin-left: 31vh;"  -->
             <img
               src="./assets/images/gallary/image1.jpg"
               style="width: 60%; margin-left: 31vh;"

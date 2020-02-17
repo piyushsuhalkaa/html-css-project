@@ -211,9 +211,11 @@
 
     <section class="testimonial-section">
       <div class="testimonial-background"></div>
-      <span class="testimonial-heading">
-        Testimonials
-      </span>
+      <div class="testimonial-heading-container">
+        <span class="testimonial-heading">
+          Testimonials
+        </span>
+      </div>
       <div class="testimonial-container">
         <div class="testimonial-slide">
           <div class="testimonial-item">
@@ -262,9 +264,8 @@
             <span class="testimonial-author">Peter Wilson</span>
           </div>
         </div>
-
-        <a class="prev-slide" onclick="plusTestimonialSlides(-1)">&#10094;</a>
-        <a class="next-slide" onclick="plusTestimonialSlides(1)">&#10095;</a>
+        <a class="prev-testimonial" onclick="getdiv(-1)">&#10094;</a>
+        <a class="next-testimonial" onclick="getdiv(1)">&#10095;</a>
       </div>
 
       <div class="testimonial-image">
@@ -325,8 +326,26 @@
         © 2020 Pesto. All Rights Reserved. Privacy Policy.
       </div>
     </section>
-
     <script>
+      var index = 1;
+      showdiv(index);
+      function getdiv(n) {
+        showdiv((index += n));
+      }
+      function showdiv(n) {
+        var i;
+        var as = document.getElementsByClassName("testimonial-slide");
+        if (n > as.length) {
+          index = 1;
+        }
+        if (n < 1) {
+          index = as.length;
+        }
+        for (i = 0; i < as.length; i++) {
+          as[i].style.display = "none";
+        }
+        as[index - 1].style.display = "block";
+      }
       var topButton = document.getElementById("topBtn");
       var scrollMenu = document.getElementsByClassName("header");
       window.onscroll = function() {
