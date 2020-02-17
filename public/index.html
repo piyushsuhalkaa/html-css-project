@@ -14,14 +14,32 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
+    <style></style>
   </head>
   <body>
     <!-- Header Section -->
+    <section class="responive-header">
+      <div class="topnav">
+        <img
+          class="responsive-header-logo"
+          src="./assets/images/logo.png"
+          alt=""
+        />
+
+        <div id="myLinks">
+          <a href="#">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contacts</a>
+          <button id="ctaHeader" style="margin: 10px; ">Book Now</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </section>
+
     <section id="header" class="header header-transparent">
       <div class="header-logo-container">
-        <button class="nav-btn" onclick="menuResponsiveModal()">
-          <i class="fa fa-bars"></i>
-        </button>
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
       </div>
       <div class="header-nav-bar">
@@ -35,23 +53,6 @@
       </div>
       <div class="header-cta-container">
         <button id="ctaHeader">Book Now</button>
-      </div>
-    </section>
-    <!-- responsive menu -->
-    <section id="responsive-menu">
-      <div>
-        <div class="header-nav-bar-res">
-          <ul class="header-nav-links">
-            <li>
-              <a class="header-nav-link active-nav-bar" href="#">Home</a>
-            </li>
-            <li><a class="header-nav-link" href="about.html">About</a></li>
-            <li><a class="header-nav-link" href="contact.html">Contacts</a></li>
-          </ul>
-        </div>
-        <div class="header-cta-container">
-          <button id="ctaHeader">Book Now</button>
-        </div>
       </div>
     </section>
     <!--Banner Section Start-->
@@ -686,6 +687,16 @@
         © 2020 Pesto. All Rights Reserved. <a href="#">Privacy Policy</a>.
       </div>
     </section>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

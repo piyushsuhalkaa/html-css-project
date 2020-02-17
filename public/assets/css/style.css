@@ -39,6 +39,16 @@ body {
   color: white;
 }
 /* Header Section*/
+.responsive {
+  display: none;
+}
+.toggle {
+  color: white;
+  font-size: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: none;
+}
 .header {
   position: absolute;
   display: flex;
@@ -51,15 +61,6 @@ body {
 .header-logo-container {
   flex: 1;
 }
-.nav-btn {
-  background-color: transparent;
-  margin: 10px;
-  font-size: 40px;
-  border: none;
-  color: white;
-  display: none;
-}
-
 .header-logo {
   justify-content: flex-start;
   margin: 30px;
@@ -226,26 +227,60 @@ body {
     box-sizing: border-box;
   }
   .header {
-    flex-direction: column;
+    display: none;
   }
-  .nav-btn {
-    display: inline;
+  .responive-header {
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+  }
+  .responsive-header-logo {
+    padding: 10px;
+    margin-left: 20vw;
+  }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #323232;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: #323232;
+    display: block;
     position: absolute;
-    top: 3vh;
+    left: 0;
+    top: 0;
+    font-size: 30px;
   }
-  .header-logo {
-    margin-left: 35vw;
-    display: inline;
-  }
-  .header-nav-links {
-    display: none;
-    flex-direction: column;
-  }
-  #ctaHeader {
-    display: none;
+
+  .topnav a:hover {
+    background: #323232;
+    color: white;
   }
   .footer {
-    height: 70vh;
+    height: 80vh;
     padding: 0;
   }
   .footer-logo {
@@ -279,6 +314,7 @@ body {
   }
   .footer-caption {
     font-size: 15px;
+    margin-top: 0px;
     color: rgb(151, 151, 151);
   }
   #topBtn {

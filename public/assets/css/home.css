@@ -32,7 +32,14 @@
   }
 }
 #responsive-menu {
-  display: none;
+  background-color: #323232;
+  z-index: 3;
+  height: 100vh;
+  width: 70vw;
+}
+.toogle {
+  font-size: 20px;
+  color: red;
 }
 .presentation-content {
   box-sizing: border-box;
@@ -551,12 +558,7 @@
     height: 90vh;
     z-index: -1;
   }
-  #responsive-menu {
-    background-color: #323232;
-    z-index: 3;
-    height: 100vh;
-    width: 70vw;
-  }
+
   .presentation-content {
     top: 40vh;
   }
