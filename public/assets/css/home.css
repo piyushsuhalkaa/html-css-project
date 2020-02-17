@@ -8,6 +8,28 @@
   width: 100vw;
   height: 110vh;
   z-index: -1;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    transform: rotate(0.02deg);
+  }
+  25% {
+    transform: rotate(0.01deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0.1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .presentation-content {
   box-sizing: border-box;

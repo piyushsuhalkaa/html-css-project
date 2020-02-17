@@ -11,11 +11,6 @@
   background-position: top center;
   z-index: -1;
 }
-.presentation-content {
-  box-sizing: border-box;
-  position: absolute;
-  top: 45vh;
-}
 .presentation-container {
   position: absolute;
   left: 40vw;
@@ -99,6 +94,10 @@
   height: 60vh !important;
 }
 /* Form */
+.form-section {
+  background-color: whitesmoke;
+  padding: 50px;
+}
 .form-header {
   text-align: center;
   padding-top: 80px;
@@ -108,7 +107,7 @@
 }
 .form-container {
   margin: 100px 0;
-  margin-left: 25vw;
+  margin-left: 23vw;
 }
 .input-form {
   width: 50vw;
@@ -124,6 +123,7 @@
   padding: 20px 70px;
   background-color: green;
   color: white;
+  margin-bottom: 0;
   font-weight: 700;
   margin-left: 20vw;
   margin-top: 5vh;
@@ -137,4 +137,50 @@
   outline: none;
   font-size: 16px;
   height: 20vh;
+}
+@media only screen and (max-width: 480px) {
+  .presentation {
+    height: 70vh;
+  }
+  .background {
+    height: 70vh;
+  }
+  .presentation-container {
+    top: 30vh;
+    left: 20vw;
+  }
+  .contact-description {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contact-description > div {
+    padding: 20px;
+  }
+  .contact-icon {
+    margin-left: 25vw;
+    height: 100px;
+  }
+  .form-section {
+    padding: 10px;
+  }
+  .form-heading {
+    font-size: 35px;
+  }
+  .form-container {
+    margin: 50px 0;
+  }
+  .input-form {
+    outline: thik;
+    border: 1px solid black;
+    width: 90vw;
+    font-size: 20px;
+  }
+  #messageInput {
+    font-size: 20px;
+  }
+  #sentButton {
+    padding: 2vh 40vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+  }
 }

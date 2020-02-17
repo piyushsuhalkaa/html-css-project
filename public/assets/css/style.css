@@ -106,8 +106,8 @@ body {
 #topBtn {
   display: none;
   position: fixed;
-  bottom: 100px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   z-index: 1;
   font-size: 25px;
   border: none;
