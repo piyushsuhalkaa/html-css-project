@@ -164,7 +164,7 @@
   font-size: 45px;
   color: white;
   font-weight: bolder;
-  margin-left: 40vw;
+  margin-left: 42vw;
   font-family: "PT Serif", serif;
 }
 .testimonial-container {
@@ -212,7 +212,7 @@
 }
 /* Award Section*/
 .award-section {
-  padding: 70px 60px;
+  padding: 70px 10px;
   background-color: whitesmoke;
 }
 .awards-heading {
@@ -220,18 +220,18 @@
 }
 .awards-head {
   font-family: "PT Serif", serif;
-
   font-weight: bolder;
   font-size: 45px;
-  margin-left: 35vw;
+  margin-left: 40vw;
   margin-bottom: 90px;
 }
 .awards-content {
   display: flex;
-  margin: 40px;
+  margin: 10px 0px;
 }
 .awards-content > a > img {
   flex: 1;
+  width: 20vw;
   margin: 25px;
 }
 .awards-content > a > img:hover {
