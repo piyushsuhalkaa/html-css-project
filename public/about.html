@@ -326,16 +326,27 @@
       </div>
     </section>
 
-    <!-- <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
+    <script>
+      var topButton = document.getElementById("topBtn");
+      var scrollMenu = document.getElementsByClassName("header");
+      window.onscroll = function() {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 400 ||
+          document.documentElement.scrollTop > 400
+        ) {
+          topButton.style.display = "block";
         } else {
-          x.className = "topnav";
+          topButton.style.display = "none";
         }
       }
-    </script> -->
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

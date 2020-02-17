@@ -17,8 +17,7 @@ Author URI:
    Author's custom styles
    ========================================================================== */
 /* Imports */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Poppins:300,400&display=swap");
 /* Global CSS Start */
 
 html,
@@ -28,7 +27,7 @@ body {
   margin: 0;
   font-weight: 400;
   width: 100%;
-  font-family: "pt serif", "times new roman", Times, serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 *::-moz-selection {
@@ -52,6 +51,13 @@ body {
 .header-logo-container {
   flex: 1;
 }
+.nav-btn {
+  background-color: transparent;
+  margin: 30px;
+  font-size: 40px;
+  border: none;
+  color: white;
+}
 .header-logo {
   justify-content: flex-start;
   margin: 30px;
@@ -71,7 +77,7 @@ body {
   color: whitesmoke;
   font-size: 14px;
   font-weight: 600;
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   margin: 0px 30px;
 }
@@ -93,7 +99,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid white;
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #ctaHeader:hover {
   outline: none;
@@ -160,7 +166,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 .footer-link > a:hover {
@@ -268,5 +274,8 @@ body {
   .footer-caption {
     font-size: 15px;
     color: rgb(151, 151, 151);
+  }
+  #topBtn {
+    visibility: hidden;
   }
 }
