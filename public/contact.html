@@ -17,6 +17,24 @@
   </head>
   <body>
     <!-- Header Section  -->
+    <section class="responive-header">
+      <div class="reponsive-nav">
+        <img
+          class="responsive-header-logo"
+          src="./assets/images/logo.png"
+          alt=""
+        />
+        <div id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="nav-active" href="#">Contacts</a>
+          <button id="ctaHeader" style="margin: 10px; ">Book Now</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </section>
     <section class="header">
       <div class="header-logo-container">
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
@@ -167,6 +185,14 @@
       </div>
     </section>
     <script>
+      function myFunction() {
+        var x = document.getElementById("navLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
       var topButton = document.getElementById("topBtn");
       var scrollMenu = document.getElementsByClassName("header");
       window.onscroll = function() {

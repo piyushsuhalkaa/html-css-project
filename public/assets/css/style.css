@@ -39,7 +39,7 @@ body {
   color: white;
 }
 /* Header Section*/
-.responsive {
+.responive-header {
   display: none;
 }
 .toggle {
@@ -247,16 +247,16 @@ body {
     border-radius: 10px;
   }
 
-  .topnav {
+  .reponsive-nav {
     background-color: #333;
     position: relative;
   }
 
-  .topnav #myLinks {
+  .reponsive-nav #navLinks {
     display: none;
   }
 
-  .topnav a {
+  .reponsive-nav a {
     color: white;
     font-family: "Poppins", sans-serif;
     padding: 14px 16px;
@@ -266,7 +266,7 @@ body {
     display: block;
   }
 
-  .topnav a.icon {
+  .reponsive-nav a.icon {
     background: #323232;
     display: block;
     position: absolute;
@@ -275,9 +275,12 @@ body {
     font-size: 30px;
   }
 
-  .topnav a:hover {
-    background: #323232;
+  .reponsive-nav a:hover {
+    background: green;
     color: white;
+  }
+  .nav-active {
+    background-color: green;
   }
   .footer {
     height: 80vh;
