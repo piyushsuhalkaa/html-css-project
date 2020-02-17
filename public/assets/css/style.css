@@ -233,7 +233,7 @@ body {
     display: none;
   }
   .footer {
-    height: 80vh;
+    height: 70vh;
     padding: 0;
   }
   .footer-logo {
@@ -266,7 +266,6 @@ body {
     font-size: 20px;
   }
   .footer-caption {
-    margin-top: 70px;
     font-size: 15px;
     color: rgb(151, 151, 151);
   }

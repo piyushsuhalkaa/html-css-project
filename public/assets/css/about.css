@@ -102,9 +102,8 @@
   font-weight: bolder;
 }
 .feature-item-container {
-  display: grid;
+  display: flex;
   margin: 20px;
-  grid-template-columns: 30vw 30vw 30vw;
 }
 .feature-item {
   background-color: rgba(255, 255, 255, 0.8);
@@ -147,7 +146,6 @@
   height: 70vh;
 }
 .testimonial-slide {
-  display: ;
 }
 .testimonial-background {
   position: absolute;
@@ -231,5 +229,81 @@
   background-color: white;
   box-shadow: 1px 1px 18px grey;
 }
-
-/*  */
+@media only screen and (max-width: 480px) {
+  .background {
+    height: 40vh;
+  }
+  .presentation-container {
+    left: 20vw;
+    top: 20vh;
+  }
+  .about-section {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .about-left {
+    margin-left: 0;
+  }
+  .about-left > img {
+    margin-left: 0;
+    padding: 0px;
+    width: 100%;
+  }
+  .about-right {
+    margin-left: 3vw;
+    margin-right: 0vw;
+  }
+  .about-heading {
+    margin-top: 5vh;
+    font-size: 35px;
+  }
+  .about-quote {
+    font-size: 20px;
+  }
+  .about-caption {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .feature-section {
+    padding: 50px 20px;
+  }
+  .feature-heading {
+    margin-left: 00vw;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .feature-item-container {
+    flex-direction: column;
+  }
+  .feature-row {
+    flex-direction: column;
+  }
+  .feature-item-image {
+    margin-left: 25vw;
+  }
+  .feature-item-name {
+    text-align: center;
+    margin: 0px;
+  }
+  .testimonial-section {
+    display: none;
+  }
+  .feature-item-caption {
+    text-align: center;
+  }
+  .awards-heading {
+    padding: 20px;
+  }
+  .awards-content {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .awards-head {
+    font-size: 30px;
+    margin-left: 15vw;
+    margin-bottom: 7px;
+  }
+  .awards-content > a > img {
+    margin: 10px;
+  }
+}
