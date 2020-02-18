@@ -224,8 +224,9 @@
   font-family: "PT Serif", serif;
   font-weight: bolder;
   font-size: 45px;
-  margin-left: 40vw;
-  margin-bottom: 90px;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
 }
 .awards-content {
   display: flex;
@@ -241,8 +242,11 @@
   box-shadow: 1px 1px 18px grey;
 }
 @media only screen and (max-width: 480px) {
+  .presentation {
+    height: 330px;
+  }
   .background {
-    height: 40vh;
+    height: 330px;
   }
   .presentation-container {
     left: 20vw;
@@ -299,14 +303,6 @@
   .feature-item-caption {
     text-align: center;
   }
-
-  .awards-heading {
-    padding: 20px;
-  }
-  .awards-content {
-    flex-direction: column;
-    margin: 10px;
-  }
   .testimonial-section {
     height: 70vh;
   }
@@ -326,15 +322,10 @@
   }
   .awards-head {
     font-size: 30px;
-    margin-left: 15vw;
-    margin-bottom: 7px;
   }
   .testimonial-author {
     font-size: 20px;
     margin-left: 25vw;
-  }
-  .awards-content > a > img {
-    margin: 10px;
   }
   .prev-testimonial,
   .next-testimonial {
@@ -350,5 +341,18 @@
   .testimonial-image {
     padding: 5px;
     border-radius: 50%;
+  }
+  .awards-heading {
+    padding: 20px;
+  }
+  .awards-content {
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .awards-content > a > img {
+    margin: 10px;
+    width: 200px;
+    flex-basis: 2px;
   }
 }

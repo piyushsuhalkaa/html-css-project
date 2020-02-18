@@ -101,7 +101,7 @@
   cursor: pointer;
   color: snow;
   margin: 30px;
-  outline: none;
+  border: none;
   width: 10vw;
   margin-top: 20px;
   margin-right: 10px;
@@ -633,15 +633,17 @@
   }
   .dish-name {
     margin-top: 5px;
+    font-size: 22px;
   }
   .dish-price {
+    font-size: 20px;
     margin: 10px;
   }
   .res-menu-heading {
     font-size: 30px;
   }
   .res-menu-container {
-    margin-left: 16vw;
+    margin: 0px 40px;
     flex-direction: column;
     width: 75%;
   }
@@ -653,7 +655,7 @@
     margin: 20px;
   }
   .res-menu-captions {
-    margin: 0px 16vw;
+    margin: 0px 40px;
     padding: 10px;
     width: 70vw;
   }
