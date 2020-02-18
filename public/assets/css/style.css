@@ -120,7 +120,9 @@ body {
   padding: 20px;
   border-radius: 4px;
 }
-
+*:focus {
+  outline: 0;
+}
 #topBtn:hover {
   background-color: black;
 }
@@ -243,7 +245,7 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     padding: 5px 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -260,6 +262,7 @@ body {
     outline: none;
   }
   .nav-active {
+    color: white;
     background-color: green;
   }
   .footer {
