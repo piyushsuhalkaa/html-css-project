@@ -47,16 +47,21 @@
 .contact-description {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 90px 0px;
 }
 .contact-description > div {
   flex: 1;
   padding: 20px 80px;
 }
+.contact-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-icon {
   height: 100px;
   padding: 20px;
-  margin-left: 80px;
 }
 .contact-heading {
   display: block;
@@ -75,7 +80,6 @@
   display: block;
   font-size: 18px;
   text-align: center;
-  padding: 20px 0px;
   color: gray;
 }
 /* Maps */
@@ -162,11 +166,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 120px;
     height: 70px;
   }
   .contact-heading > a {
     font-size: 20px;
+    padding: 0px 20px;
   }
   .contact-caption {
     font-size: 14px;
@@ -198,7 +202,7 @@
   }
   .input-form {
     border: 1px solid black;
-    width: 360px;
+    width: 300px;
     border: none;
     font-size: 20px;
   }
