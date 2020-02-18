@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style></style>
   </head>
   <body>
@@ -123,14 +124,14 @@
 
     <!-- About Section Start -->
     <section class="about">
-      <div class="about__left">
+      <div data-aos="fade-right" class="about__left">
         <img
           class="about-back-img"
           src="./assets/images/about/about-back.jpg"
         />
         <img class="about-img" src="./assets/images/about/chef.png" />
       </div>
-      <div class="about__right">
+      <div data-aos="fade-left" class="about__right">
         <h2 class="about-heading">About Us</h2>
         <p class="about-caption">
           Pesto is a family owned and operated Italian Restaurant offering a
@@ -147,7 +148,7 @@
 
     <!-- Featured Section-->
     <section class="featured">
-      <div class="featured-top">
+      <div class="featured-top" data-aos="fade-down">
         <h2 class="featured-head">Featured Offers</h2>
         <p class="featured-caption">
           We offer a great variety of the best Italian dishes to our visitors
@@ -155,7 +156,7 @@
           desserts.
         </p>
       </div>
-      <div class="featured-items">
+      <div class="featured-items" data-aos="fade-up">
         <div class="featured-item-1">
           <a class="item-links" href="#">
             <img
@@ -390,7 +391,7 @@
     </section>
     <!-- Gallary Section -->
     <section class="gallary-container">
-      <div class="gallary-row">
+      <div class="gallary-row" data-aos="fade-down">
         <img
           onclick="gallaryOpenModal();currentGallarySlide(1)"
           class="gallary-item-row-one"
@@ -410,7 +411,7 @@
           alt=""
         />
       </div>
-      <div class="gallary-row">
+      <div class="gallary-row" data-aos="fade-up">
         <img
           onclick="gallaryOpenModal();currentGallarySlide(4)"
           class="gallary-item-row-two"
@@ -470,10 +471,10 @@
 
     <!-- Recent News Section -->
     <section class="recent-news-section">
-      <div class="recent-news-heading">
+      <div class="recent-news-heading" data-aos="fade-down">
         <h2>Recent News</h2>
       </div>
-      <div class="recent-news-container">
+      <div class="recent-news-container" data-aos="fade-up">
         <div class="recent-news">
           <div class="recent-news-items">
             <div class="recent-news-item">
@@ -644,7 +645,7 @@
     </section>
 
     <!-- Footer Section -->
-    <section class="footer">
+    <section class="footer" data-aos="fade">
       <div class="footer-logo">
         <img src="./assets/images/logo.png" />
       </div>
@@ -699,5 +700,9 @@
       }
     </script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

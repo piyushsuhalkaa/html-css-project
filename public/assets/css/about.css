@@ -1,11 +1,15 @@
 .presentation {
   position: relative;
+  height: 550px;
+  width: 100%;
 }
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("../images/back.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  height: 550px;
+  width: 100%;
 }
 .presentation-content {
   box-sizing: border-box;
