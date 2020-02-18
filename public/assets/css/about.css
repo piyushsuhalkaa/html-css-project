@@ -6,12 +6,10 @@
     url("../images/back.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  height: 64vh;
 }
 .presentation-content {
   box-sizing: border-box;
   position: absolute;
-  top: 45vh;
 }
 .presentation-container {
   position: absolute;

@@ -19,11 +19,13 @@
     <!-- Header Section  -->
     <section class="responive-header">
       <div class="reponsive-nav">
-        <img
-          class="responsive-header-logo"
-          src="./assets/images/logo.png"
-          alt=""
-        />
+        <a href="about.html">
+          <img
+            class="responsive-header-logo"
+            src="./assets/images/logo.png"
+            alt=""
+          />
+        </a>
         <div id="navLinks">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
@@ -120,28 +122,26 @@
       <div class="form-header">
         <span class="form-heading">Get in Touch</span>
       </div>
-      <div class="form-container">
-        <form id="contactForm">
-          <input
-            class="input-form"
-            type="text"
-            placeholder="Your Name"
-            required
-          />
-          <input class="input-form" type="email" placeholder="Email" required />
-          <input class="input-form" type="tel" placeholder="Phone" required />
-          <textarea
-            id="messageInput"
-            class="input-form"
-            type="text"
-            wrap="virtual"
-            placeholder="Your Message"
-            cols="42"
-            rows="5"
-          ></textarea>
-          <button id="sentButton" type="submit">Send</button>
-        </form>
-      </div>
+      <form id="contactForm" class="form-container">
+        <input
+          class="input-form"
+          type="text"
+          placeholder="Your Name"
+          required
+        />
+        <input class="input-form" type="email" placeholder="Email" required />
+        <input class="input-form" type="tel" placeholder="Phone" required />
+        <textarea
+          id="messageInput"
+          class="input-form"
+          type="text"
+          wrap="virtual"
+          placeholder="Your Message"
+          cols="42"
+          rows="5"
+        ></textarea>
+        <button id="sentButton" type="submit">Send</button>
+      </form>
     </section>
     <!-- Footer Section-->
     <section class="footer">

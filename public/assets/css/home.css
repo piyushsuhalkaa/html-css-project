@@ -1,50 +1,21 @@
 .presentation {
-  height: 110vh;
+  height: 900px;
+  display: flex;
+  align-items: center;
 }
 .background {
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("../images/background.jpg");
-  width: 100vw;
-  height: 110vh;
+  width: 100%;
+  height: 900px;
   z-index: -1;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  animation-duration: 5s;
-  animation-name: slidein;
-}
-@keyframes slidein {
-  0% {
-    transform: rotate(0.02deg);
-  }
-  25% {
-    transform: rotate(0.01deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(0.1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-#responsive-menu {
-  background-color: #323232;
-  z-index: 3;
-  height: 100vh;
-  width: 70vw;
-}
-.toogle {
-  font-size: 20px;
-  color: red;
 }
 .presentation-content {
   box-sizing: border-box;
-  position: absolute;
-  top: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .banner-heading {
   text-align: center;
@@ -58,7 +29,6 @@
   width: 100px;
   margin: 20px 0px;
   background-color: white;
-  margin-left: 46%;
 }
 .banner-caption {
   color: white;
@@ -103,16 +73,14 @@
 .label-heading {
   font-size: 16px;
   text-transform: uppercase;
-  color: gray;
   display: block;
-  font-family: "PT Serif", serif;
+  font-family: "Poppins", sans-serif;
 }
 .label-input {
   width: 200px;
   height: 10vh;
   border: none;
   font-size: 18px;
-  color: gray;
   background-color: snow;
 }
 *:focus {
@@ -121,13 +89,13 @@
 
 .select-label {
   width: 35px;
-  color: gray;
 }
 
 #ctaBook {
   text-transform: uppercase;
   font-weight: 600;
   padding: 15px 20px;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   background-color: #323232;
   cursor: pointer;
@@ -136,7 +104,7 @@
   outline: none;
   width: 10vw;
   margin-top: 20px;
-  margin-right: 10px; important;
+  margin-right: 10px;
 }
 #ctaBook:hover {
   background-color: green;
@@ -205,6 +173,7 @@
 .featured-head {
   font-size: 50px;
   margin-bottom: 30px;
+  font-family: "PT Serif", serif;
 }
 .featured-caption {
   font-weight: 100;
@@ -553,69 +522,66 @@
   background-color: green;
 }
 @media only screen and (max-width: 480px) {
+  .presentation {
+    height: 400px;
+    justify-content: center;
+  }
   .background {
     position: absolute;
-    width: 100vw;
-    height: 90vh;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
     z-index: -1;
-  }
-
-  .presentation-content {
-    top: 40vh;
   }
   .banner-heading {
     font-size: 50px;
   }
   .banner-hr {
     width: 100px;
-    margin: 20px 0px;
     background-color: white;
-    margin-left: 35vw;
   }
   .banner-caption {
-    font-size: 20px;
-    margin: auto 30px;
+    margin: 0 20px;
+    font-size: 16px;
   }
   .cta-form {
-    position: relative;
-    top: -30vh;
-    padding: 10px;
+    top: -100px;
+    padding: 0px;
     z-index: 1;
   }
   .form-block {
     margin: 10px;
-    padding: 20px;
+    padding: 0px;
     margin-top: 50px;
     font-size: 25px;
-    width: 80vw;
+    width: 95%;
+    border-radius: 5px;
     flex-direction: column;
   }
   .cta-form-container {
     flex-direction: column;
-    margin: 50px 30px;
+    justify-content: space-around;
+    margin: 0px;
     background-color: snow;
-    width: 70%;
+    margin: 0 10px;
   }
   .label-heading {
-    font-size: 18px;
+    margin: 10px 0px;
     margin-top: 20px;
+    font-size: 18px;
   }
   .label-input {
+    height: 30px;
+    width: 100%;
+    color: black;
     border-bottom: 1px solid gray;
   }
   #ctaBook {
     text-transform: uppercase;
-    font-weight: 300;
-    padding: 15px 20px;
     font-size: 14px;
-    background-color: #323232;
-    cursor: pointer;
-    font-family: "PT Sans", sans-serif;
-    color: snow;
-    margin: 30px;
-    outline: none;
-    width: 25vh;
-    margin-top: 50px;
+    width: 50%;
+    margin: 10px 0px;
   }
   .about {
     flex-direction: column;
@@ -624,8 +590,8 @@
     padding-bottom: 50px;
   }
   .about > div {
-    margin: 20px;
-    padding: 20px 0px;
+    margin: 10px;
+    padding: 0px;
     justify-content: center;
   }
   .about__left {
@@ -636,15 +602,16 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    margin-top: 120px;
+    margin-bottom: 20px;
   }
   .about-img {
     width: 70%;
-    left: 7vh;
-    top: -23px;
+    left: 50px;
+    top: 75px;
   }
   .about-sign {
     margin-top: 20px;
-    justify-content: baseline;
   }
   .about-heading {
     font-size: 30px;
@@ -663,7 +630,7 @@
   }
   .item-links > img {
     width: 75vw;
-}
+  }
   .dish-name {
     margin-top: 5px;
   }
