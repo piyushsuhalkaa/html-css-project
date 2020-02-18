@@ -203,7 +203,6 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .dish-name {
   font-weight: bolder;
   margin-top: 15px;
@@ -221,7 +220,6 @@
   text-decoration: none;
   color: green;
 }
-
 .image {
   opacity: 1;
   display: block;
@@ -384,6 +382,9 @@
   margin: auto;
   padding: 0;
   width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .close-modal {
   color: white;
@@ -403,6 +404,10 @@
 .gallarySlides {
   display: none;
 }
+.gallarySlides > img {
+  width: 70%;
+  margin: 10% 20%;
+}
 .prev-slide,
 .next-slide {
   cursor: pointer;
@@ -412,12 +417,14 @@
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  top: 40vh;
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+.prev-slide {
+  left: 0;
 }
 .next-slide {
   right: 0;
@@ -691,13 +698,12 @@
   }
   .gallary-modal {
     display: none;
-    position: fixed;
+    padding: absolute;
     z-index: 3;
-    padding-top: 1px;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     background-color: #323232;
   }
   .modal-content {
@@ -705,6 +711,10 @@
     margin: 1px;
     padding: 0;
     width: 90%;
+  }
+  .gallarySlides > img {
+    width: 70%;
+    margin: 10% 20%;
   }
   .recent-news-heading {
     font-size: 25px;
