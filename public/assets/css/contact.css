@@ -81,14 +81,14 @@
 /* Maps */
 .google-maps {
   position: relative;
-  padding-bottom: 60vh;
+  padding-bottom: 600px;
   height: 0;
   overflow: hidden;
 }
 .google-maps iframe {
   position: absolute;
   width: 100% !important;
-  height: 60px !important;
+  height: 600px !important;
 }
 /* Form */
 .form-section {
@@ -103,16 +103,16 @@
   font-family: "PT Serif", serif;
 }
 .form-container {
-  margin: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 .input-form {
-  width: 50vw;
-  height: 7vh;
+  width: 700px;
+  height: 40px;
   padding: 10px;
+  border: none;
   margin: 10px;
   font-size: 16px;
   outline: none;
@@ -124,9 +124,9 @@
   padding: 20px 70px;
   background-color: green;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   font-weight: 700;
-  margin-top: 5vh;
+  margin-top: 50px;
 }
 #sentButton:hover {
   background-color: black;
@@ -134,7 +134,7 @@
 }
 #messageInput {
   white-space: nowrap;
-  outline: none;
+  border: none;
   font-size: 16px;
   height: 20vh;
 }
@@ -197,17 +197,15 @@
     margin: 10px 0;
   }
   .input-form {
-    outline: thik;
     border: 1px solid black;
-    width: 90vw;
+    width: 360px;
+    border: none;
     font-size: 20px;
   }
   #messageInput {
     font-size: 20px;
   }
   #sentButton {
-    padding: 2vh 40vw;
-    margin-left: 2vw;
-    margin-top: 1vh;
+    padding: 20px 150px;
   }
 }
