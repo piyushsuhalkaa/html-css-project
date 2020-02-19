@@ -617,11 +617,16 @@ input::placeholder {
     justify-content: center;
   }
   .about__left {
+    margin-left: 110px;
     padding-left: 0px;
     margin-left: 0px;
   }
+  .about__right {
+    width: 500px;
+    margin: 0px;
+  }
   .about-back-img {
-    width: 100%;
+    width: 400px;
     position: relative;
     z-index: 1;
     margin-top: 120px;
@@ -630,7 +635,7 @@ input::placeholder {
   .about-img {
     width: 70%;
     left: 50px;
-    top: 75px;
+    top: 70px;
   }
   .about-sign {
     margin-top: 20px;
