@@ -32,7 +32,7 @@
           <a href="contact.html">Contacts</a>
           <button id="ctaHeader" style="margin: 10px; ">Book Now</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -363,12 +363,12 @@
       </div>
     </section>
     <script>
-      function myFunction() {
-        var x = document.getElementById("navLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+      function navFunction() {
+        var nav = document.getElementById("navLinks");
+        if (nav.style.display === "block") {
+          nav.style.display = "none";
         } else {
-          x.style.display = "block";
+          nav.style.display = "block";
         }
       }
       var index = 1;
