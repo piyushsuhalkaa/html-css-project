@@ -43,12 +43,13 @@
   top: -150px;
   padding: 20px auto;
   z-index: 1;
+  width: 90%;
 }
 .form-block {
-  margin-left: 5vw;
+  margin: 50px;
   margin-top: 50px;
   font-size: 25px;
-  width: 90vw;
+  padding: 20px;
   z-index: 1;
   display: flex;
   background-color: snow;
@@ -59,16 +60,14 @@
   display: flex;
   margin: 50px 30px;
   background-color: snow;
-  width: 85vw;
-}
-.cta-form-item {
-  flex: 1;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: center;
+  align-content: center;
 }
 .cta-form-line {
   border-right: 2px solid gray;
   flex: 1;
-  margin-right: 30px;
+  margin: 0px 30px;
 }
 .label-heading {
   font-size: 16px;
@@ -78,8 +77,9 @@
 }
 .label-input {
   width: 200px;
-  height: 10vh;
+  height: 20px;
   border: none;
+  color: black;
   font-size: 18px;
   background-color: snow;
 }
@@ -100,11 +100,8 @@
   background-color: #323232;
   cursor: pointer;
   color: snow;
-  margin: 30px;
   border: none;
-  width: 10vw;
   margin-top: 20px;
-  margin-right: 10px;
 }
 #ctaBook:hover {
   background-color: green;
@@ -581,7 +578,6 @@
   .label-input {
     height: 30px;
     width: 100%;
-    color: black;
     border-bottom: 1px solid gray;
   }
   #ctaBook {
