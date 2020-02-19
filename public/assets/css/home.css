@@ -1,79 +1,84 @@
 .presentation {
-  height: 900px;
+  height: 110vh;
   display: flex;
   align-items: center;
 }
 .background {
   position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
     url("../images/background.jpg");
   width: 100%;
-  height: 900px;
+  height: 100%;
+  background-position: top;
   z-index: -1;
 }
 .presentation-content {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .banner-heading {
   text-align: center;
-  font-size: 70px;
+  font-size: 86px;
   color: white;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+  letter-spacing: 0.8px;
+  line-height: 26px;
   font-family: "PT Serif", serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .banner-hr {
-  width: 100px;
-  margin: 20px 0px;
+  width: 60px;
+  margin: 30px 0px;
   background-color: white;
 }
 .banner-caption {
   color: white;
   text-align: center;
-  font-size: 20px;
-  margin: auto 300px;
+  font-size: 18px;
+  margin: 0 350px;
+  font-weight: 300;
 }
 /*Header Element Css Ends*/
 /*CTA Froms Start */
 .cta-form {
+  display: flex;
+  justify-content: center;
   position: relative;
   top: -150px;
-  padding: 20px auto;
   z-index: 1;
-  width: 90%;
 }
 .form-block {
-  margin: 50px;
-  margin-top: 50px;
   font-size: 25px;
-  padding: 20px;
   z-index: 1;
   display: flex;
   background-color: snow;
-  border-radius: 20px;
-  box-shadow: 0px 0px 50px grey;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 50px #323232;
+  padding: 10px 20px;
 }
 .cta-form-container {
   display: flex;
-  margin: 50px 30px;
+  margin: 50px 10px;
   background-color: snow;
-  width: 90%;
   justify-content: center;
   align-content: center;
 }
 .cta-form-line {
-  border-right: 2px solid gray;
+  border-right: 1px solid #e7e7e7;
   flex: 1;
   margin: 0px 30px;
 }
 .label-heading {
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
+  letter-spacing: 1.1px;
   display: block;
   font-family: "Poppins", sans-serif;
+  color: #323232;
 }
 .label-input {
   width: 200px;
@@ -82,6 +87,10 @@
   color: black;
   font-size: 18px;
   background-color: snow;
+}
+input::placeholder {
+  color: black;
+  font-size: 20px;
 }
 *:focus {
   outline: none;
@@ -104,7 +113,7 @@
   margin-top: 20px;
 }
 #ctaBook:hover {
-  background-color: green;
+  background-color: #41a451;
 }
 /* CTA Forms End*/
 
@@ -113,60 +122,64 @@
 .about {
   background-color: whitesmoke;
   display: flex;
-  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 110px;
+  padding-top: 200px;
   margin-top: -265px;
-  padding-left: 150px;
-  padding-bottom: 50px;
 }
 .about > div {
-  margin: 50px;
-  padding: 25px 0px;
-  justify-content: space-around;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 .about__left {
-  padding-left: 2vw;
   position: relative;
-  left: 0;
-  top: 0;
-  margin-left: 200px;
+  margin: 5px;
 }
 .about-back-img {
+  padding-top: 0px;
   position: relative;
-  z-index: 1;
+  border-radius: 10px;
 }
 .about-img {
   position: absolute;
-  left: 10vh;
-  top: -38px;
   z-index: 1;
+  top: -64px;
+  left: 60px;
 }
-.about-sign {
-  margin-top: 20px;
-  justify-content: baseline;
+.about__right {
+  padding-left: 160px;
 }
 .about-heading {
-  font-size: 50px;
-  margin-top: -8px;
-  margin-bottom: 30px;
+  font-size: 45px;
+  line-height: 54px;
+  font-weight: 700;
+  margin-bottom: 20px;
   font-weight: bold;
-  color: #0d0e0d;
   font-family: "PT Serif", serif;
 }
 .about-caption {
-  font-weight: 300;
+  font-weight: 200;
   margin: 10px auto;
   font-size: 15px;
-  max-width: 500px;
+  color: rgba(21, 21, 21, 0.8);
   line-height: 25px;
 }
 /*About Element CSS End*/
 
 /*Featured CSS Starts*/
 .featured {
+  background-color: white;
   padding: 50px 0px;
   text-align: center;
 }
-
+.featured-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .featured-head {
   font-size: 50px;
   margin-bottom: 30px;
@@ -175,18 +188,17 @@
 .featured-caption {
   font-weight: 100;
   font-size: 15px;
-  margin-bottom: 1em;
-  margin: 0 400px;
-  color: gray;
+  margin-bottom: 20px;
+  color: rgba(21, 21, 21, 0.8);
   max-width: 700px;
 }
 .featured-items {
   display: flex;
-  margin: 5vh;
-  margin-left: 10vw;
+  justify-content: center;
+  align-items: center;
 }
 .featured-items > div {
-  padding: 20px;
+  padding: 18px;
 }
 .featured-item-1,
 .featured-item-2,
@@ -194,16 +206,18 @@
   position: relative;
 }
 .item-links > img {
-  width: 23vw;
+  width: 380px;
 }
 .item-links > a {
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "PT Serif", serif;
 }
 .dish-name {
   font-weight: bolder;
   margin-top: 15px;
   text-decoration: none;
+  font-family: "PT Serif", serif;
   color: black;
 }
 
@@ -215,7 +229,7 @@
 .link-normal-dish-price {
   margin-top: 20px;
   text-decoration: none;
-  color: green;
+  color: #41a451;
 }
 .image {
   opacity: 1;
@@ -237,7 +251,7 @@
   text-align: center;
 }
 .text {
-  background-color: green;
+  background-color: #41a451;
   color: white;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -269,10 +283,12 @@
   font-family: "PT Serif", serif;
 }
 .res-menu-container {
-  margin-left: 16vw;
   background-color: #323232;
   display: flex;
-  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  width: 84%;
+  margin: 0 8%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -286,33 +302,33 @@
   font-weight: bold;
   text-transform: uppercase;
   flex: 1;
+  justify-content: center;
   padding: 50px 0px;
-  margin: 5px;
 }
 .top-caption {
   margin: 80px;
 }
 .tab-head-first {
-  margin-left: 30vh;
+  margin-left: 30%;
 }
 .tab-head-last {
-  margin-right: 30vh;
+  margin-right: 30%;
 }
 .res-menu-captions {
-  background-color: snow;
-  margin-left: 16vw;
+  background-color: white;
+  margin: 0 8%;
   padding: 10px;
-  width: 69vw;
+  width: 83%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: justify;
 }
 .res-menu-item-price {
-  color: green;
+  color: #41a451;
   font-size: 18px;
   display: block;
   margin: 10px;
-  padding: 1px 100px;
+  padding: 1px 150px;
 }
 .res-menu-item-name {
   color: black;
@@ -321,14 +337,14 @@
   font-weight: 700;
   margin: 10px;
   font-family: "PT Serif", serif;
-  padding: 1px 100px;
+  padding: 1px 150px;
 }
 .res-menu-item-name > a {
   color: black;
   text-decoration: none;
 }
 .res-menu-item-name > a:hover {
-  color: green;
+  color: #41a451;
 }
 .res-menu-item-caption {
   display: block;
@@ -336,7 +352,7 @@
   font-size: 14px;
   margin: 10px;
   margin-bottom: 50px;
-  padding: 1px 100px;
+  padding: 1px 150px;
 }
 .res-menu-tab-head:hover {
   color: rgb(255, 255, 255);
@@ -394,7 +410,7 @@
 }
 .close-modal:hover,
 .close-modal:focus {
-  color: green;
+  color: #41a451;
   text-decoration: none;
   cursor: pointer;
 }
@@ -429,7 +445,7 @@
 }
 .prev-slide:hover,
 .next-slide:hover {
-  color: green;
+  color: #41a451;
 }
 /* Recent News Section  */
 .recent-news-section {
@@ -447,11 +463,14 @@
 }
 .recent-news-items {
   display: flex;
+  justify-content: space-between;
+}
+.recent-news-container {
+  margin: 10px 0px;
 }
 .recent-news-item {
   flex: 1;
-  margin-left: 20px;
-  justify-content: space-around;
+  padding: 20px;
 }
 .item-date {
   margin: 10px;
@@ -467,7 +486,7 @@
   text-decoration: none;
 }
 .item-date > a:hover {
-  background-color: green;
+  background-color: #41a451;
 }
 .item-title {
   margin: 10px;
@@ -483,7 +502,7 @@
   text-decoration: none;
 }
 .item-title > a:hover {
-  color: green;
+  color: #41a451;
 }
 .item-caption {
   margin-top: 20px;
@@ -505,7 +524,7 @@
 }
 .item-link > a:hover {
   text-decoration: none;
-  color: green;
+  color: #41a451;
 }
 .recent-news-container {
   max-width: 80vw;
@@ -523,7 +542,7 @@
 }
 .active,
 .recent-news-dot:hover {
-  background-color: green;
+  background-color: #41a451;
 }
 @media only screen and (max-width: 480px) {
   .presentation {

@@ -74,7 +74,7 @@
   color: black;
 }
 .contact-heading > a:hover {
-  color: green;
+  color: #41a451;
 }
 .contact-caption {
   display: block;
@@ -126,7 +126,7 @@
   display: block;
   text-transform: uppercase;
   padding: 20px 70px;
-  background-color: green;
+  background-color: #41a451;
   color: white;
   margin-bottom: 30px;
   font-weight: 700;

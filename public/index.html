@@ -41,28 +41,24 @@
     </section>
 
     <section id="header" class="header header-transparent">
-      <div class="header-logo-container">
+      <a href="#">
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
-      </div>
-      <div class="header-nav-bar">
-        <ul class="header-nav-links">
-          <li>
-            <a class="header-nav-link active-nav-bar" href="#">Home</a>
-          </li>
-          <li><a class="header-nav-link" href="about.html">About</a></li>
-          <li><a class="header-nav-link" href="contact.html">Contacts</a></li>
-        </ul>
-      </div>
-      <div class="header-cta-container">
-        <button id="ctaHeader">Book Now</button>
-      </div>
+      </a>
+      <ul class="header-nav-links">
+        <li>
+          <a class="header-nav-link active-nav-bar" href="#">Home</a>
+        </li>
+        <li><a class="header-nav-link" href="about.html">About</a></li>
+        <li><a class="header-nav-link" href="contact.html">Contacts</a></li>
+      </ul>
+      <button id="ctaHeader">Book Now</button>
     </section>
     <!--Banner Section Start-->
     <section class="presentation">
       <div class="background"></div>
       <div class="presentation-content">
         <h1 class="banner-heading">Welcome</h1>
-        <hr size="7" class="banner-hr" />
+        <hr size="4" class="banner-hr" />
         <p class="banner-caption">
           Our restaurant offers full-service dining with breathtaking views seen
           from our indoor covered patio and our outdoor sundeck.
@@ -222,7 +218,7 @@
     <!-- Restaurant menu Section -->
     <section class="res-menu">
       <h1 class="res-menu-heading">Our Restaurant Menu</h1>
-      <section class="">
+      <section>
         <div class="res-menu-container">
           <button
             class="res-menu-tab-head tab-head-first"
@@ -231,15 +227,12 @@
           >
             Main
           </button>
-          <button
-            class="res-menu-tab-head"
-            onclick="ourMenu('ourDessert', this, 'red')"
-          >
+          <button class="res-menu-tab-head" onclick="ourMenu('ourDessert')">
             Dessert
           </button>
           <button
             class="res-menu-tab-head tab-head-last"
-            onclick="ourMenu('ourDrink', this, 'red')"
+            onclick="ourMenu('ourDrink')"
           >
             Drink
           </button>
@@ -645,31 +638,21 @@
         </ul>
       </div>
       <div class="footer-social-link-container">
-        <ul class="footer-social-links">
-          <li class="footer-social-link">
-            <a href="#">
-              <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="footer-social-link">
-            <a href="#">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="footer-social-link">
-            <a href="#">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="footer-social-link">
-            <a href="#">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="footer-social-link">
-            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-          </li>
-        </ul>
+        <a class="footer-social-link" href="#">
+          <i class="fa fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a class="footer-social-link" href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a class="footer-social-link" href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="footer-social-link" href="#">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </a>
+        <a class="footer-social-link" href="#">
+          <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="footer-caption">
         © 2020 Pesto. All Rights Reserved. <a href="#">Privacy Policy</a>.
