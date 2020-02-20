@@ -274,6 +274,9 @@ body {
   .vertical-line {
     display: none;
   }
+  .footer-social-links {
+    padding: 0;
+  }
   .footer-social-link-container {
     padding-top: 0px;
   }
