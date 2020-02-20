@@ -220,3 +220,8 @@
     padding: 20px 150px;
   }
 }
+@media only screen and (max-width: 420px) {
+  .contact-description {
+    padding: 0px;
+  }
+}

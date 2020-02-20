@@ -186,9 +186,6 @@ body {
 .footer-caption > a:hover {
   color: var(--theme-highlight);
 }
-@media only screen and (max-width: 1024px) {
-}
-
 @media only screen and (max-width: 500px) {
   html,
   body {
