@@ -177,7 +177,6 @@
   }
   .contact-heading > a {
     font-size: 20px;
-    padding: 0px 20px;
   }
   .contact-caption {
     font-size: 14px;
@@ -204,6 +203,7 @@
   .form-heading {
     font-weight: 700;
     font-size: 25px;
+    margin: 0;
   }
   .form-container {
     margin: 10px 0;
