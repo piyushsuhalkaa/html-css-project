@@ -79,9 +79,11 @@
 }
 .contact-caption {
   display: block;
-  font-size: 18px;
   text-align: center;
-  color: gray;
+  font-size: 14px;
+  padding: 10px 0px;
+  font-weight: 100;
+  color: #737373;
 }
 /* Maps */
 .google-maps {
@@ -120,10 +122,10 @@
   width: 600px;
   height: 40px;
   padding: 10px;
-  border: none;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
   margin: 10px;
   font-size: 16px;
-  outline: none;
 }
 #sentButton {
   font-size: 18px;
@@ -142,9 +144,10 @@
 }
 #messageInput {
   white-space: nowrap;
-  border: none;
   font-size: 16px;
   height: 200px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
 }
 @media only screen and (max-width: 480px) {
   .presentation {
@@ -179,6 +182,7 @@
   .contact-caption {
     font-size: 14px;
     padding: 10px 0px;
+    color: rgba(21, 21, 21, 0.8);
   }
   .google-maps {
     position: relative;

@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <section id="header" class="header header-transparent">
+    <section id="header" class="header">
       <a href="#">
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
       </a>
@@ -72,11 +72,11 @@
     <!--Reservation Form-->
     <section class="cta-form">
       <div class="form-block">
-        <form class="form-cta" action="" novalidate>
+        <form class="form-cta" action="">
           <div class="cta-form-container">
             <div class="cta-form-item">
               <label class="label-heading">Name</label>
-              <input class="label-input" type="text" placeholder="Your name" />
+              <input class="label-input" type="text" placeholder="Your name" required />
             </div>
             <div class="cta-form-line"></div>
             <div class="cta-form-item">
@@ -86,12 +86,13 @@
                 type="tel"
                 placeholder="Your phone Number"
                 style="color: black;"
+                required
               />
             </div>
             <div class="cta-form-line"></div>
             <div class="cta-form-item">
               <label class="label-heading">Date </label>
-              <input class="label-input" placeholder="2012-3-23" type="date" />
+              <input class="label-input" type="date" required />
             </div>
             <div class="cta-form-line"></div>
             <div class="cta-form-item" style="width:200px;">
@@ -99,7 +100,8 @@
               <select
                 class="select-label"
                 style="width: 130px; margin-top: 25px; height: 25px; font-size: 18px;"
-              >
+              required
+                >
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
