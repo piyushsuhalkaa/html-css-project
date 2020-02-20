@@ -30,14 +30,14 @@
   justify-content: center;
   font-size: 50px;
   font-weight: bolder;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   text-align: center;
   text-transform: uppercase;
 }
 .presentation-caption {
   text-align: center;
   margin-top: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--theme-pri-font);
   text-transform: uppercase;
   color: white;
   font-size: 15px;
@@ -67,7 +67,7 @@
   font-weight: bolder;
   font-size: 50px;
   margin-bottom: 20px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .about-quote-container {
   margin: 10px;
@@ -76,11 +76,11 @@
 .quote-vertical-line {
   width: 80px;
   margin-top: 25px;
-  border-top: 2px solid #41a451;
+  border-top: 2px solid var(--theme-highlight);
 }
 .about-quote {
   margin: 10px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   font-style: italic;
   font-size: 25px;
   color: gray;
@@ -106,7 +106,7 @@
 }
 .feature-heading {
   font-size: 40px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   font-weight: bolder;
 }
 .feature-item-container {
@@ -147,11 +147,11 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 25px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   color: black;
 }
 .feature-item-name > a:hover {
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .feature-item-caption {
   font-size: 14px;
@@ -187,7 +187,7 @@
   font-size: 45px;
   color: white;
   font-weight: bolder;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .testimonial-container {
   margin-top: 70px;
@@ -222,7 +222,7 @@
 }
 .prev-testimonial:hover,
 .next-testimonial:hover {
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .testimonial-images {
   display: flex;
@@ -241,7 +241,7 @@
   padding: 30px;
 }
 .awards-head {
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   font-weight: bolder;
   font-size: 45px;
   display: flex;

@@ -24,7 +24,7 @@
   margin-bottom: 30px;
   letter-spacing: 0.8px;
   line-height: 26px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -77,7 +77,7 @@
   text-transform: uppercase;
   letter-spacing: 1.1px;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--theme-pri-font);
   color: #323232;
 }
 .label-input {
@@ -104,7 +104,7 @@ input::placeholder {
   text-transform: uppercase;
   font-weight: 600;
   padding: 15px 20px;
-  font-family: "PT Sans", sans-serif;
+  font-family: var(--theme-sec-font);
   font-size: 16px;
   background-color: #323232;
   cursor: pointer;
@@ -113,7 +113,7 @@ input::placeholder {
   margin-top: 20px;
 }
 #ctaBook:hover {
-  background-color: #41a451;
+  background-color: var(--theme-highlight);
 }
 /* CTA Forms End*/
 
@@ -157,7 +157,7 @@ input::placeholder {
   font-weight: 700;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .about-caption {
   font-weight: 200;
@@ -183,7 +183,7 @@ input::placeholder {
 .featured-head {
   font-size: 50px;
   margin-bottom: 30px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .featured-caption {
   font-weight: 100;
@@ -211,13 +211,13 @@ input::placeholder {
 .item-links > a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .dish-name {
   font-weight: bolder;
   margin-top: 15px;
   text-decoration: none;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   color: black;
 }
 
@@ -229,7 +229,7 @@ input::placeholder {
 .link-normal-dish-price {
   margin-top: 20px;
   text-decoration: none;
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .image {
   opacity: 1;
@@ -251,10 +251,10 @@ input::placeholder {
   text-align: center;
 }
 .text {
-  background-color: #41a451;
+  background-color: var(--theme-highlight);
   color: white;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--theme-pri-font);
   font-size: 16px;
   padding: 10px;
 }
@@ -280,7 +280,7 @@ input::placeholder {
   font-weight: bolder;
   text-align: center;
   font-size: 50px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 }
 .res-menu-container {
   background-color: #323232;
@@ -324,7 +324,7 @@ input::placeholder {
   text-align: justify;
 }
 .res-menu-item-price {
-  color: #41a451;
+  color: var(--theme-highlight);
   font-size: 18px;
   display: block;
   margin: 10px;
@@ -336,7 +336,7 @@ input::placeholder {
   display: block;
   font-weight: 400;
   margin: 10px;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   padding: 1px 150px;
 }
 .res-menu-item-name > a {
@@ -344,7 +344,7 @@ input::placeholder {
   text-decoration: none;
 }
 .res-menu-item-name > a:hover {
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .res-menu-item-caption {
   display: block;
@@ -410,7 +410,7 @@ input::placeholder {
 }
 .close-modal:hover,
 .close-modal:focus {
-  color: #41a451;
+  color: var(--theme-highlight);
   text-decoration: none;
   cursor: pointer;
 }
@@ -445,7 +445,7 @@ input::placeholder {
 }
 .prev-slide:hover,
 .next-slide:hover {
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 /* Recent News Section  */
 .recent-news-section {
@@ -454,7 +454,7 @@ input::placeholder {
 }
 .recent-news-heading {
   text-align: center;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
   font-size: 30px;
   margin-bottom: 90px;
 }
@@ -486,7 +486,7 @@ input::placeholder {
   text-decoration: none;
 }
 .item-date > a:hover {
-  background-color: #41a451;
+  background-color: var(--theme-highlight);
 }
 .item-title {
   display: block;
@@ -498,12 +498,12 @@ input::placeholder {
   line-height: 36px;
   font-weight: 400;
   color: black;
-  font-family: "PT Serif", serif;
+  font-family: var(--theme-sec-font);
 
   text-decoration: none;
 }
 .item-title > a:hover {
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .item-caption {
   margin-top: 20px;
@@ -524,7 +524,7 @@ input::placeholder {
 }
 .item-link > a:hover {
   text-decoration: none;
-  color: #41a451;
+  color: var(--theme-highlight);
 }
 .recent-news-container {
   max-width: 80vw;
@@ -542,13 +542,37 @@ input::placeholder {
 }
 .active,
 .recent-news-dot:hover {
-  background-color: #41a451;
+  background-color: var(--theme-highlight);
 }
-/*@media only screen and (min-width: 176px) and (max-width: 360px) {
-  body {
-    background: green;
+@media only screen and (max-width: 1024px) {
+  .presentation {
+    height: 90vh;
   }
-}*/
+  .item-links > img {
+    width: 280px;
+  }
+  .about {
+    padding: 50px;
+    padding-top: 200px;
+  }
+  .about__right {
+    padding-left: 50px;
+  }
+  .item-title {
+    width: 300px;
+  }
+  .item-caption {
+    width: 250px;
+  }
+  .recent-news-container {
+    margin: 20px;
+  }
+  .recent-news-item {
+    flex: 1;
+    padding: 15px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .presentation {
     height: 400px;
@@ -771,228 +795,35 @@ input::placeholder {
     margin-bottom: 400px;
   }
 }
-/*@media only screen and (min-width: 501x) and (max-width: 767px) {
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .presentation {
-    height: 400px;
-    justify-content: center;
-  }
+@media only screen and (max-width: 420px) {
   .background {
     position: absolute;
     margin-top: 50px;
-    width: 100%;
     height: 300px;
     background-size: cover;
     z-index: -1;
   }
-  .banner-heading {
-    font-size: 50px;
-  }
-  .banner-hr {
-    width: 100px;
-    background-color: white;
-  }
-  .banner-caption {
-    margin: 0 20px;
-    font-size: 16px;
-  }
-  .cta-form {
-    top: -100px;
-    padding: 0px;
-    z-index: 1;
-  }
-  .form-block {
-    margin: 10px;
-    padding: 0px;
-    margin-top: 50px;
-    font-size: 25px;
-    border-radius: 5px;
-    flex-direction: column;
-    width: 95%;
-  }
-  .form-cta {
-    width: inherit;
-  }
-  .cta-form-container {
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0px;
-    background-color: snow;
-    margin: 0 10px;
-  }
-  .label-heading {
-    margin: 10px 0px;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  .label-input {
-    height: 30px;
-    width: 100%;
-    border-bottom: 1px solid gray;
-  }
-  #ctaBook {
-    text-transform: uppercase;
-    font-size: 14px;
-    width: 50%;
-    margin: 10px 0px;
-  }
-  .about {
-    flex-direction: column;
-    padding-top: 90px;
-    padding-left: 10px;
-    padding-bottom: 50px;
-  }
-  .about > div {
-    margin: 10px;
-    padding: 0px;
-    justify-content: center;
-  }
-  .about__left {
-    margin-left: 110px !important;
-    padding-left: 0px;
-  }
-  .about__right {
-    margin-left: 100px !important;
+  .about-back-img {
     width: 340px;
   }
-  .about-back-img {
-    width: 360px;
-    position: relative;
-    z-index: 1;
-    margin-top: 120px;
-    margin-bottom: 20px;
-  }
   .about-img {
-    width: 70%;
-    left: 50px;
-    top: 75px;
+    top: 79px;
   }
-  .about-sign {
-    margin-top: 20px;
+  .about__left {
+    margin-left: 50px !important;
   }
-  .about-heading {
-    font-size: 30px;
-  }
-  .featured-head {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .featured-caption {
-    font-size: 15px;
-    margin: 4% 10%;
-    max-width: 90%;
-  }
-  .featured-items {
-    flex-direction: column;
-    margin: 10px;
+
+  .about__right {
+    margin-left: 50px !important;
+    width: 330px;
   }
   .item-links > img {
-    width: 360px;
-  }
-  .dish-name {
-    margin-top: 5px;
-    font-size: 22px;
-  }
-  .dish-price {
-    font-size: 20px;
-    margin: 10px;
-  }
-  .res-menu-heading {
-    font-size: 30px;
-  }
-  .res-menu-container {
-    margin: 0px 20px;
-    flex-direction: column;
-    width: 89%;
-  }
-  .res-menu-tab-head {
-    padding: 20px 0px;
-    margin: 5px;
-  }
-  .top-caption {
-    margin: 20px;
-  }
-  .res-menu-captions {
-    margin: 0px 20px;
-    padding: 10px;
-    width: 85%;
-  }
-  .res-menu-item-price {
-    font-size: 18px;
-    margin: 1px;
-    padding: 5px 0px;
-  }
-  .res-menu-item-name {
-    font-size: 20px;
-    margin: 1px;
-    padding: 5px 0px;
-  }
-  .res-menu-item-caption {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 1px;
-    text-align: left;
-    margin-bottom: 50px;
-    padding: 5px 0px;
-  }
-  .gallary-container {
-    width: 100%;
-  }
-  .gallary-row {
-    flex-direction: column;
-  }
-  .gallary-item-row-one {
-    width: 100vw;
-  }
-  .gallary-item-row-two {
-    width: 100vw;
-  }
-  .gallary-modal {
-    display: none;
-    padding: absolute;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #323232;
-  }
-  .modal-content {
-    position: relative;
-    margin: 1px;
-    padding: 0;
-    width: 90%;
-  }
-  .gallarySlides > img {
-    width: 70%;
-    margin: 10% 20%;
-  }
-  .recent-news-heading {
-    font-size: 25px;
-    margin-bottom: 60px;
-  }
-  .recent-news-items {
-    flex-direction: column;
-  }
-  .item-date {
-    margin-top: 1px;
-    margin: 15px 10px;
+    width: 300px;
   }
   .item-title {
-    margin-top: 10px;
-    margin: 15px 10px;
+    width: 250px;
   }
-  .item-caption {
-    margin-top: 20px;
-    margin: 15px 10px;
-  }
-  .item-link {
-    margin: 15px 10px;
-    margin-top: 0px;
-  }
-  .item-link > a {
-    margin-bottom: 400px;
+  .item-title > a {
+    font-size: 20px;
   }
 }
-*/
