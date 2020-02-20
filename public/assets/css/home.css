@@ -544,7 +544,7 @@ input::placeholder {
 .recent-news-dot:hover {
   background-color: #41a451;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .presentation {
     height: 400px;
     justify-content: center;

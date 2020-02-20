@@ -149,7 +149,7 @@
   border: 1px solid rgb(196, 196, 196);
   border-radius: 5px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .presentation {
     height: 200px;
   }
@@ -209,15 +209,14 @@
     margin: 10px 0;
   }
   .input-form {
-    border: 1px solid black;
-    width: 300px;
-    border: none;
+    width: 85%;
     font-size: 20px;
   }
   #messageInput {
     font-size: 20px;
   }
   #sentButton {
+    width: 90%;
     padding: 20px 150px;
   }
 }

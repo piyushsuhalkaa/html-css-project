@@ -202,7 +202,7 @@ body {
 
 /*Footer CSS end*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   html,
   body {
     font-size: 20px;
