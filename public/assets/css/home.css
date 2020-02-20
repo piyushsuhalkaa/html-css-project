@@ -334,7 +334,7 @@ input::placeholder {
   color: black;
   font-size: 25px;
   display: block;
-  font-weight: 700;
+  font-weight: 400;
   margin: 10px;
   font-family: "PT Serif", serif;
   padding: 1px 150px;
@@ -348,7 +348,7 @@ input::placeholder {
 }
 .res-menu-item-caption {
   display: block;
-  color: black;
+  color: rgba(21, 21, 21, 0.8);
   font-size: 14px;
   margin: 10px;
   margin-bottom: 50px;
@@ -578,9 +578,12 @@ input::placeholder {
     padding: 0px;
     margin-top: 50px;
     font-size: 25px;
-    width: 95%;
     border-radius: 5px;
     flex-direction: column;
+    width: 95%;
+  }
+  .form-cta {
+    width: inherit;
   }
   .cta-form-container {
     flex-direction: column;
@@ -617,16 +620,15 @@ input::placeholder {
     justify-content: center;
   }
   .about__left {
-    margin-left: 110px;
+    margin-left: 110px !important;
     padding-left: 0px;
-    margin-left: 0px;
   }
   .about__right {
-    width: 500px;
-    margin: 0px;
+    margin-left: 100px !important;
+    width: 340px;
   }
   .about-back-img {
-    width: 400px;
+    width: 360px;
     position: relative;
     z-index: 1;
     margin-top: 120px;
@@ -635,7 +637,7 @@ input::placeholder {
   .about-img {
     width: 70%;
     left: 50px;
-    top: 70px;
+    top: 75px;
   }
   .about-sign {
     margin-top: 20px;
@@ -645,18 +647,19 @@ input::placeholder {
   }
   .featured-head {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   .featured-caption {
     font-size: 15px;
-    margin: 10%;
+    margin: 4% 10%;
     max-width: 90%;
   }
   .featured-items {
     flex-direction: column;
-    margin: 50px 30px;
+    margin: 10px;
   }
   .item-links > img {
-    width: 75vw;
+    width: 360px;
   }
   .dish-name {
     margin-top: 5px;
@@ -670,9 +673,9 @@ input::placeholder {
     font-size: 30px;
   }
   .res-menu-container {
-    margin: 0px 40px;
+    margin: 0px 20px;
     flex-direction: column;
-    width: 75%;
+    width: 89%;
   }
   .res-menu-tab-head {
     padding: 20px 0px;
@@ -682,27 +685,27 @@ input::placeholder {
     margin: 20px;
   }
   .res-menu-captions {
-    margin: 0px 40px;
+    margin: 0px 20px;
     padding: 10px;
-    width: 70vw;
+    width: 85%;
   }
   .res-menu-item-price {
-    font-size: 14px;
-    margin: 1px;
-    padding: 1px;
-  }
-  .res-menu-item-name {
     font-size: 18px;
     margin: 1px;
-    padding: 1px;
+    padding: 5px 0px;
+  }
+  .res-menu-item-name {
+    font-size: 20px;
+    margin: 1px;
+    padding: 5px 0px;
   }
   .res-menu-item-caption {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 25px;
     margin: 1px;
     text-align: left;
     margin-bottom: 50px;
-    padding: 1px;
+    padding: 5px 0px;
   }
   .gallary-container {
     width: 100%;

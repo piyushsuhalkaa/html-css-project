@@ -220,6 +220,7 @@ body {
   }
   .responsive-header-logo {
     margin-left: 42px;
+    width: 100px;
   }
   .reponsive-nav {
     background-color: #444141;
