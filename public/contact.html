@@ -11,8 +11,8 @@
       sizes="16x16"
       type="image/png"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/9364c8c1fa.css" />
   </head>
   <body>
@@ -122,15 +122,17 @@
           required
         />
         <input class="input-form" type="email" placeholder="Email" required />
-        <input class="input-form" type="tel" placeholder="Phone" required />
+        <input
+          class="input-form"
+          type="tel"
+          placeholder="Phone"
+          maxlength="10"
+          required
+        />
         <textarea
           id="messageInput"
           class="input-form"
-          type="text"
-          wrap="virtual"
           placeholder="Your Message"
-          cols="42"
-          rows="5"
           required
         ></textarea>
         <button id="sentButton" type="submit">Send</button>
@@ -212,6 +214,6 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>
