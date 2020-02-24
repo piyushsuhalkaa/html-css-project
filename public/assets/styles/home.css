@@ -102,9 +102,9 @@ input::placeholder {
 
 #ctaBook {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   padding: 15px 20px;
-  font-family: var(--theme-sec-font);
+  font-family: var(--theme-pri-font);
   font-size: 16px;
   background-color: #323232;
   cursor: pointer;

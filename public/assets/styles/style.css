@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 .header-logo {
-  padding: 20px;
+  margin-left: 20px;
   display: flex;
   width: 140px;
   justify-content: flex-start;
@@ -62,13 +62,17 @@ body {
   justify-content: center;
 }
 .header-nav-link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  color: whitesmoke;
-  font-size: 16px;
-  font-weight: 600;
+  color: white;
   font-family: var(--theme-pri-font);
   text-transform: uppercase;
-  margin: 10px 30px;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin: 0px 30px;
 }
 .active-nav-bar {
   color: var(--theme-highlight);
@@ -77,17 +81,18 @@ body {
   color: var(--theme-highlight);
 }
 #ctaHeader {
-  padding: 10px;
+  margin-right: 20px;
+  padding: 8px 25px;
   display: inline-block;
   size: 10px;
   line-height: 20px;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid white;
   font-family: var(--theme-pri-font);
-  margin: 20px;
+  box-shadow: 0 0 15px rgba(21, 21, 21, 0.15);
 }
 #ctaHeader:hover {
   outline: none;
@@ -122,8 +127,7 @@ body {
 /* Footer */
 .footer {
   background-color: var(--theme-background);
-  padding: 50px;
-  height: 450px;
+  padding: 120px 0 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,25 +135,28 @@ body {
 }
 .footer-logo {
   display: block;
+  margin-bottom: 50px;
 }
 .footer-links {
   display: flex;
   align-items: center;
   padding: 0;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 .vertical-line {
   height: 30px;
   border-right: 1px solid white;
 }
 .footer-link {
-  margin: 5px;
+  margin: 0 5px;
   text-decoration: none;
   list-style: none;
 }
 .footer-link > a {
   display: flex;
   color: white;
-  margin: 10px;
+  margin: 0 10px;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -167,6 +174,10 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+}
+.footer-social-link {
+  margin-right: 25px;
 }
 .footer-social-link > a > i {
   font-size: 25px;
@@ -231,7 +242,6 @@ body {
     font-size: 17px;
     display: block;
   }
-
   .reponsive-nav a.icon,
   .icon:hover {
     background: #444141;
