@@ -45,6 +45,7 @@ body {
   height: 91px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 15px rgba(21, 21, 21, 0.2);
 }
 .header-logo {
   margin-left: 20px;

@@ -70,7 +70,7 @@
 .cta-form-line {
   border-right: 1px solid #e7e7e7;
   flex: 1;
-  margin: 0px 30px;
+  margin-right: 30px;
 }
 .label-heading {
   font-size: 15px;
@@ -97,9 +97,22 @@ input::placeholder {
 }
 
 .select-label {
-  width: 35px;
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  font-size: 18px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../images/down-arrow.png") 90% / 20% no-repeat #fff;
+  background-size: contain;
 }
-
+.date-selector {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 #ctaBook {
   text-transform: uppercase;
   font-weight: 500;
@@ -135,7 +148,7 @@ input::placeholder {
 }
 .about__left {
   position: relative;
-  margin: 5px;
+  margin-left: 40px;
 }
 .about-back-img {
   padding-top: 0px;
@@ -149,29 +162,34 @@ input::placeholder {
   left: 60px;
 }
 .about__right {
-  padding-left: 160px;
+  padding-left: 100px;
 }
 .about-heading {
   font-size: 45px;
   line-height: 54px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-top: 0px;
   font-weight: bold;
   font-family: var(--theme-sec-font);
 }
 .about-caption {
   font-weight: 200;
-  margin: 10px auto;
+  margin-bottom: 15px;
   font-size: 15px;
+  max-width: 500px;
   color: rgba(21, 21, 21, 0.8);
   line-height: 25px;
+}
+.about-sign {
+  margin-top: 20px;
 }
 /*About Element CSS End*/
 
 /*Featured CSS Starts*/
 .featured {
   background-color: white;
-  padding: 50px 0px;
+  padding-top: 115px;
+  padding-bottom: 90px;
   text-align: center;
 }
 .featured-top {
@@ -181,24 +199,28 @@ input::placeholder {
   align-items: center;
 }
 .featured-head {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-family: var(--theme-sec-font);
 }
 .featured-caption {
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 25px;
   font-size: 15px;
-  margin-bottom: 20px;
-  color: rgba(21, 21, 21, 0.8);
+  margin-bottom: 40px;
+  color: rgba(21, 21, 21, 0.7);
   max-width: 700px;
 }
 .featured-items {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .featured-items > div {
-  padding: 18px;
+  padding: 0 18px;
 }
 .featured-item-1,
 .featured-item-2,
@@ -206,7 +228,7 @@ input::placeholder {
   position: relative;
 }
 .item-links > img {
-  width: 380px;
+  width: 355px;
 }
 .item-links > a {
   text-decoration: none;
@@ -217,19 +239,26 @@ input::placeholder {
   font-weight: bolder;
   margin-top: 15px;
   text-decoration: none;
-  font-family: var(--theme-sec-font);
-  color: black;
+  margin-bottom: 0px;
+}
+.dish-price {
+  margin-top: 10px;
 }
 
 .link-normal-dish-name {
-  margin-top: 20px;
   text-decoration: none;
+  font-family: var(--theme-sec-font);
   color: black;
+  font-weight: 400;
+  line-height: 36px;
 }
 .link-normal-dish-price {
-  margin-top: 20px;
   text-decoration: none;
   color: var(--theme-highlight);
+  font-family: var(--theme-pri-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
 }
 .image {
   opacity: 1;
@@ -239,7 +268,6 @@ input::placeholder {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-
 .middle {
   transition: 0.5s ease;
   opacity: 0;
@@ -265,21 +293,22 @@ input::placeholder {
 .item-links:hover .image {
   opacity: 0.6;
 }
-
 .item-links:hover .middle {
   opacity: 1;
 }
-
 /* Restaurant Menu Starts */
 .res-menu {
-  padding: 50px 0;
+  padding: 115px 0;
   background-color: whitesmoke;
   padding-bottom: 100px;
 }
 .res-menu-heading {
-  font-weight: bolder;
+  font-weight: 700;
+  line-height: 54px;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 60px;
   font-family: var(--theme-sec-font);
 }
 .res-menu-container {
@@ -287,8 +316,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 84%;
-  margin: 0 8%;
+  margin: 0 150px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -299,6 +327,7 @@ input::placeholder {
   outline: none;
   cursor: pointer;
   font-size: 18px;
+  line-height: 0;
   font-weight: bold;
   text-transform: uppercase;
   flex: 1;
@@ -306,7 +335,7 @@ input::placeholder {
   padding: 50px 0px;
 }
 .top-caption {
-  margin: 80px;
+  margin: 45px 80px;
 }
 .tab-head-first {
   margin-left: 30%;
@@ -316,28 +345,29 @@ input::placeholder {
 }
 .res-menu-captions {
   background-color: white;
-  margin: 0 8%;
+  margin: 0 150px;
   padding: 10px;
-  width: 83%;
+  margin-bottom: px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: justify;
+}
+.menu-tab-content {
+  padding: 0px 160px;
 }
 .res-menu-item-price {
   color: var(--theme-highlight);
   font-size: 18px;
   display: block;
-  margin: 10px;
-  padding: 1px 150px;
+  margin: 10px 0;
 }
 .res-menu-item-name {
   color: black;
   font-size: 25px;
   display: block;
   font-weight: 400;
-  margin: 10px;
+  margin: 10px 0;
   font-family: var(--theme-sec-font);
-  padding: 1px 150px;
 }
 .res-menu-item-name > a {
   color: black;
@@ -346,13 +376,15 @@ input::placeholder {
 .res-menu-item-name > a:hover {
   color: var(--theme-highlight);
 }
+.res-menu-item-name > a:active {
+  color: var(--theme-highlight);
+}
 .res-menu-item-caption {
   display: block;
   color: rgba(21, 21, 21, 0.8);
   font-size: 14px;
-  margin: 10px;
+  margin: 10px 0;
   margin-bottom: 50px;
-  padding: 1px 150px;
 }
 .res-menu-tab-head:hover {
   color: rgb(255, 255, 255);
@@ -449,31 +481,31 @@ input::placeholder {
 }
 /* Recent News Section  */
 .recent-news-section {
-  padding: 50px 0px;
-  margin-bottom: 30px;
+  padding: 115px 0px;
 }
-.recent-news-heading {
+.recent-news-heading > h2 {
+  font-size: 45px;
   text-align: center;
   font-family: var(--theme-sec-font);
-  font-size: 30px;
-  margin-bottom: 90px;
+  margin: 0;
 }
 .recent-news {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .recent-news-items {
   display: flex;
   justify-content: space-between;
 }
 .recent-news-container {
-  margin: 10px 0px;
+  margin: 40px 150px;
+  width: 82%;
 }
 .recent-news-item {
   flex: 1;
-  padding: 20px;
+  padding: 33px 10px;
 }
 .item-date {
-  margin: 10px;
+  margin-top: 10px;
   display: block;
 }
 .item-date > a {
@@ -499,7 +531,6 @@ input::placeholder {
   font-weight: 400;
   color: black;
   font-family: var(--theme-sec-font);
-
   text-decoration: none;
 }
 .item-title > a:hover {
@@ -507,6 +538,7 @@ input::placeholder {
 }
 .item-caption {
   margin-top: 20px;
+  width: 350px;
   display: block;
   color: rgba(21, 21, 21, 0.8);
   font-size: 15px;
@@ -515,7 +547,7 @@ input::placeholder {
   margin-bottom: 30px;
 }
 .item-link {
-  margin-top: 30px;
+  position: absolute;
 }
 .item-link > a {
   text-decoration: none;
@@ -526,19 +558,15 @@ input::placeholder {
   text-decoration: none;
   color: var(--theme-highlight);
 }
-.recent-news-container {
-  max-width: 80vw;
-  margin-left: 10vw;
-}
+
 .recent-news-dot {
   cursor: pointer;
   height: 12px;
   width: 12px;
-  margin: 0 3px;
+  margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
 .active,
 .recent-news-dot:hover {

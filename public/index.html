@@ -50,7 +50,10 @@
         <li><a class="header-nav-link" href="about.html">About</a></li>
         <li><a class="header-nav-link" href="contact.html">Contacts</a></li>
       </ul>
-      <button id="ctaHeader">Book Now</button>
+      <a>
+        <button id="ctaHeader">Book Now</button>
+      </a>
+      
     </section>
     <!--Banner Section Start-->
     <section class="presentation">
@@ -91,18 +94,17 @@
             <div class="cta-form-line"></div>
             <div class="cta-form-item">
               <label class="label-heading">Date </label>
-              <input class="label-input" type="date" required />
+              <input class="label-input date-selector" type="date" required />
             </div>
             <div class="cta-form-line"></div>
             <div class="cta-form-item" style="width:200px;">
               <label class="label-heading">No. of People</label>
               <select
                 class="select-label"
-                style="width: 130px; margin-top: 25px; height: 25px; font-size: 18px;"
               required
                 >
                 <option value="1">1</option>
-                <option value="2">2</option>
+                <option value="2" selected >2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -204,9 +206,7 @@
               <div class="text">Order Now</div>
             </div>
             <h1 class="dish-name">
-              <a class="link-normal-dish-name" style="color: black;" href="#"
-                ><strong>Gelato</strong></a
-              >
+              <a class="link-normal-dish-name" href="#">Gelato</a>
             </h1>
             <h2 class="dish-price">
               <a class="link-normal-dish-price" href="#">$ 3</a>
