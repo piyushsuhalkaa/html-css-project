@@ -86,8 +86,8 @@
   color: gray;
 }
 .about-caption {
-  font-size: 15px;
-  color: black;
+  font-size: 12px;
+  color: rgba(21, 21, 21, 0.8);
   font-weight: 300;
 }
 
@@ -146,7 +146,7 @@
 .feature-item-name > a {
   text-decoration: none;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   font-family: var(--theme-sec-font);
   color: black;
 }
@@ -174,19 +174,21 @@
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
   height: 600px;
   width: 100%;
   z-index: -1;
 }
 .testimonial-heading-container {
-  padding-top: 90px;
+  padding-top: 50px;
 }
 .testimonial-heading {
   display: flex;
   justify-content: center;
   font-size: 45px;
   color: white;
-  font-weight: bolder;
+  font-weight: 700;
   font-family: var(--theme-sec-font);
 }
 .testimonial-container {
@@ -206,6 +208,7 @@
   font-size: 20px;
   max-width: 800px;
   text-align: center;
+  font-style: italic;
 }
 .testimonial-author {
   font-size: 30px;
@@ -255,12 +258,19 @@
 .awards-content > a > img {
   margin: 15px;
 }
-
 .awards-content > a > img:hover {
   background-color: white;
   box-shadow: 5px 5px 30px grey;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 1279px) {
+}
+@media (max-width: 1023px) {
+}
+@media (max-width: 786px) {
+  
+  }
+}
+@media (max-width: 420px) {
   .presentation {
     height: 200px;
   }
@@ -284,21 +294,21 @@
   }
   .about-heading {
     margin-top: 5px;
-    font-size: 30px;
+    font-size: 28px;
   }
   .about-quote {
     font-size: 22px;
   }
   .about-caption {
     padding: 0px 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .feature-section {
     padding: 50px 20px;
   }
   .feature-heading {
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 28px;
+    font-weight: 500;
   }
   .feature-item-container {
     flex-direction: column;
@@ -306,31 +316,35 @@
   .feature-row {
     flex-direction: column;
   }
+  .feature-item-image {
+    width: 50px;
+  }
   .feature-item-name {
     text-align: center;
     margin: 0px;
+    font-size: 22px;
   }
   .feature-item-caption {
     text-align: center;
   }
-  .testimonial-section {
+  .testimonial-background {
     height: 600px;
+    width: 100%;
+    z-index: -1;
   }
   .testimonial-container {
     margin: 0px;
   }
   .testimonial-heading {
-    font-size: 40px;
+    font-size: 28px;
   }
   .testimonial-item {
     margin: 30px;
     text-align: justify;
   }
   .testimonial-caption {
-    font-size: 16px;
-  }
-  .awards-head {
-    font-size: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
   .testimonial-author {
     font-size: 18px;
@@ -339,7 +353,10 @@
     padding: 0px 20px;
   }
   .award-section {
-    padding: 0px;
+    padding: 50px;
+  }
+  .awards-head {
+    font-size: 30px;
   }
   .awards-heading {
     padding: 0px;
@@ -353,8 +370,6 @@
     margin: 10px;
     width: 170px;
   }
-}
-@media only screen and (max-width: 420px) {
   .feature-heading-container {
     padding: 10px;
   }

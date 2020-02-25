@@ -100,16 +100,15 @@
 /* Form */
 .form-section {
   background-color: whitesmoke;
-  padding: 50px;
+  padding: 110px 0;
 }
 .form-header {
   text-align: center;
-  padding: 50px;
 }
 .form-heading {
   font-size: 36px;
   font-weight: 700;
-  margin: 200px;
+  margin: 30px;
   font-family: var(--theme-sec-font);
 }
 .form-container {
@@ -136,7 +135,7 @@
   background-image: none;
   border-radius: 5px;
   -webkit-appearance: none;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border: 1px solid #c4c4c4;
 }
 #sentButton {
@@ -148,7 +147,7 @@
   color: white;
   margin-bottom: 30px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #sentButton:hover {
   background-color: black;
@@ -158,14 +157,32 @@
   white-space: nowrap;
   font-size: 16px;
   height: 200px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
 #messageInput::placeholder {
-  font-family: font-family: var(--theme-pri-font);
+  font-family: var(--theme-pri-font);
 }
-@media (max-width: 500px) {
+@media (max-width: 1279px) {
+  .contact-description {
+    margin: 0px 20px;
+    padding: 100px 0px;
+  }
+  .contact-description > div {
+    padding: 20px 40px;
+  }
+  .contact-icon {
+    height: 80px;
+  }
+  .form-section {
+    padding: 100px 0;
+  }
+  .form-heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
   .presentation {
     height: 200px;
   }
@@ -211,7 +228,7 @@
     height: 250px !important;
   }
   .form-section {
-    padding: 10px;
+    padding: 100px 0;
   }
   .form-header {
     padding: 20px;
@@ -225,19 +242,30 @@
     margin: 10px 0;
   }
   .input-form {
-    width: 85%;
+    width: 65%;
     font-size: 15px;
   }
   #messageInput {
     font-size: 15px;
   }
   #sentButton {
-    width: 90%;
+    width: 30%;
     padding: 20px;
   }
 }
 @media (max-width: 420px) {
   .contact-description {
     padding: 0px;
+  }
+  .input-form {
+    width: 65%;
+    font-size: 15px;
+  }
+  #messageInput {
+    font-size: 15px;
+  }
+  #sentButton {
+    width: 76%;
+    padding: 20px;
   }
 }
