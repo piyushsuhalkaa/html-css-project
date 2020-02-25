@@ -889,6 +889,7 @@ input::placeholder {
     width: 340px;
   }
   .about {
+    padding-bottom: 15px;
     flex-direction: column;
   }
   .about__left {
