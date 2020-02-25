@@ -17,22 +17,26 @@
   </head>
   <body>
     <!-- Header Section  -->
-    <section class="responive-header">
-      <div class="reponsive-nav">
+    <section class="mobile-header">
+      <div class="mobile-navigation">
         <a href="about.html">
           <img
-            class="responsive-header-logo"
+            class="mobile-header-logo"
             src="./assets/images/logo.png"
             alt=""
           />
         </a>
-        <div id="navLinks">
+        <div id="navigationLinks">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a class="nav-active" href="#">Contacts</a>
-          <button id="ctaHeader" style="margin: 10px; ">Book Now</button>
+          <a class="navigation-active" href="#">Contacts</a>
+          <button id="mobileBookingBtn">Book Now</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="navigationFunction()"
+        >
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -41,14 +45,18 @@
       <a href="index.html">
         <img class="header-logo" src="./assets/images/logo.png" alt="" />
       </a>
-      <ul class="header-nav-links">
+      <ul class="header-navigation-links">
         <li>
-          <a class="header-nav-link" href="index.html">Home</a>
+          <a class="header-navigation-link" href="index.html">Home</a>
         </li>
-        <li><a class="header-nav-link" href="about.html">About</a></li>
-        <li><a class="header-nav-link active-nav-bar" href="#">Contacts</a></li>
+        <li><a class="header-navigation-link" href="about.html">About</a></li>
+        <li>
+          <a class="header-navigation-link active-navigation-bar" href="#"
+            >Contacts</a
+          >
+        </li>
       </ul>
-      <button id="ctaHeader">Book Now</button>
+      <button id="headerBookingBtn">Book Now</button>
     </section>
     <!--Banner Section Start-->
     <section class="presentation">
@@ -186,8 +194,8 @@
       </div>
     </section>
     <script>
-      function navFunction() {
-        var x = document.getElementById("navLinks");
+      function navigationFunction() {
+        var x = document.getElementById("navigationLinks");
         if (x.style.display === "block") {
           x.style.display = "none";
         } else {

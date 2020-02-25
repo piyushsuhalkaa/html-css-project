@@ -51,11 +51,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-function menuResponsiveModal() {
-  console.log("Click Detected");
-  document.getElementById("responsive-menu").style.display = "block";
-}
 /* 
 
 Gallary Code 

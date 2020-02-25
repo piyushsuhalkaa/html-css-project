@@ -33,7 +33,7 @@ body {
   color: white;
 }
 /* Header Section*/
-.responive-header {
+.mobile-header {
   display: none;
 }
 .header {
@@ -55,14 +55,14 @@ body {
   align-items: center;
   flex: 1;
 }
-.header-nav-links {
+.header-navigation-links {
   flex: 8;
   list-style: none;
   display: flex;
   padding: 0px 40px;
   justify-content: center;
 }
-.header-nav-link {
+.header-navigation-link {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -75,13 +75,13 @@ body {
   font-weight: 500;
   margin: 0px 30px;
 }
-.active-nav-bar {
+.active-navigation-bar {
   color: var(--theme-highlight);
 }
-.header-nav-link:hover {
+.header-navigation-link:hover {
   color: var(--theme-highlight);
 }
-#ctaHeader {
+#headerBookingBtn {
   margin-right: 20px;
   padding: 8px 25px;
   display: inline-block;
@@ -95,13 +95,27 @@ body {
   font-family: var(--theme-pri-font);
   box-shadow: 0 0 15px rgba(21, 21, 21, 0.15);
 }
-#ctaHeader:hover {
+#headerBookingBtn:hover {
   outline: none;
   background-color: black;
   color: snow;
   border: 1px solid black;
 }
-
+#mobileBookingBtn {
+  margin: 10px;
+  margin-top: 14px;
+  padding: 8px 25px;
+  display: inline-block;
+  size: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid white;
+  font-family: var(--theme-pri-font);
+  box-shadow: 0 0 15px rgba(21, 21, 21, 0.15);
+}
 /* Top Button*/
 #topBtn {
   display: none;
@@ -224,25 +238,26 @@ body {
   .header {
     display: none;
   }
-  .responive-header {
+  .mobile-header {
     display: block;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    height: 10px;
     z-index: 3;
   }
-  .responsive-header-logo {
+  .mobile-header-logo {
     margin-left: 42px;
     width: 100px;
   }
-  .reponsive-nav {
+  .mobile-navigation {
     background-color: #444141;
     position: relative;
     width: 100%;
   }
-  .reponsive-nav #navLinks {
+  .mobile-navigation #navigationLinks {
     display: none;
   }
-  .reponsive-nav a {
+  .mobile-navigation a {
     color: white;
     font-family: var(--theme-pri-font);
     padding: 5px 16px;
@@ -251,7 +266,7 @@ body {
     font-size: 17px;
     display: block;
   }
-  .reponsive-nav a.icon,
+  .mobile-navigation a.icon,
   .icon:hover {
     background: #444141;
     display: block;
@@ -261,7 +276,7 @@ body {
     font-size: 30px;
     outline: none;
   }
-  .nav-active {
+  .navigation-active {
     color: white;
     background-color: var(--theme-highlight);
   }
