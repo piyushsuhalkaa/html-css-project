@@ -1,4 +1,4 @@
-.presentation {
+.main-banner {
   position: relative;
   height: 570px;
   display: flex;
@@ -183,7 +183,7 @@
   }
 }
 @media (max-width: 768px) {
-  .presentation {
+  .main-banner {
     height: 200px;
   }
   .background {
