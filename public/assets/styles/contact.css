@@ -119,13 +119,25 @@
   justify-content: center;
 }
 .input-form {
+  font-family: var(--theme-pri-font);
   width: 600px;
-  height: 40px;
+  height: 20px;
   padding: 10px;
-  border: 1px solid rgb(196, 196, 196);
   border-radius: 5px;
   margin: 10px;
-  font-size: 16px;
+  font-size: 14px;
+  display: block;
+  padding: 16px 25px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #151515;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  transition: .3s ease-in-out;
+  border: 1px solid #c4c4c4;
 }
 #sentButton {
   font-size: 18px;
@@ -146,10 +158,14 @@
   white-space: nowrap;
   font-size: 16px;
   height: 200px;
-  border: 1px solid rgb(196, 196, 196);
+  transition: .3s ease-in-out;
+  border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
-@media only screen and (max-width: 500px) {
+#messageInput::placeholder {
+  font-family: font-family: var(--theme-pri-font);
+}
+@media (max-width: 500px) {
   .presentation {
     height: 200px;
   }
@@ -210,17 +226,17 @@
   }
   .input-form {
     width: 85%;
-    font-size: 20px;
+    font-size: 15px;
   }
   #messageInput {
-    font-size: 20px;
+    font-size: 15px;
   }
   #sentButton {
     width: 90%;
-    padding: 20px 150px;
+    padding: 20px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media (max-width: 420px) {
   .contact-description {
     padding: 0px;
   }
