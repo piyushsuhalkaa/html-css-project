@@ -69,7 +69,7 @@
     </section>
     <!-- Top Function Button -->
     <section class="top-function">
-      <button onclick="topFunction()" id="topBtn">⇧</button>
+      <button onclick="topFunction()" id="topBtn"><i class="fa fa-chevron-up"></i></button>
     </section>
     <!--Reservation Form-->
     <section class="cta-form">
@@ -78,12 +78,13 @@
           <div class="cta-form-container">
             <div class="cta-form-item">
               <label class="label-heading">Name</label>
-              <input class="label-input" type="text" placeholder="Your name" required />
+              <input pattern="[A-Za-z] {20}{30}"class="label-input" type="text" placeholder="Your name" required />
             </div>
             <div class="cta-form-line"></div>
             <div class="cta-form-item">
               <label class="label-heading">Phone</label>
               <input
+                pattern="[0-9] {10}"
                 class="label-input"
                 type="tel"
                 placeholder="Your phone Number"
