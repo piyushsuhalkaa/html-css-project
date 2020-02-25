@@ -858,6 +858,30 @@ input::placeholder {
   .cta-form {
     top: -115px;
   }
+  .label-heading {
+    margin-top: 20px;
+    font-size: 18px;
+    margin: 5px -40px;
+  }
+  .label-input {
+    height: 30px;
+    width: 130%;
+    border-bottom: 1px solid gray;
+    margin: 0 -40px;
+    margin-bottom: 15px;
+  }
+  #ctaBook {
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 90%;
+    margin: 10px -40px;
+  }
+  .select-label {
+    border-bottom: 1px solid gray;
+    width: 130%;
+    border-radius: 0;
+    margin: 10px -40px;
+  }
   .form-block {
     padding: 10px 50px;
   }
@@ -902,12 +926,18 @@ input::placeholder {
   .featured-items {
     flex-direction: column;
   }
+  .featured {
+    padding: 50px 0;
+  }
   .featured-head {
     font-size: 28px;
     line-height: 42px;
   }
   .featured-caption {
     margin: 0 20px;
+  }
+  .res-menu {
+    padding: 50px 0;
   }
   .res-menu-heading {
     font-size: 28px;
@@ -952,6 +982,9 @@ input::placeholder {
   }
   .gallary-item-row-two {
     width: 100vw;
+  }
+  .recent-news-section {
+    padding: 50px 0;
   }
   .recent-news-container {
     margin: 0px 2px;
