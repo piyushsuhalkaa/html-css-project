@@ -215,7 +215,7 @@ body {
 .footer-caption > a:hover {
   color: var(--theme-highlight);
 }
-@media (min-width: 500px) {
+@media (max-width: 1023px) {
   html,
   body {
     font-size: 20px;
@@ -225,15 +225,9 @@ body {
   .header {
     display: none;
   }
-  .responive-header {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-  }
   .responsive-header-logo {
     margin-left: 42px;
-    width: 100px;
+    width: 120px;
   }
   .reponsive-nav {
     background-color: #444141;
@@ -309,7 +303,7 @@ body {
     visibility: hidden;
   }
 }
-@media (min-width: 360px) {
+@media (max-width: 768px) {
   html,
   body {
     font-size: 20px;
