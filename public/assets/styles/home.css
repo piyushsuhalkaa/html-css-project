@@ -800,7 +800,7 @@ input::placeholder {
   #ctaBook {
     text-transform: uppercase;
     font-size: 14px;
-    width: 85%;
+    width: 100%;
     margin: 10px -40px;
   }
   .date-selector {
@@ -865,7 +865,7 @@ input::placeholder {
     line-height: 42px;
   }
   .featured-caption {
-    margin: 0 20px;
+    margin: 0 50px;
   }
   .recent-news-dot {
     margin: 0 15px;
@@ -977,7 +977,7 @@ input::placeholder {
   #ctaBook {
     text-transform: uppercase;
     font-size: 14px;
-    width: 90%;
+    width: 100%;
     margin: 10px -40px;
   }
   .select-label {
