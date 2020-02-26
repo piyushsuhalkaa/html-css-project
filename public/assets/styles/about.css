@@ -64,8 +64,8 @@
   flex: 1;
 }
 .about-heading {
-  font-weight: bolder;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 45px;
   margin-bottom: 20px;
   font-family: var(--theme-sec-font);
 }
@@ -86,7 +86,7 @@
   color: gray;
 }
 .about-caption {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(21, 21, 21, 0.8);
   font-weight: 300;
 }
@@ -95,7 +95,7 @@
 .feature-section {
   display: flex;
   flex-direction: column;
-  padding: 90px;
+  padding: 110px 60px;
   width: 90%;
   background-color: white;
   justify-content: center;
@@ -107,7 +107,7 @@
 .feature-heading {
   font-size: 40px;
   font-family: var(--theme-sec-font);
-  font-weight: bolder;
+  font-weight: 700;
 }
 .feature-item-container {
   display: flex;
@@ -248,6 +248,7 @@
   font-weight: bolder;
   font-size: 45px;
   display: flex;
+  font-weight: 700;
   justify-content: center;
 }
 .awards-content {
@@ -262,12 +263,78 @@
   background-color: white;
   box-shadow: 5px 5px 30px grey;
 }
-@media (max-width: 1279px) {
-}
-@media (max-width: 1023px) {
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 100px 50px;
+  }
+  .about-left > img {
+    width: 450px;
+  }
+  .about-right {
+    margin-left: 10px;
+  }
+  .about-heading > h2 {
+    font-size: 28px;
+  }
+  .about-quote {
+    font-size: 22px;
+  }
+  .about-caption {
+    font-size: 15px;
+  }
+  .feature-section {
+    padding: 110px 50px;
+  }
+  .feature-item-container {
+    flex-direction: column;
+  }
+  .testimonial-caption {
+    width: 650px;
+  }
+
+  .awards-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .awards-content > a > img {
+    margin: 20px 250px;
+  }
 }
 @media (max-width: 786px) {
-  
+  .about-section {
+    flex-direction: column;
+    padding: 100px 30px;
+  }
+  .about-left > img {
+    width: 440px;
+  }
+  .about-heading > h2 {
+    font-size: 28px;
+  }
+  .about-quote {
+    font-size: 22px;
+  }
+  .feature-section {
+    padding: 100px 30px;
+  }
+  .feature-heading {
+    font-size: 28px;
+  }
+  .testimonial-heading {
+    font-size: 28px;
+  }
+  .testimonial-caption {
+    font-size: 18px;
+  }
+  .testimonial-author {
+    font-size: 18px;
+  }
+  .testimonial-caption {
+    width: 430px;
+  }
+  .awards-content > a > img {
+    margin: 20px 0px;
   }
 }
 @media (max-width: 420px) {
@@ -345,6 +412,7 @@
   .testimonial-caption {
     font-size: 18px;
     line-height: 30px;
+    width: 300px;
   }
   .testimonial-author {
     font-size: 18px;
