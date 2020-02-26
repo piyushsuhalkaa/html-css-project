@@ -108,7 +108,8 @@
 .form-heading {
   font-size: 36px;
   font-weight: 700;
-  margin: 30px;
+  margin: 0px;
+  margin-bottom: 30px;
   font-family: var(--theme-sec-font);
 }
 .form-container {
@@ -156,7 +157,7 @@
 #messageInput {
   white-space: nowrap;
   font-size: 16px;
-  height: 200px;
+  height: 100px;
   transition: 0.3s ease-in-out;
   border: 1px solid #c4c4c4;
   border-radius: 5px;

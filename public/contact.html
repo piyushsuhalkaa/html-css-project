@@ -124,19 +124,29 @@
       <div class="form-header">
         <h3 class="form-heading">Get in Touch</h3>
       </div>
-      <form id="contactForm" class="form-container">
+      <form name="ConForm" id="contactForm" class="form-container">
         <input
           class="input-form"
           type="text"
           placeholder="Your Name"
+          name="name"
           required
         />
-        <input class="input-form" type="email" placeholder="E-mail" required />
+        <input
+          class="input-form"
+          type="email"
+          placeholder="E-mail"
+          name="email"
+          required
+        />
         <input
           class="input-form"
           type="tel"
+          pattern="\d{10}"
           placeholder="Phone"
+          minlength="10"
           maxlength="10"
+          name="phone"
           required
         />
         <textarea
@@ -144,6 +154,7 @@
           class="input-form"
           placeholder="Your Message"
           required
+          name="message"
         ></textarea>
         <button id="sentButton" type="submit">Send</button>
       </form>

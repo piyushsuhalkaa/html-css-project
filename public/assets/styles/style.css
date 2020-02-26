@@ -123,7 +123,7 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 1;
-  font-size: 25px;
+  font-size: 10px;
   border: none;
   outline: none;
   background-color: var(--theme-highlight);

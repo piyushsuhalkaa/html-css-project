@@ -410,7 +410,7 @@ input::placeholder {
 }
 .gallary-item-row-one {
   flex: 1;
-  width: 33.4vw;
+  width: 33.3vw;
 }
 .gallary-item-row-two {
   flex: 1;
@@ -529,7 +529,7 @@ input::placeholder {
 .news-item-title {
   display: block;
   margin-top: 30px;
-  width: 350px;
+  width: 375px;
 }
 .news-item-title > a {
   font-size: 28px;
@@ -817,9 +817,6 @@ input::placeholder {
   .form-block {
     padding: 10px 50px;
   }
-  .about-background-img {
-    width: 340px;
-  }
   .about-section {
     margin-top: -550px;
     padding-bottom: 15px;
@@ -831,17 +828,16 @@ input::placeholder {
   }
   .about-background-img {
     padding-top: 70px;
-    width: 400px;
+    width: 430px;
   }
   .about-foreground-img {
     width: 80%;
     left: 30px;
-    top: 275px;
+    top: 270px;
   }
   .about-right-section {
-    margin-left: 10px !important;
-    width: 400px;
-    padding-left: 10px;
+    width: 410px;
+    padding-left: 0px;
   }
 
   .about-heading {
@@ -869,10 +865,10 @@ input::placeholder {
     line-height: 42px;
   }
   .featured-caption {
-    margin: 0 50px;
+    margin: 0 20px;
   }
-  .restaurant-menu {
-    padding: 50px 0;
+  .recent-news-dot {
+    margin: 0 15px;
   }
   .res-menu-heading {
     font-size: 28px;

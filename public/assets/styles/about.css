@@ -319,8 +319,23 @@
   .feature-section {
     padding: 100px 30px;
   }
+  .feature-row {
+    flex-direction: column;
+  }
   .feature-heading {
     font-size: 28px;
+  }
+  .feature-item-name > a {
+    display: flex;
+    justify-content: center;
+  }
+  .feature-item-image {
+    width: 80px;
+  }
+
+  .feature-item-caption {
+    width: 400px;
+    text-align: center;
   }
   .testimonial-heading {
     font-size: 28px;
