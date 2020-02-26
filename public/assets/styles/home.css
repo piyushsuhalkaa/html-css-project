@@ -1028,7 +1028,7 @@ input::placeholder {
     width: 300px;
   }
   .recent-news-section {
-    padding: 50px 0;
+    padding: 50px 10px;
   }
   .recent-news-container {
     margin: 0px 30px;
@@ -1041,13 +1041,13 @@ input::placeholder {
     flex-direction: column;
   }
   .news-item-title {
-    width: 290px;
+    width: 330px;
   }
   .news-item-title > a {
     font-size: 20px;
   }
   .news-item-caption {
-    width: 290px;
+    width: 330px;
   }
   .featured-items {
     flex-direction: column;
@@ -1060,7 +1060,7 @@ input::placeholder {
     line-height: 42px;
   }
   .featured-caption {
-    margin: 0 20px;
+    margin: 0 60px;
   }
   .restaurant-menu {
     padding: 50px 0;

@@ -13,6 +13,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url("../images/back.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: top center;
   z-index: -1;
 }
@@ -198,7 +199,7 @@
   }
   .contact-description {
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 20px;
   }
   .contact-description > div {
     padding: 5px;
@@ -232,7 +233,7 @@
     padding: 100px 0;
   }
   .form-header {
-    padding: 20px;
+    padding-bottom: 20px;
   }
   .form-heading {
     font-weight: 700;
@@ -250,13 +251,16 @@
     font-size: 15px;
   }
   #sentButton {
-    width: 30%;
+    width: 75%;
     padding: 20px;
   }
 }
 @media (max-width: 420px) {
   .contact-description {
-    padding: 0px;
+    margin: 50px 0;
+  }
+  .form-section {
+    padding: 50px 0;
   }
   .input-form {
     width: 65%;
