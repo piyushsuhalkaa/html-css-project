@@ -87,7 +87,7 @@ body {
   display: inline-block;
   size: 10px;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
@@ -198,9 +198,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
-}
-.footer-social-link {
-  margin-right: 25px;
 }
 .footer-social-link > a > i {
   font-size: 25px;

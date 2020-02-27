@@ -24,11 +24,11 @@
 }
 .main-banner-heading {
   text-align: center;
-  font-size: 86px;
+  font-size: 80px;
   color: white;
   margin-bottom: 30px;
   letter-spacing: 0.8px;
-  line-height: 26px;
+  line-height: 86px;
   font-family: var(--theme-sec-font);
   text-transform: uppercase;
   font-weight: 700;
@@ -44,6 +44,7 @@
   font-size: 18px;
   margin: 0 430px;
   font-weight: 300;
+  line-height: 30px;
 }
 /*Header Element Css Ends*/
 /*CTA Froms Start */
@@ -62,7 +63,7 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 50px #323232;
+  box-shadow: 0px 0px 5px #323232;
   padding: 10px 35px;
 }
 .cta-form-container {
@@ -80,10 +81,11 @@
 .label-heading {
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 1.1px;
+  line-height: 25px;
+  font-weight: 400;
   display: block;
   font-family: var(--theme-pri-font);
-  color: #323232;
+  color: rgba(0, 0, 0, 0.8);
 }
 .label-input {
   width: 200px;
@@ -99,6 +101,8 @@ input[type="date"]::-webkit-inner-spin-button {
 input::placeholder {
   color: black;
   font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
 }
 *:focus {
   outline: none;
@@ -123,10 +127,11 @@ input::placeholder {
 }
 #ctaBook {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   padding: 15px 20px;
   font-family: var(--theme-pri-font);
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 23px;
   background-color: #323232;
   cursor: pointer;
   color: white;
@@ -231,18 +236,11 @@ input::placeholder {
 .featured-items > div {
   padding: 0 18px;
 }
-.featured-item-1,
-.featured-item-2,
-.featured-item-3 {
+.featured-item-con{
   position: relative;
 }
 .item-links > img {
   width: 355px;
-  background: linear-gradient(
-    180deg,
-    rgba(21, 21, 21, 0) 38.12%,
-    rgba(21, 21, 21, 0.364) 100%
-  );
 }
 .item-links > a {
   text-decoration: none;
@@ -291,7 +289,6 @@ input::placeholder {
   transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
   text-align: center;
-  box-shadow: 20px 20px 1000px black;
 }
 .text {
   background-color: var(--theme-highlight);
@@ -305,12 +302,14 @@ input::placeholder {
 .middle :hover {
   background-color: #323232;
 }
-
-.item-links:hover .image {
+.featured-item-con:hover .image {
   opacity: 1;
+  
 }
-.item-links:hover .middle {
+.featured-item-con:hover .middle {
   opacity: 1;
+  box-shadow: 0px 30px 100px black;
+}
 }
 /* Restaurant Menu Starts */
 .restaurant-menu {
@@ -348,7 +347,6 @@ input::placeholder {
   text-transform: uppercase;
   flex: 1;
   font-family: var(--theme-pri-font);
-
   justify-content: center;
   padding: 50px 0px;
 }

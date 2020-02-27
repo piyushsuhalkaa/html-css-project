@@ -174,12 +174,15 @@
 }
 .testimonial-background {
   position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(
+      rgba(18, 18, 18, 0.6) 0.91%,
+      rgba(18, 18, 18, 0.28) 47.77%,
+      rgba(39, 42, 55, 0.75) 99.52%
+    ),
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background-position: left;
   height: 100%;
   width: 100%;
   z-index: -1;
