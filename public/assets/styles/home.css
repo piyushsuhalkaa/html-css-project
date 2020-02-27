@@ -63,7 +63,7 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 5px #323232;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
   padding: 10px 35px;
 }
 .cta-form-container {
@@ -176,7 +176,7 @@ input::placeholder {
   left: 60px;
 }
 .about-right-section {
-  padding-left: 180px;
+  padding-left: 170px;
 }
 .about-heading {
   font-size: 45px;
@@ -236,7 +236,7 @@ input::placeholder {
 .featured-items > div {
   padding: 0 18px;
 }
-.featured-item-con{
+.featured-item-con {
   position: relative;
 }
 .item-links > img {
@@ -304,12 +304,10 @@ input::placeholder {
 }
 .featured-item-con:hover .image {
   opacity: 1;
-  
 }
 .featured-item-con:hover .middle {
   opacity: 1;
   box-shadow: 0px 30px 100px black;
-}
 }
 /* Restaurant Menu Starts */
 .restaurant-menu {
