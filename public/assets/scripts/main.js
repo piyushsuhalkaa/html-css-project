@@ -98,6 +98,7 @@ var topButton = document.getElementById("topBtn");
 var scrollMenu = document.getElementsByClassName("header");
 window.onscroll = function() {
   scrollFunction();
+  headerChange();
 };
 function scrollFunction() {
   if (
@@ -107,6 +108,15 @@ function scrollFunction() {
     topButton.style.display = "block";
   } else {
     topButton.style.display = "none";
+  }
+}
+function headerChange() {
+  var element = document.getElementById("header");
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    console.log("scroll Detected");
+    element.classList.add("active-header");
+  } else {
+    element.classList.remove("active-header");
   }
 }
 function topFunction() {
