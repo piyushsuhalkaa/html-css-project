@@ -72,6 +72,7 @@ header {
   display: inline-block;
   text-decoration: none;
   color: white;
+  cursor: pointer;
   font-family: var(--theme-pri-font);
   text-transform: uppercase;
   font-size: 15px;

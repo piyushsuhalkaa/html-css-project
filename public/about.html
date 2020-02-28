@@ -405,7 +405,6 @@
           document.body.scrollTop > 400 ||
           document.documentElement.scrollTop > 400
         ) {
-          console.log("Detected");
           topButton.style.display = "block";
         } else {
           topButton.style.display = "none";
@@ -417,7 +416,6 @@
           document.body.scrollTop > 10 ||
           document.documentElement.scrollTop > 10
         ) {
-          console.log("scroll Detected");
           element.classList.add("active-header");
         } else {
           element.classList.remove("active-header");
@@ -428,6 +426,5 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

@@ -126,36 +126,55 @@
       </div>
       <form name="ConForm" id="contactForm" class="form-container">
         <input
+          id="nameInput"
           class="input-form"
           type="text"
           placeholder="Your Name"
           name="name"
+          onchange="nameValidityCheck(this.value)"
           required
         />
+        <div id="nameInvalid" class="deactive hidden-mege">
+          Enter valid name
+        </div>
         <input
+          id="emailInput"
           class="input-form"
           type="email"
           placeholder="E-mail"
           name="email"
+          onchange="ValidityCheck(this.value)"
           required
         />
+        <span id="emailInvalid" class="deactive hidden-mege">
+          Enter valid e-mail
+        </span>
         <input
+          id="phoneInput"
           class="input-form"
           type="tel"
-          pattern="\d{10}"
-          placeholder="Phone (10 digit only)"
-          minlength="10"
-          maxlength="10"
+          placeholder="Phone"
           name="phone"
+          onchange="numberValidityCheck(this.value)"
           required
         />
+        <span id="phoneInvalid" class=" hidden-mege deactive">
+          Enter valid number
+        </span>
         <textarea
           id="messageInput"
-          class="input-form"
+          class="input-form input-error-message"
           placeholder="Your Message"
-          required
           name="message"
+          onchange="ValidityCheck(this.value,this.id)"
+          required
         ></textarea>
+        <div class="hidden-mege">
+          <span id="messageInvalid" class="deactive-message">
+            Enter message
+          </span>
+        </div>
+
         <button id="sentButton" type="submit">Send</button>
       </form>
     </section>
@@ -237,7 +256,6 @@
           document.body.scrollTop > 10 ||
           document.documentElement.scrollTop > 10
         ) {
-          console.log("scroll Detected");
           element.classList.add("active-header");
         } else {
           element.classList.remove("active-header");
@@ -247,7 +265,38 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+      var check = document.getElementById("nameInput");
+      var check2 = document.getElementById("nameInvalid");
+      var check3 = document.getElementById("phoneInput");
+      var check4 = document.getElementById("phoneInvalid");
+
+      function nameValidityCheck(val) {
+        if (3 > val.length) {
+          check.classList.add("input-error");
+          check2.classList.remove("hidden-mege");
+        } else {
+          check.classList.remove("input-error");
+          check2.classList.add("hidden-mege");
+        }
+      }
+      function numberValidityCheck(val) {
+        var val1;
+        val1 = parseInt(val, 10);
+        if (9 > val.length) {
+          check3.classList.add("input-error");
+          check4.classList.remove("hidden-mege");
+        } else {
+          check3.classList.remove("input-error");
+          check4.classList.add("hidden-mege");
+        }
+      }
+      if (val1 === NaN) {
+        check3.classList.add("input-error");
+        check4.classList.remove("hidden-mege");
+      } else {
+        check3.classList.remove("input-error");
+        check4.classList.add("hidden-mege");
+      }
     </script>
-    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

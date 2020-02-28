@@ -3,7 +3,7 @@
 Menu Section
 
 */
-
+console.log("Connected");
 function ourMenu(pageName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("menu-tab-content");
