@@ -584,7 +584,7 @@ input::placeholder {
   border-radius: 50%;
   display: inline-block;
 }
-.active,
+.active-dots,
 .recent-news-dot:hover {
   background-color: var(--theme-highlight);
 }

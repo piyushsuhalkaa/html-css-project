@@ -41,9 +41,9 @@
         </a>
       </div>
     </section>
-    <section class="header">
+    <header id="header">
       <a href="index.html">
-        <img class="header-logo" src="./assets/images/logo.png" alt="" />
+        <img class="brand-logo" src="./assets/images/logo.png" alt="" />
       </a>
       <ul class="header-navigation-links">
         <li>
@@ -57,7 +57,7 @@
         </li>
       </ul>
       <button id="headerBookingBtn">Book Now</button>
-    </section>
+    </header>
     <!--Banner Section Start-->
     <section class="main-banner">
       <div class="background"></div>
@@ -219,6 +219,7 @@
       var scrollMenu = document.getElementsByClassName("header");
       window.onscroll = function() {
         scrollFunction();
+        headerChange();
       };
       function scrollFunction() {
         if (
@@ -228,6 +229,18 @@
           topButton.style.display = "block";
         } else {
           topButton.style.display = "none";
+        }
+      }
+      function headerChange() {
+        var element = document.getElementById("header");
+        if (
+          document.body.scrollTop > 10 ||
+          document.documentElement.scrollTop > 10
+        ) {
+          console.log("scroll Detected");
+          element.classList.add("active-header");
+        } else {
+          element.classList.remove("active-header");
         }
       }
       function topFunction() {
