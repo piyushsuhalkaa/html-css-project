@@ -17,6 +17,7 @@
 *:focus {
   outline: 0;
 }
+
 html,
 body {
   scroll-behavior: smooth;
@@ -126,6 +127,8 @@ header {
 #topBtn {
   display: none;
   position: fixed;
+  width: 60px;
+  height: 60px;
   right: 40px;
   bottom: 40px;
   z-index: 1;
@@ -206,7 +209,7 @@ header {
 .footer-social-link > a > i {
   font-size: 25px;
   color: white;
-  margin: 10px;
+  margin: 10px 20px;
   padding: 12px;
   width: 25px;
   text-align: center;
@@ -236,7 +239,7 @@ header {
     font-weight: 200;
     box-sizing: border-box;
   }
-  .header {
+  header {
     display: none;
   }
   .mobile-header {

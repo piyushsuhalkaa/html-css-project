@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML / CSS PROJECT | Cafe | Contact</title>
     <link
       rel="icon"
@@ -17,6 +16,7 @@
   </head>
   <body>
     <!-- Header Section  -->
+    <!-- Mobile Header -->
     <section class="mobile-header">
       <div class="mobile-navigation">
         <a href="about.html">
@@ -32,15 +32,12 @@
           <a class="navigation-active" href="#">Contacts</a>
           <button id="mobileBookingBtn">Book Now</button>
         </div>
-        <a
-          href="javascript:void(0);"
-          class="icon"
-          onclick="navigationFunction()"
-        >
+        <a href="javascript:void(0);" class="icon" onclick="navigationSlider()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </section>
+    <!-- Desktop Header -->
     <header id="header">
       <a href="index.html">
         <img class="brand-logo" src="./assets/images/logo.png" alt="" />
@@ -226,12 +223,12 @@
       </div>
     </section>
     <script>
-      function navigationFunction() {
-        var x = document.getElementById("navigationLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+      function navigationSlider() {
+        var navigator = document.getElementById("navigationLinks");
+        if (navigatior.style.display === "block") {
+          navigatior.style.display = "none";
         } else {
-          x.style.display = "block";
+          navigatior.style.display = "block";
         }
       }
       var topButton = document.getElementById("topBtn");
@@ -282,6 +279,18 @@
       function numberValidityCheck(val) {
         var val1;
         val1 = parseInt(val, 10);
+        console.log(val);
+        console.log(val1);
+        console.log(typeof val1);
+        if (val === val1) {
+          check3.classList.remove("input-error");
+          check4.classList.add("hidden-mege");
+          console.log("Print HElo");
+        } else {
+          console.log("hi bhai");
+          check3.classList.add("input-error");
+          check4.classList.remove("hidden-mege");
+        }
         if (9 > val.length) {
           check3.classList.add("input-error");
           check4.classList.remove("hidden-mege");
@@ -289,13 +298,6 @@
           check3.classList.remove("input-error");
           check4.classList.add("hidden-mege");
         }
-      }
-      if (val1 === NaN) {
-        check3.classList.add("input-error");
-        check4.classList.remove("hidden-mege");
-      } else {
-        check3.classList.remove("input-error");
-        check4.classList.add("hidden-mege");
       }
     </script>
   </body>

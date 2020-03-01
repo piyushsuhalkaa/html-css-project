@@ -222,22 +222,15 @@
       <h1 class="res-menu-heading">Our Restaurant Menu</h1>
       <section>
         <div class="res-menu-container">
-          <button
-            class="res-menu-tab-head tab-head-first"
-            id="AlwaysOpen"
-            onclick="ourMenu('ourMain')"
-          >
+          <li class="res-menu-tab-head tablink white" onclick="ourMenu(event, 'ourMain')">
             Main
-          </button>
-          <button class="res-menu-tab-head" onclick="ourMenu('ourDessert')">
+          </li>
+          <li class="res-menu-tab-head tablink" onclick="ourMenu(event, 'ourDessert')">
             Dessert
-          </button>
-          <button
-            class="res-menu-tab-head tab-head-last"
-            onclick="ourMenu('ourDrink')"
-          >
+          </li>
+          <li class="res-menu-tab-head tablink" onclick="ourMenu(event, 'ourDrink')">
             Drink
-          </button>
+          </li>
         </div>
         <div class="res-menu-captions">
           <div id="ourMain" class="menu-tab-content">
@@ -265,7 +258,7 @@
                 </p>
               </div>
               <div>
-                <span class="res-menu-item-price">$18.89</span>
+                <span class="res-menu-item-price">$17.89</span>
                 <span class="res-menu-item-name">
                   <a href="#">Trippa Satriano</a>
                 </span>

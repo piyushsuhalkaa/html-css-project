@@ -3,22 +3,19 @@
 Menu Section
 
 */
-console.log("Connected");
-function ourMenu(pageName) {
+function ourMenu(evt, pageName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("menu-tab-content");
+  tablinks = document.getElementsByClassName("res-menu-tab-head");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
   document.getElementById(pageName).style.display = "block";
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("white", "");
+  }
+  evt.currentTarget.className += " white";
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("AlwaysOpen").click();
 
 // js code for recent
 var slideIndex = 1;
@@ -113,7 +110,6 @@ function scrollFunction() {
 function headerChange() {
   var element = document.getElementById("header");
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    console.log("scroll Detected");
     element.classList.add("active-header");
   } else {
     element.classList.remove("active-header");

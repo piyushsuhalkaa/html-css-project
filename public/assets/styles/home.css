@@ -331,23 +331,25 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   margin: 0 150px;
+  height: 110px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .res-menu-tab-head {
-  background-color: #323232;
   color: rgb(99, 99, 99);
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 18px;
   line-height: 0;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  flex: 1;
   font-family: var(--theme-pri-font);
-  justify-content: center;
-  padding: 50px 0px;
+  padding: 50px 30px;
+  list-style: none;
+}
+.white {
+  color: white;
 }
 .top-caption {
   margin: 45px 80px;
