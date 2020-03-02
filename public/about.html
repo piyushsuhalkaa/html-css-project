@@ -17,20 +17,16 @@
   </head>
   <body>
     <!-- Header Section  -->
-    <section class="mobile-header">
-      <div class="mobile-navigation">
-        <a href="about.html">
-          <img
-            class="mobile-header-logo"
-            src="./assets/images/logo.png"
-            alt=""
-          />
+    <section class="header-sm">
+      <div class="header-navigation-sm">
+        <a href="index.html">
+          <img class="brand-logo-sm" src="./assets/images/logo.png" alt="" />
         </a>
         <div id="navigationLinks">
           <a href="index.html">Home</a>
           <a class="navigation-active" href="#">About</a>
           <a href="contact.html">Contacts</a>
-          <button id="mobileBookingBtn" style="margin: 10px; ">Book Now</button>
+          <button id="BookingButtonSm" style="margin: 10px; ">Book Now</button>
         </div>
         <a
           href="javascript:void(0);"
@@ -50,13 +46,15 @@
           <a class="header-navigation-link" href="index.html">Home</a>
         </li>
         <li>
-          <a class="header-navigation-link active-nav-bar" href="#">About</a>
+          <a class="header-navigation-link active-navigation-link" href="#">
+            About
+          </a>
         </li>
         <li>
           <a class="header-navigation-link" href="contact.html">Contacts</a>
         </li>
       </ul>
-      <button id="headerBookingBtn">Book Now</button>
+      <button id="BookingButton">Book Now</button>
     </header>
     <!--Banner Section Start-->
     <section class="presentation">
@@ -71,7 +69,7 @@
     </section>
     <!-- Top Function Button -->
     <section class="top-function">
-      <button onclick="topFunction()" id="topBtn">
+      <button onclick="topFunction()" id="bottomToTopButton">
         <i class="fa fa-chevron-up"></i>
       </button>
     </section>
@@ -394,8 +392,7 @@
         }
         as[index - 1].style.display = "block";
       }
-      var topButton = document.getElementById("topBtn");
-      var scrollMenu = document.getElementsByClassName("header");
+      var bottomToTopBtn = document.getElementById("bottomToTopButton");
       window.onscroll = function() {
         scrollFunction();
         headerChange();
@@ -405,9 +402,9 @@
           document.body.scrollTop > 400 ||
           document.documentElement.scrollTop > 400
         ) {
-          topButton.style.display = "block";
+          bottomToTopBtn.style.display = "block";
         } else {
-          topButton.style.display = "none";
+          bottomToTopBtn.style.display = "none";
         }
       }
       function headerChange() {

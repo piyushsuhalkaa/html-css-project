@@ -29,12 +29,8 @@ body {
   font-family: var(--theme-pri-font);
   box-sizing: border-box;
 }
-.active {
-  color: var(--theme-highlight) !important;
-}
-
 /* Header Section*/
-.mobile-header {
+.header-sm {
   display: none;
 }
 header {
@@ -82,13 +78,13 @@ header {
   font-weight: 500;
   margin: 0px 30px;
 }
-.active-navigation-bar {
+.active-navigation-link {
   color: var(--theme-highlight);
 }
 .header-navigation-link:hover {
   color: var(--theme-highlight);
 }
-#headerBookingBtn {
+#BookingButton {
   margin-right: 15px;
   padding: 8px 25px;
   display: inline-block;
@@ -102,13 +98,13 @@ header {
   font-family: var(--theme-pri-font);
   box-shadow: 0 0 15px rgba(21, 21, 21, 0.15);
 }
-#headerBookingBtn:hover {
+#BookingButton:hover {
   outline: none;
   background-color: black;
   color: snow;
   border: 1px solid black;
 }
-#mobileBookingBtn {
+#BookingButtonSm {
   margin: 10px;
   margin-top: 14px;
   padding: 8px 25px;
@@ -124,7 +120,7 @@ header {
   box-shadow: 0 0 15px rgba(21, 21, 21, 0.15);
 }
 /* Top Button*/
-#topBtn {
+#bottomToTopButton {
   display: none;
   position: fixed;
   width: 60px;
@@ -151,7 +147,7 @@ header {
   }
 }
 
-#topBtn:hover {
+#bottomToTopButton:hover {
   background-color: black;
 }
 /* Footer */
@@ -242,26 +238,26 @@ header {
   header {
     display: none;
   }
-  .mobile-header {
+  .header-sm {
     display: block;
     position: fixed;
     width: 100vw;
     height: 10px;
     z-index: 3;
   }
-  .mobile-header-logo {
+  .brand-logo-sm {
     margin-left: 42px;
     width: 100px;
   }
-  .mobile-navigation {
+  .header-navigation-sm {
     background-color: #444141;
     position: relative;
     width: 100%;
   }
-  .mobile-navigation #navigationLinks {
+  .header-navigation-sm #navigationLinks {
     display: none;
   }
-  .mobile-navigation a {
+  .header-navigation-sm a {
     color: white;
     font-family: var(--theme-pri-font);
     padding: 5px 16px;
@@ -270,7 +266,7 @@ header {
     font-size: 17px;
     display: block;
   }
-  .mobile-navigation a.icon,
+  .header-navigation-sm a.icon,
   .icon:hover {
     background: #444141;
     display: block;
@@ -280,7 +276,7 @@ header {
     font-size: 30px;
     outline: none;
   }
-  .navigation-active {
+  .navigation-active-sm {
     color: white;
     background-color: var(--theme-highlight);
   }
@@ -306,7 +302,7 @@ header {
   }
   .footer-social-link {
     padding: 0;
-    margin: 10px;
+    margin: 5px;
   }
   .footer-social-link-container {
     padding-top: 0px;

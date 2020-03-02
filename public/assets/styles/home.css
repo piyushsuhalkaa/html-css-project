@@ -112,18 +112,69 @@ input::placeholder {
 *:focus {
   outline: none;
 }
-
-.select-label {
-  cursor: pointer;
-  width: 50px;
-  height: 25px;
+.input-error {
+  border: 1px;
+  border-bottom: 5px red;
+}
+.custom-select {
+  position: relative;
   font-size: 18px;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: white;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
   border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("../images/down-arrow.png") 90% / 20% no-repeat #fff;
-  background-size: contain;
+}
+
+.select-selected.select-arrow-active:after {
+  top: 7px;
+}
+
+.select-items div {
+  color: white;
+  width: 60px;
+  background-color: black;
+  padding: 4px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.select-selected {
+  color: black;
+  background-color: white;
+  padding: 4px 2px;
+  border: none;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  color: black;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  color: black;
+  background-color: white;
 }
 .date-selector {
   -webkit-appearance: none;

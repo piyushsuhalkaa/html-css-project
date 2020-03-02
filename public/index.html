@@ -16,22 +16,24 @@
   </head>
   <body>
     <!-- Header Section -->
-    <section class="mobile-header">
-      <div class="mobile-navigation">
-        <a href="about.html">
-          <img
-            class="mobile-header-logo"
-            src="./assets/images/logo.png"
-            alt=""
-          />
+    <section class="header-sm">
+      <div class="header-navigation-sm ">
+        <a href="#">
+          <img class="brand-logo-sm" src="./assets/images/logo.png" alt="" />
         </a>
         <div id="navigationLinks">
-          <a class=" mobile-navigation-links navigation-active" href="#">Home</a>
+          <a class=" mobile-navigation-links navigation-active-link" href="#"
+            >Home</a
+          >
           <a class="mobile-navigation-links" href="about.html">About</a>
           <a class="mobile-navigation-links" href="contact.html">Contacts</a>
-          <button id="mobileBookingBtn">Book Now</button>
+          <button id="BookingButtonSm">Book Now</button>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="navigationFunction()">
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="navigationFunction()"
+        >
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -43,13 +45,17 @@
       </a>
       <nav class="header-navigation-links">
         <li>
-          <a class="header-navigation-link active" href="#">Home</a>
+          <a class="header-navigation-link active-navigation-link" href="#"
+            >Home</a
+          >
         </li>
         <li><a class="header-navigation-link" href="about.html">About</a></li>
-        <li><a class="header-navigation-link" href="contact.html">Contacts</a></li>
+        <li>
+          <a class="header-navigation-link" href="contact.html">Contacts</a>
+        </li>
       </nav>
       <a>
-        <button id="headerBookingBtn">Book Now</button>
+        <button id="BookingButton">Book Now</button>
       </a>
     </header>
     <!--Banner Section Start-->
@@ -65,61 +71,62 @@
       </div>
     </section>
     <!-- Top Function Button -->
-    <section class="top-function">
-      <button onclick="topFunction()" id="topBtn"><i class="fa fa-chevron-up"></i></button>
+    <section class="bottom-to-top-ui">
+      <button onclick="topFunction()" id="bottomToTopButton">
+        <i class="fa fa-chevron-up"></i>
+      </button>
     </section>
     <!--Reservation Form-->
     <section class="cta-form-section">
-      <div class="box" >
+      <div class="box">
         <div class="form-block">
-        <form class="form-cta" action="#">
-          <div class="cta-form-container">
-            <div class="cta-form-item">
-              <label class="label-heading">Name</label>
-              <input pattern="["class="label-input" type="text" placeholder="Your name" required />
+          <form class="form-cta" action="#">
+            <div class="cta-form-container">
+              <div class="cta-form-item">
+                <label class="label-heading">Name</label>
+                <input
+                  class="label-input input-error"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="cta-form-line"></div>
+              <div class="cta-form-item">
+                <label class="label-heading">Phone</label>
+                <input
+                  class="label-input"
+                  type="tel"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+              <div class="cta-form-line"></div>
+              <div class="cta-form-item">
+                <label class="label-heading">Date </label>
+                <input class="label-input date-selector" type="date" required />
+              </div>
+              <div class="cta-form-line"></div>
+              <div class="cta-form-item custom-select" style="width:200px;">
+                <label class="label-heading">No. of People</label>
+                <select class="select-label" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
+              </div>
+              <div class="cta-form-item">
+                <span class="cta-container">
+                  <button id="ctaBook" type="submit">Check Avlaibilty</button>
+                </span>
+              </div>
             </div>
-            <div class="cta-form-line"></div>
-            <div class="cta-form-item">
-              <label class="label-heading">Phone</label>
-              <input
-                class="label-input"
-                type="tel"
-                placeholder="Your phone number"
-                minlength="10"
-                maxlength="10"
-                pattern="\d{10}"
-                required
-              />
-            </div>
-            <div class="cta-form-line"></div>
-            <div class="cta-form-item">
-              <label class="label-heading">Date </label>
-              <input class="label-input date-selector" type="date" required />
-            </div>
-            <div class="cta-form-line"></div>
-            <div class="cta-form-item" style="width:200px;">
-              <label class="label-heading">No. of People</label>
-              <select
-                class="select-label"
-              required
-                >
-                <option value="1">1</option>
-                <option value="2" selected >2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-              </select>
-            </div>
-            <div class="cta-form-item">
-              <span class="cta-container">
-                <button id="ctaBook" type="submit">Check Avlaibilty</button>
-              </span>
-            </div>
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -130,7 +137,10 @@
           class="about-background-img"
           src="./assets/images/about/about-back.jpg"
         />
-        <img class="about-foreground-img" src="./assets/images/about/chef.png" />
+        <img
+          class="about-foreground-img"
+          src="./assets/images/about/chef.png"
+        />
       </div>
       <div class="about-right-section">
         <h2 class="about-heading">About Us</h2>
@@ -157,7 +167,7 @@
           desserts.
         </p>
       </div>
-      <div class="featured-items" >
+      <div class="featured-items">
         <div class="featured-item-con">
           <a class="item-links" href="#">
             <img
@@ -224,13 +234,22 @@
       <h1 class="res-menu-heading">Our Restaurant Menu</h1>
       <section>
         <div class="res-menu-container">
-          <li class="res-menu-tab-head tablink white" onclick="ourMenu(event, 'ourMain')">
+          <li
+            class="res-menu-tab-head tablink white"
+            onclick="ourMenu(event, 'ourMain')"
+          >
             Main
           </li>
-          <li class="res-menu-tab-head tablink" onclick="ourMenu(event, 'ourDessert')">
+          <li
+            class="res-menu-tab-head tablink"
+            onclick="ourMenu(event, 'ourDessert')"
+          >
             Dessert
           </li>
-          <li class="res-menu-tab-head tablink" onclick="ourMenu(event, 'ourDrink')">
+          <li
+            class="res-menu-tab-head tablink"
+            onclick="ourMenu(event, 'ourDrink')"
+          >
             Drink
           </li>
         </div>
@@ -382,7 +401,7 @@
     </section>
     <!-- Gallary Section -->
     <section class="gallary-container">
-      <div class="gallary-row" >
+      <div class="gallary-row">
         <img
           onclick="gallaryOpenModal();currentGallarySlide(1)"
           class="gallary-item-row-one"
@@ -447,10 +466,10 @@
 
     <!-- Recent News Section -->
     <section class="recent-news-section">
-      <div class="recent-news-heading" >
+      <div class="recent-news-heading">
         <h2>Recent News</h2>
       </div>
-      <div class="recent-news-container" >
+      <div class="recent-news-container">
         <div class="recent-news">
           <div class="recent-news-items">
             <div class="recent-news-item">
@@ -642,9 +661,9 @@
             </a>
           </li>
           <li class="footer-social-link">
-              <a href="#">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+            <a href="#">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
           </li>
           <li class="footer-social-link">
             <a href="#">
@@ -654,7 +673,7 @@
           <li class="footer-social-link">
             <a href="#">
               <i class="fa fa-youtube-play" aria-hidden="true"></i>
-             </a>
+            </a>
           </li>
           <li class="footer-social-link">
             <a href="#">
@@ -663,20 +682,94 @@
           </li>
         </ul>
       </div>
-      </div>
       <div class="footer-caption">
         © 2020 Pesto. All Rights Reserved. <a href="#">Privacy Policy</a>.
       </div>
     </section>
     <script>
       function navigationFunction() {
-        var nav = document.getElementById("navigationLinks");
-        if (nav.style.display === "block") {
-          nav.style.display = "none";
+        var navigationItem = document.getElementById("navigationLinks");
+        if (navigationItem.style.display === "block") {
+          navigationItem.style.display = "none";
         } else {
-          nav.style.display = "block";
+          navigationItem.style.display = "block";
         }
       }
+      var x, i, j, selElmnt, a, b, c;
+      /*look for any elements with the class "custom-select":*/
+      x = document.getElementsByClassName("custom-select");
+      for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+          /*for each option in the original select element,
+          create a new DIV that will act as an option item:*/
+          c = document.createElement("DIV");
+          c.innerHTML = selElmnt.options[j].innerHTML;
+          c.addEventListener("click", function(e) {
+            /*when an item is clicked, update the original select box,
+              and the selected item:*/
+            var y, i, k, s, h;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            h = this.parentNode.previousSibling;
+            for (i = 0; i < s.length; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                for (k = 0; k < y.length; k++) {
+                  y[k].removeAttribute("class");
+                }
+                this.setAttribute("class", "same-as-selected");
+                break;
+              }
+            }
+            h.click();
+          });
+          b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+          /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
+      }
+      function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x,
+          y,
+          i,
+          arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+          if (elmnt == y[i]) {
+            arrNo.push(i);
+          } else {
+            y[i].classList.remove("select-arrow-active");
+          }
+        }
+        for (i = 0; i < x.length; i++) {
+          if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
+          }
+        }
+      }
+      /*if the user clicks anywhere outside the select box,
+      then close all select boxes:*/
+      document.addEventListener("click", closeAllSelect);
     </script>
     <script src="./assets/scripts/main.js"></script>
   </body>

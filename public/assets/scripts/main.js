@@ -91,8 +91,7 @@ function displaySlides(n) {
 Top Button Function 
 
 */
-var topButton = document.getElementById("topBtn");
-var scrollMenu = document.getElementsByClassName("header");
+var topButton = document.getElementById("bottomToTopButton");
 window.onscroll = function() {
   scrollFunction();
   headerChange();
