@@ -407,7 +407,8 @@
     font-size: 18px;
   }
   .prev-testimonial {
-    left: 5%;
+    top: -180px;
+    left: -10%;
   }
   .award-section {
     padding: 50px 0px;
@@ -487,7 +488,16 @@
     width: 340px;
   }
   .testimonial-container {
-    margin: 0px;
+    margin: 0px 30px;
+  }
+  .testimonial-background {
+    height: 110%;
+  }
+  .testimonial-heading-container {
+    padding-top: 55px;
+  }
+  .testimonial-section {
+    padding-bottom: 55px;
   }
   .testimonial-heading {
     font-size: 28px;
@@ -498,14 +508,16 @@
   }
   prev-testimonial {
     left: 5%;
+    top: -180px;
   }
   .next-testimonial {
+    top: -180px;
     right: 5%;
   }
   .testimonial-caption {
     font-size: 18px;
     line-height: 30px;
-    width: 300px;
+    width: 110%;
   }
   .testimonial-author {
     font-size: 18px;
