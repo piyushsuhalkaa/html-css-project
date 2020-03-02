@@ -42,9 +42,11 @@
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 10px;
 }
 .page-location {
   color: rgb(157, 157, 157);
+  margin-left: 10px;
 }
 .contact-description {
   display: flex;
@@ -127,17 +129,17 @@
   border-radius: 5px;
   font-size: 14px;
   display: block;
-  padding: 16px 25px;
+  padding: 18px 25px;
   font-size: 15px;
   font-weight: 300;
   line-height: 26px;
   color: #151515;
   background-color: #fff;
-  background-image: none;
   border-radius: 5px;
   -webkit-appearance: none;
   transition: 0.3s ease-in-out;
   border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
 }
 .input-error {
   border: 1px solid red;
@@ -146,7 +148,7 @@
 .deactive {
   position: relative;
   left: 270px;
-  bottom: 50px;
+  bottom: 6 0px;
   z-index: 11;
   font-size: 9px;
   font-weight: 400;
@@ -179,7 +181,7 @@
   font-family: var(--theme-pri-font);
 }
 #sentButton {
-  font-size: 18px;
+  font-size: 15px;
   display: block;
   text-transform: uppercase;
   padding: 20px 70px;
@@ -188,9 +190,10 @@
   margin-bottom: 30px;
   font-weight: 700;
   margin-top: 20px;
+  width: 20%;
 }
 #sentButton:hover {
-  background-color: black;
+  background-color: #444141;
   cursor: pointer;
 }
 
@@ -224,6 +227,7 @@
   }
   .presentation-head {
     font-size: 25px;
+    margin: 0px;
   }
   .contact-description {
     flex-direction: column;

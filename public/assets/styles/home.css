@@ -1,5 +1,5 @@
 .main-banner {
-  height: 110vh;
+  height: 120vh;
   display: flex;
   align-items: center;
 }
@@ -59,7 +59,7 @@
 }
 .form-block {
   font-size: 25px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   background-color: white;
   border-radius: 10px;
@@ -67,9 +67,13 @@
   align-items: center;
   padding: 10px 35px;
 }
+.box {
+  z-index: -10;
+  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.2);
+}
 .cta-form-container {
   display: flex;
-  margin: 50px 10px;
+  margin: 60px 10px;
   background-color: white;
   justify-content: center;
   align-content: center;
@@ -151,8 +155,8 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   padding: 110px;
-  padding-top: 200px;
-  margin-top: -265px;
+  padding-top: 220px;
+  margin-top: -285px;
 }
 .about-section > div {
   flex: 1;
@@ -235,13 +239,13 @@ input::placeholder {
   align-items: center;
 }
 .featured-items > div {
-  padding: 0 18px;
+  padding: 0 15px;
+  margin: 0;
 }
 .featured-item-con {
   position: relative;
 }
 .item-links > img {
-  width: 355px;
 }
 .item-links > a {
   text-decoration: none;
@@ -330,7 +334,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 150px;
+  margin: 0 135px;
   height: 110px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -345,25 +349,22 @@ input::placeholder {
   font-weight: 600;
   text-transform: uppercase;
   font-family: var(--theme-pri-font);
-  padding: 50px 30px;
+  padding: 50px 45px;
   list-style: none;
+  transition: all 0.3s;
 }
 .white {
   color: white;
 }
 .top-caption {
-  margin: 45px 80px;
-}
-.tab-head-first {
-  margin-left: 30%;
-}
-.tab-head-last {
-  margin-right: 30%;
+  padding: 45px 30px;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .res-menu-captions {
   background-color: white;
-  margin: 0 150px;
-  padding: 10px;
+  margin: 0 135px;
   margin-bottom: px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -375,15 +376,19 @@ input::placeholder {
 .res-menu-item-price {
   color: var(--theme-highlight);
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
   display: block;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .res-menu-item-name {
   color: black;
-  font-size: 25px;
+  font-size: 26px;
+  line-height: 36px;
+
   display: block;
   font-weight: 400;
-  margin: 10px 0;
+  margin: 15px 0;
   font-family: var(--theme-sec-font);
 }
 .res-menu-item-name > a {
@@ -399,9 +404,11 @@ input::placeholder {
 .res-menu-item-caption {
   display: block;
   color: rgba(21, 21, 21, 0.8);
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
   margin: 10px 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .res-menu-tab-head:hover {
   color: rgb(255, 255, 255);
@@ -633,9 +640,6 @@ input::placeholder {
     font-size: 16px;
     word-spacing: 1.5px;
   }
-  .cta-form-item {
-    width: 170px;
-  }
   .cta-form-line {
     margin-right: 10px;
   }
@@ -769,13 +773,13 @@ input::placeholder {
   }
   .banner-background {
     position: absolute;
-    height: 300px;
+    height: 460px;
     background-size: cover;
     z-index: -1;
   }
   .main-banner-heading {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
   }
   .main-banner-line {
     width: 50px;
@@ -790,9 +794,6 @@ input::placeholder {
   }
   .cta-form-section {
     top: -115px;
-  }
-  .form-block {
-    width: 70%;
   }
   .form-cta {
     width: 100%;
@@ -887,14 +888,8 @@ input::placeholder {
     line-height: 1.5;
   }
   .res-menu-container {
-    background-color: #323232;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 30px;
     flex-direction: column;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: auto;
   }
   .res-menu-tab-head {
     padding: 30px 0px;
@@ -910,9 +905,6 @@ input::placeholder {
   }
   .res-menu-captions {
     margin: 0 30px;
-  }
-  .top-caption {
-    margin: 20px;
   }
   .news-item-title {
     width: 450px;
@@ -952,13 +944,16 @@ input::placeholder {
   }
   .banner-background {
     position: absolute;
-    height: 300px;
+    height: 360px;
     background-size: cover;
     z-index: -1;
   }
   .main-banner-heading {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
+  }
+  .main-banner-content {
+    margin-bottom: 30%;
   }
   .main-banner-line {
     width: 50px;
@@ -972,7 +967,7 @@ input::placeholder {
     margin: 10px 20px;
   }
   .cta-form-section {
-    top: -115px;
+    top: -160px;
   }
   .label-heading {
     margin-top: 20px;
@@ -1008,6 +1003,7 @@ input::placeholder {
   }
   .about-section {
     padding-bottom: 15px;
+    margin-top: -600px;
     flex-direction: column;
   }
   .about-left-section {
@@ -1034,10 +1030,10 @@ input::placeholder {
   }
   .about-caption {
     font-size: 15px;
-    width: 300px;
+    width: 100%;
   }
   .item-links > img {
-    width: 300px;
+    width: 100%;
   }
   .recent-news-section {
     padding: 50px 10px;

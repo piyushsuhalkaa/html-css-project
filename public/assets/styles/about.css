@@ -228,9 +228,10 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
-  width: 700px;
+  width: 850px;
   text-align: center;
   font-style: italic;
+  letter-spacing: 1px;
 }
 .testimonial-author {
   font-size: 18px;
@@ -296,11 +297,11 @@
 
 @media (max-width: 1024px) {
   .presentation {
-    height: 250px;
+    height: 200px;
   }
   .background {
     background-attachment: fixed;
-    height: 250px;
+    height: 200px;
   }
   .about-section {
     padding: 100px 50px;
@@ -350,6 +351,13 @@
   }
 }
 @media (max-width: 786px) {
+  .presentation-head {
+    font-size: 25px;
+    margin: 0;
+  }
+  .presentation-container {
+    margin-top: 20px;
+  }
   .about-section {
     flex-direction: column;
     padding: 50px 30px;
@@ -362,6 +370,10 @@
   }
   .about-quote {
     font-size: 22px;
+    width: 850px;
+  }
+  .about-caption {
+    width: auto;
   }
   .feature-section {
     padding: 50px 30px;
@@ -389,12 +401,13 @@
   }
   .testimonial-caption {
     font-size: 18px;
+    width: 80%;
   }
   .testimonial-author {
     font-size: 18px;
   }
-  .testimonial-caption {
-    width: 430px;
+  .prev-testimonial {
+    left: 5%;
   }
   .award-section {
     padding: 50px 0px;
@@ -423,6 +436,7 @@
     height: 200px;
   }
   .presentation-head {
+    margin: 0;
     margin-top: 40px;
     font-size: 25px;
   }
@@ -481,6 +495,12 @@
   .testimonial-item {
     margin: 30px;
     text-align: justify;
+  }
+  prev-testimonial {
+    left: 5%;
+  }
+  .next-testimonial {
+    right: 5%;
   }
   .testimonial-caption {
     font-size: 18px;
