@@ -1049,13 +1049,13 @@ input::placeholder {
     flex-direction: column;
   }
   .news-item-title {
-    width: 330px;
+    width: 90%;
   }
   .news-item-title > a {
     font-size: 20px;
   }
   .news-item-caption {
-    width: 330px;
+    width: 90%;
   }
   .featured-items {
     flex-direction: column;
